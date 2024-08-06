@@ -86,7 +86,6 @@ const config = {
             sidebarId: "mainSidebar",
             position: "left",
             label: "参赛手册",
-            to: "/docs/",
           },
           { to: "/docs/mainChart/", label: "主表格", position: "left" },
           { to: "/docs/contact/", label: "相关信息", position: "left" },
@@ -106,7 +105,7 @@ const config = {
             items: [
               {
                 label: "参赛手册",
-                to: "/docs/handbook",
+                to: "/docs/",
               },
               {
                 label: "主表格",
