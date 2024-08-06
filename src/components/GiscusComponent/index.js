@@ -7,10 +7,10 @@ export default function GiscusComponent() {
 
   return (
     <Giscus
-      repo="osu-atri/osu-dictionary"
-      repoId="R_kgDOMN7Jkg"
-      category="General"
-      categoryId="DIC_kwDOMN7Jks4CgXXQ"
+      repo="offfc/offfc.github.io"
+      repoId="R_kgDOMSC04Q  "
+      category="Announcements"
+      categoryId="DIC_kwDOMSC04c4ChbTr"
       mapping="og:title"
       reactionsEnabled="1"
       emitMetadata="0"
