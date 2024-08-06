@@ -12,11 +12,11 @@ export default function BlogPostItemContent({children, className}) {
     <React.Fragment>
       <Giscus
         id="comments"
-        repo="osu-atri/osu-news"
-        repoId="R_kgDOMU6doQ"
+        repo="offfc/offfc.github.io"
+        repoId="R_kgDOMSC04Q"
         category="General"
-        categoryId="DIC_kwDOMU6doc4CguVK"
-        mapping="or:title"
+        categoryId="DIC_kwDOMSC04c4ChbTs"
+        mapping="title"
         reactionsEnabled="1"
         emitMetadata="0"
         inputPosition="top"
