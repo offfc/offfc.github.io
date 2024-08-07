@@ -1,61 +1,34 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
-
-// TODO: Needs reworking!
-const FeatureList = [
-  {
-    title: '标题一',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        还没想好这里写啥
-      </>
-    ),
-  },
-  {
-    title: '标题二',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        这里也是
-      </>
-    ),
-  },
-  {
-    title: '标题三',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        还有这里
-      </>
-    ),
-  },
-];
-
-function Feature({Svg, title, description}) {
-  return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
-      </div>
-    </div>
-  );
-}
+import React from 'react';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
+        <div className={styles.tabsContainer}>
+          <Tabs
+              defaultValue="tab1"
+              values={[
+                {label: 'ODGC S2 Round1 Showcase', value: 'tab1'},
+                {label: 'ODGC S2 Finals Showcase', value: 'tab2'},
+                {label: 'ODGC S2 Round2 Match', value: 'tab3'},
+              ]}
+          >
+              <TabItem value="tab1">
+               <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=112694002715828&bvid=BV1zT3tewEEi&cid=500001598848638&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="400"></iframe>
+              </TabItem>
+              <TabItem value="tab2">
+               <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=112801997719933&bvid=BV1PGb1eeEuq&cid=500001618460981&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="400"></iframe>
+              </TabItem>
+              <TabItem value="tab3">
+               <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=112791159572703&bvid=BV1JGbXe2E1Z&cid=500001616474909&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="400"></iframe>
+              </TabItem>
+            </Tabs>
+          </div>
       </div>
     </section>
   );

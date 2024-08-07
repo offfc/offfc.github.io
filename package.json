@@ -22,6 +22,7 @@
     "docusaurus-plugin-name": "^0.0.1-security.6",
     "prism-react-renderer": "^2.3.0",
     "react": "^18.0.0",
+    "react-bilibili-embed-renderer": "^1.2.1",
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
