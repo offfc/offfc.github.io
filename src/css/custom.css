@@ -14,13 +14,35 @@
   --ifm-color-primary-lighter: #4fd3ee;
   --ifm-color-primary-lightest: #6ad3f0;
   --ifm-code-font-size: 95%;
+  --ifm-font-family-base: 'Torus';
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  @font-face {
+    font-family: "Torus";
+    src: url("/static/fonts/Torus-Bold.otf") format("TorusBold"),
+      url("/static/fonts/Torus-Regular.otf") format("TorusRegular"),
+      url("/static/fonts/Torus-SemiBold.otf") format("TorusSemiBold");
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+  }
+  
+  html {
+    font-family: "Torus";
+  }
+
   h1 {
     font-size: 2rem;
   }
   h2 {
     font-size: 1.5rem;
   }
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Torus";
+  }
+
 
   .navbar {
     background: rgba(118, 183, 227, 0.6);
