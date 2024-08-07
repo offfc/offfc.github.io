@@ -35,3 +35,23 @@ h2.heroTagline {
   align-items: left;
   justify-content: left;
 }
+
+@media screen and (max-width: 710px) {
+  .heroBanner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    background-image: url('/static/img/full-transparent.png'), linear-gradient(to right, rgba(11, 155, 187, 0.8), 20%, rgba(218, 245, 252, 1));
+    background-position: center bottom;
+    background-size: cover;
+  }
+  
+  .heroBanner h1, .heroBanner p {
+    text-align: center;
+  }
+  
+  .buttons {
+    justify-content: center;
+  }
+}
