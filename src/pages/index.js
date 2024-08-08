@@ -3,7 +3,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-
+import LiveStream from '../components/HomepageLiveStream/index.js';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
@@ -12,6 +12,7 @@ const common = require('../../common.js');
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   // Should we keep this button?
+  // RE: sure we're gonna keep this.
   return (
     <header
       className={clsx('hero hero--primary', styles.heroBanner)}
@@ -42,6 +43,7 @@ export default function Home() {
       description={`${common.description}`}>
       <HomepageHeader />
       <main>
+        <LiveStream />
         <HomepageFeatures />
       </main>
     </Layout>

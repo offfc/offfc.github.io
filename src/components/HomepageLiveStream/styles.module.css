@@ -1,0 +1,19 @@
+.liveStream {
+  margin-bottom: 2rem;
+}
+
+.liveStreamContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.liveStreamTitle {
+  margin-bottom: 1rem;
+}
+
+iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 21 / 9;
+}
