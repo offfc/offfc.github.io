@@ -81,12 +81,7 @@ const config = {
           src: common.icon,
         },
         items: [
-          {
-            type: "docSidebar",
-            sidebarId: "mainSidebar",
-            position: "left",
-            label: "参赛手册",
-          },
+          { to: "/docs/", label: "参赛手册", position: "left" },
           { to: "/docs/mainChart/", label: "主表格", position: "left" },
           { to: "/docs/contact/", label: "相关信息", position: "left" },
           { to: "/blog", label: "动态", position: "left" },
