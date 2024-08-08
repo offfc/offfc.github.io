@@ -10,9 +10,11 @@
   overflow: hidden;
   padding: 6rem 0 10rem;
   margin-bottom: 2rem;
-  background-position: center;
-  background-size: cover;
-  background-color: #0b9bbb;
+  background-position: right, center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /*background-color: #0b9bbb;*/
+  background-image: url('/static/img/cirno-fac.png'), linear-gradient(to right, rgba(11, 155, 187, 0.8), 20%, rgba(218, 245, 252, 1))
 }
 .heroLogo {
   width: 178px;
@@ -32,4 +34,24 @@ h2.heroTagline {
   display: flex;
   align-items: left;
   justify-content: left;
+}
+
+@media screen and (max-width: 710px) {
+  .heroBanner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    background-image: url('/static/img/full-transparent.png'), linear-gradient(to right, rgba(11, 155, 187, 0.8), 20%, rgba(218, 245, 252, 1));
+    background-position: center bottom;
+    background-size: cover;
+  }
+  
+  .heroBanner h1, .heroBanner p {
+    text-align: center;
+  }
+  
+  .buttons {
+    justify-content: center;
+  }
 }
