@@ -35,7 +35,7 @@
     url("/static/fonts/HarmonyOS Sans/HarmonyOS_Sans_Medium.ttf") format("truetype"),
     url("/static/fonts/HarmonyOS Sans/HarmonyOS_Sans_Regular.ttf") format("truetype"),
     url("/static/fonts/HarmonyOS Sans/HarmonyOS_Sans_Thin.ttf") format("truetype");
-    unicode-range: U+4E00-9FFF, U+3400-4DBF, U+20000-2A6DF, U+2A700-2B73F, U+2B740-2B81F, U+2B820-2CEAF;
+    unicode-range: U+4E00-9FFF, U+3400-4DBF, U+20000-2A6DF, U+2A700-2B73F, U+2B740-2B81F, U+2B820-2CEAF, U+3000-303F;
   }
 
   html {
