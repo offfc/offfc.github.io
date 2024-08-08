@@ -14,7 +14,7 @@
   --ifm-color-primary-lighter: #4fd3ee;
   --ifm-color-primary-lightest: #6ad3f0;
   --ifm-code-font-size: 95%;
-  --ifm-font-family-base: 'Torus', sans-serif;
+  --ifm-font-family-base: 'HarmonyOS Sans', 'Torus', sans-serif;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
   @font-face {
@@ -39,7 +39,7 @@
   }
 
   html {
-    font-family: "Torus", sans-serif;
+    font-family: "Torus", "HarmonyOS Sans" sans-serif;
   }
 
   h1 {
@@ -52,11 +52,11 @@
   h4,
   h5,
   h6 {
-    font-family: "Torus", sans-serif;
+    font-family: "HarmonyOS Sans", "Torus", sans-serif;
   }
 
   body {
-    font-family: "Torus", "HarmonyOS Sans", sans-serif;
+    font-family: "HarmonyOS Sans", "Torus", sans-serif;
   }
 
   .navbar {
