@@ -14,7 +14,7 @@
   --ifm-color-primary-lighter: #4fd3ee;
   --ifm-color-primary-lightest: #6ad3f0;
   --ifm-code-font-size: 95%;
-  --ifm-font-family-base: 'Torus';
+  --ifm-font-family-base: 'Torus', sans-serif;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
   @font-face {
@@ -24,10 +24,22 @@
       url("/static/fonts/Torus-SemiBold.otf") format("TorusSemiBold");
     font-weight: 200 900;
     font-stretch: 75% 125%;
+    unicode-range: U+0000-00FF, U+0100-017F, U+0180-024F;
   }
   
+  @font-face {
+    font-family: "HarmonyOS Sans";
+    src: url("/static/fonts/HarmonyOS Sans/HarmonyOS_Sans_Black.ttf") format("truetype"), /* Add other weights/styles as needed */
+    url("/static/fonts/HarmonyOS Sans/HarmonyOS_Sans_Bold.ttf") format("truetype"),
+    url("/static/fonts/HarmonyOS Sans/HarmonyOS_Sans_Light.ttf") format("truetype"),
+    url("/static/fonts/HarmonyOS Sans/HarmonyOS_Sans_Medium.ttf") format("truetype"),
+    url("/static/fonts/HarmonyOS Sans/HarmonyOS_Sans_Regular.ttf") format("truetype"),
+    url("/static/fonts/HarmonyOS Sans/HarmonyOS_Sans_Thin.ttf") format("truetype");
+    unicode-range: U+4E00-9FFF, U+3400-4DBF, U+20000-2A6DF, U+2A700-2B73F, U+2B740-2B81F, U+2B820-2CEAF;
+  }
+
   html {
-    font-family: "Torus";
+    font-family: "Torus", sans-serif;
   }
 
   h1 {
@@ -40,9 +52,12 @@
   h4,
   h5,
   h6 {
-    font-family: "Torus";
+    font-family: "Torus", sans-serif;
   }
 
+  body {
+    font-family: "Torus", "HarmonyOS Sans", sans-serif;
+  }
 
   .navbar {
     background: rgba(118, 183, 227, 0.6);
