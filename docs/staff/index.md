@@ -8,6 +8,7 @@ displayed_sidebar: mainSidebar
 
 下面是所有参与本届OFFC幕后工作的工作人员，排名不分先后：
 
+<StaffBoard></StaffBoard>
 
 |头像|ID|职务|
 |:-:|:-|:-|
