@@ -3,9 +3,24 @@
   align-items: center;
   padding: 2rem 0;
   width: 100%;
+  flex-direction: column;
 }
 
 .featureSvg {
   height: 200px;
   width: 200px;
+}
+
+.videoContainer {
+  width: 90%; /* Adjust this value to change the width of the video container */
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.tabsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* Aligns tabs to the right */
 }

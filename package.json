@@ -17,11 +17,14 @@
     "@docusaurus/core": "3.4.0",
     "@docusaurus/preset-classic": "3.4.0",
     "@docusaurus/theme-search-algolia": "^3.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
     "docusaurus-plugin-name": "^0.0.1-security.6",
     "prism-react-renderer": "^2.3.0",
     "react": "^18.0.0",
+    "react-bilibili-embed-renderer": "^1.2.1",
     "react-dom": "^18.0.0"
   },
   "devDependencies": {

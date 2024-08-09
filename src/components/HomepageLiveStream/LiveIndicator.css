@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.live-indicator-block {
+  position: relative;
+  left: 0%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.live-indicator {
+  font-family: 'Roboto', sans-serif;
+  background: #ea2429; /* Red live color */
+  color: #fff; /* White color */
+  padding: 6px 7px;
+  line-height: 1;
+  border-radius: 6px;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  font-weight: bold;
+  width: auto;
+}
+
+.blink {
+  animation: blinker 1s cubic-bezier(0.8, 0, 1, 1) infinite alternate;
+  font-size: 10px;
+  margin-right: 5px;
+  vertical-align: baseline;
+}
+
+@keyframes blinker {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
