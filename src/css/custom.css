@@ -14,7 +14,7 @@
   --ifm-color-primary-lighter: #4fd3ee;
   --ifm-color-primary-lightest: #6ad3f0;
   --ifm-code-font-size: 95%;
-  --ifm-font-family-base: "Torus", "HarmonyOS Sans", sans-serif;
+  --ifm-font-family-base: "Torus", "HarmonyOS", sans-serif;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
   h1 {
@@ -56,6 +56,7 @@
   --ifm-color-primary-light: #4bd3ee;
   --ifm-color-primary-lighter: #4fd3ee;
   --ifm-color-primary-lightest: #6ad3f0;
+  --ifm-font-family-base: "Torus", "HarmonyOS", sans-serif;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 
   .navbar {
@@ -83,23 +84,47 @@
 
 @font-face {
   font-family: "Torus";
-  src: url("/static/fonts/Torus-Bold.otf"),
-    url("/static/fonts/Torus-SemiBold.otf"),
-    url("/static/fonts/Torus-Regular.otf");
-  font-weight: 400 700 800;
+  src: url("/fonts/Torus-Bold.otf");
+  font-weight: 800;
   font-stretch: 75% 125%;
-  /*unicode-range: U+0000-00FF, U+0100-017F, U+0180-024F;*/
+  unicode-range: U+0000-00FF, U+0100-017F, U+0180-024F;
 }
 
 @font-face {
-  font-family: "HarmonyOS Sans";
-  src: url("/static/fonts/HarmonyOS Sans/HarmonyOS_Sans_Black.ttf"),
-    /* Add other weights/styles as needed */
-      url("/static/fonts/HarmonyOS Sans/HarmonyOS_Sans_Bold.ttf"),
-    url("/static/fonts/HarmonyOS Sans/HarmonyOS_Sans_Light.ttf"),
-    url("/static/fonts/HarmonyOS Sans/HarmonyOS_Sans_Medium.ttf"),
-    url("/static/fonts/HarmonyOS Sans/HarmonyOS_Sans_Regular.ttf"),
-    url("/static/fonts/HarmonyOS Sans/HarmonyOS_Sans_Thin.ttf");
+  font-family: "Torus";
+  src: url("/fonts/Torus-Regular.otf");
+  font-weight: 400;
+  font-stretch: 75% 125%;
+  unicode-range: U+0000-00FF, U+0100-017F, U+0180-024F;
+}
+
+@font-face {
+  font-family: "Torus";
+  src: url("/fonts/Torus-SemiBold.otf");
+  font-weight: 700;
+  font-stretch: 75% 125%;
+  unicode-range: U+0000-00FF, U+0100-017F, U+0180-024F;
+}
+
+@font-face {
+  font-family: "HarmonyOS";
+  src: url("/fonts/HarmonyOS Sans/HarmonyOS_Sans_SC_Regular.ttf");
+  font-weight: 400;
+  unicode-range: U+3000-303F, U+3400-4DBF, U+4E00-9FFF, U+20000-2A6DF,
+    U+2A700-2B73F, U+2B740-2B81F, U+2B820-2CEAF;
+}
+@font-face {
+  font-family: "HarmonyOS";
+  src: url("/fonts/HarmonyOS Sans/HarmonyOS_Sans_SC_Bold.ttf");
+  font-weight: 700;
+  unicode-range: U+3000-303F, U+3400-4DBF, U+4E00-9FFF, U+20000-2A6DF,
+    U+2A700-2B73F, U+2B740-2B81F, U+2B820-2CEAF;
+}
+
+@font-face {
+  font-family: "HarmonyOS";
+  src: url("/fonts/HarmonyOS Sans/HarmonyOS_Sans_SC_Medium.ttf");
+  font-weight: 500;
   unicode-range: U+3000-303F, U+3400-4DBF, U+4E00-9FFF, U+20000-2A6DF,
     U+2A700-2B73F, U+2B740-2B81F, U+2B820-2CEAF;
 }
