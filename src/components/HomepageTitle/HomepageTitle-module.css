@@ -1,0 +1,19 @@
+.font-extrabold {
+    font-weight: 800
+}
+.text-transparent {
+    color: #0000
+}
+.bg-clip-text {
+    -webkit-background-clip: text;
+    background-clip: text
+}
+.text-7xl {
+    line-height: 1
+}
+@media (min-width: 640px) {
+    .md\:text-8xl {
+        font-size: 4.5rem;
+        line-height: 1
+    }
+}

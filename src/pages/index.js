@@ -6,6 +6,7 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import LiveStream from '../components/HomepageLiveStream/index.js';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
+import HomepageTitle from '../components/HomepageTitle/HomepageTitle.js';
 
 const common = require('../../common.js');
 
@@ -19,9 +20,8 @@ function HomepageHeader() {
       // style={{ backgroundImage: "url('/img/landing.gif')" }}
     >
       <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
+        <HomepageTitle />
+        <br />
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
