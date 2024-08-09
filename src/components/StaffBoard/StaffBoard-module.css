@@ -1,10 +1,31 @@
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  background: rgba(101, 171, 217, 0.28  );
+  backdrop-filter: blur(25px);
+  background-position: bottom;
+  background-size: auto 60%;
+  background-repeat: repeat-x;
   }
-  
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("./asset/triangles.svg");
+  background-position: bottom;
+  background-size: auto 60%;
+  background-repeat: repeat-x;
+  opacity: 0.4; /* Adjust the opacity as needed */
+  z-index: -1;
+  }
+
   .card-title {
     /*color: grey;*/
     font-size: 18px;
