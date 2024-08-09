@@ -44,7 +44,6 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <LiveStream />
-        <HomepageFeatures />
       </main>
     </Layout>
   );
