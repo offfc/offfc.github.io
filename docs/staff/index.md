@@ -9,6 +9,9 @@ displayed_sidebar: mainSidebar
 下面是所有参与本届OFFC幕后工作的工作人员，排名不分先后：
 
 <StaffBoard uid="30973609" userName="Amrzs0971" role="程序"></StaffBoard>
+<StaffBoard uid="33887163" userName="kitakore" role="裁判，直播，规则"></StaffBoard>
+
+
 
 |头像|ID|职务|
 |:-:|:-|:-|
