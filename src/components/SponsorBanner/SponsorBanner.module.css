@@ -1,0 +1,61 @@
+.containerV1 {
+  width: 100%;
+  background-color: #f4f4f4;
+  padding: 20px 0;
+}
+
+.mainText{
+  font-size: 45rem;
+  font-weight: 1000;
+}
+
+.wrapperV1 {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.gridBlockV1 {
+  display: flex;
+  align-items: center;
+}
+
+.blockElement {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.green {
+  background-color: #e0f7e7;
+}
+
+.imageAlignSide {
+  display: flex;
+  align-items: center;
+}
+
+.imageAlignLeft {
+  flex-direction: row;
+}
+
+.twoByGridBlock {
+  width: 100%;
+}
+
+.blockImage {
+  margin-right: 0px;
+}
+
+.blockContent {
+  flex-grow: 1;
+}
+
+h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+p {
+  margin: 0;
+  font-size: 16px;
+}
