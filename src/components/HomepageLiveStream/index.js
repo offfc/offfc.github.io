@@ -37,7 +37,7 @@ export default function LiveStream() {
         <div className={styles.liveStreamContainer}>
           <LiveIndicator />
           <iframe
-            src="https://www.bilibili.com/blackboard/live/live-activity-player.html?cid=21622811&sendpanel=1&danmaku=1&enableCtrlUI=1&logo=0"
+            src="https://www.bilibili.com/blackboard/live/live-activity-player.html?cid=31505637&sendpanel=1&danmaku=1&enableCtrlUI=1&logo=0"
             frameBorder="no"
             frameSpacing="0"
             scrolling="no"
