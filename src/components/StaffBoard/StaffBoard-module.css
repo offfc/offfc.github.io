@@ -1,60 +1,59 @@
-/* stylelint-disable docusaurus/copyright-header */
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
- .heroBanner {
-  padding: 3rem 0;
-  text-align: left;
+.card {
   position: relative;
-  overflow: hidden;
-  padding: 6rem 0 10rem;
-  margin-bottom: 2rem;
-  background-position: right, center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  /*background-color: #0b9bbb;*/
-  background-image: url('/static/img/cirno-fac.png'), linear-gradient(to right, rgba(11, 155, 187, 0.8), 20%, rgba(218, 245, 252, 1))
-}
-.heroLogo {
-  width: 178px;
-  height: 178px;
-}
-h2.heroTagline {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  filter: drop-shadow(2px 2px 2px #666);
-}
-@media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  background: rgba(101, 171, 217, 0.28  );
+  backdrop-filter: blur(25px);
+  background-position: bottom;
+  background-size: auto 60%;
+  background-repeat: repeat-x;
   }
-}
-.buttons {
-  display: flex;
-  align-items: left;
-  justify-content: left;
-}
 
-@media screen and (max-width: 710px) {
-  .heroBanner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem 1rem;
-    background-image: url('/static/img/full-transparent.png'), linear-gradient(to right, rgba(11, 155, 187, 0.8), 20%, rgba(218, 245, 252, 1));
-    background-position: center bottom;
-    background-size: cover;
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("./asset/triangles.svg");
+  background-position: bottom;
+  background-size: auto 60%;
+  background-repeat: repeat-x;
+  opacity: 0.4; /* Adjust the opacity as needed */
+  z-index: -1;
+  }
+
+  .card-title {
+    /*color: grey;*/
+    font-size: 18px;
   }
   
-  .heroBanner h1, .heroBanner p {
+
+  .card-button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
     text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
   }
   
-  .buttons {
-    justify-content: center;
+  .acard {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
   }
-}
+
+  .card-button:hover, .acard:hover {
+    opacity: 0.7;
+  }
 
 /* Button design */
 

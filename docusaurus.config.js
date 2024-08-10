@@ -81,10 +81,11 @@ const config = {
           src: common.icon,
         },
         items: [
-          { to: "/docs/", label: "参赛手册", position: "left" },
+          { to: "/docs/handbook", label: "参赛手册", position: "left" },
           { to: "/docs/mainChart/", label: "主表格", position: "left" },
           { to: "/docs/contact/", label: "相关信息", position: "left" },
           { to: "/blog", label: "动态", position: "left" },
+          { to: "/docs/staff", label: "Staff", position: "left" },
           {
             href: common.src,
             label: "GitHub",
@@ -100,7 +101,7 @@ const config = {
             items: [
               {
                 label: "参赛手册",
-                to: "/docs/",
+                to: "/docs/handbook",
               },
               {
                 label: "主表格",
@@ -129,7 +130,7 @@ const config = {
                 href: "https://docs.google.com/spreadsheets/d/14ZFqYajLDRjr863hDo5n5xvGQMoDZPmNwJycgQXr3YQ/edit?usp=sharing",
               },
               {
-                label: "参赛手册",
+                label: "参赛手册（腾讯文档）",
                 href: "https://docs.qq.com/doc/DV2VOWlZJdFZWZUpB?from_page=save",
               },
             ],
