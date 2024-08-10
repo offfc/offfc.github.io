@@ -16,7 +16,7 @@ function StaffBoard({ uid, userName, role }) {
       ></link>
       <h1>{userName}</h1>
       <p class="card-title">{role}</p>
-      <p>
+      <p style={{ marginTop: "10px" }}>
         <FeatureButton link={ "https://osu.ppy.sh/users" + uid} buttonText="在 osu! 查看"/>
       </p>
       <br />
