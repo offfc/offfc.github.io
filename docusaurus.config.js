@@ -86,6 +86,8 @@ const config = {
           { to: "/docs/mainChart/", label: "主表格", position: "left" },
           { to: "/blog", label: "动态", position: "left" },
           { to: "/docs/staff", label: "Staff", position: "left" },
+          { to: "/docs/easteregg", label: "     ", position: "left" },
+          { to: "/docs/memes", label: "爆典", position: "left" },
           {
             href: common.src,
             label: "GitHub",
