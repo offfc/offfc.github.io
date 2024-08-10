@@ -25,6 +25,7 @@ function HomepageHeader() {
         <HomepageTitle />
         <br />
         <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <br />
         <div className={styles.buttons}>
           <FeatureButton
             link="/docs/info"
