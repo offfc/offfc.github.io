@@ -14,13 +14,8 @@ function StaffBoard({ uid, userName, role }) {
         rel="stylesheet"
         href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css"
       ></link>
-      <br />
       <h1>{userName}</h1>
       <p class="card-title">{role}</p>
-      <a href="#" class="acard">
-        <i class="fa fa-dribbble"></i>
-      </a>
-      <br />
       <p>
         <FeatureButton link={ "https://osu.ppy.sh/users" + uid} buttonText="在 osu! 查看"/>
       </p>

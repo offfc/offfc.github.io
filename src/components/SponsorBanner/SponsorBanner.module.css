@@ -1,0 +1,66 @@
+.containerV1 {
+  width: 100%;
+  /*background-color: #f4f4f4;*/
+  padding: 20px 0;
+}
+
+.mainText{
+  font-size: 450em;
+  font-weight: 1000;
+  text-align: center;
+}
+
+.wrapperV1 {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.gridBlockV1 {
+  display: flex;
+  align-items: center;
+}
+
+.blockElement {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.bannerBackground {
+  background-color: #4e46dc;
+}
+
+.bannerText {
+  color: white;
+}
+
+.imageAlignSide {
+  display: flex;
+  align-items: center;
+}
+
+.imageAlignLeft {
+  flex-direction: row;
+}
+
+.twoByGridBlock {
+  width: 100%;
+}
+
+.blockImage {
+  margin-right: 0px;
+}
+
+.blockContent {
+  flex-grow: 1;
+}
+
+h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+p {
+  margin: 0;
+  font-size: 16px;
+}

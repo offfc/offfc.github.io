@@ -8,6 +8,7 @@ import Heading from "@theme/Heading";
 import styles from "./index.module.css";
 import HomepageTitle from "@site/src/components/HomepageTitle/HomepageTitle.js";
 import FeatureButton from "@site/src/components/FeatureButton.js";
+import SponsorBanner from "@site/src/components/SponsorBanner/SponsorBanner.js";
 
 const common = require("../../common.js");
 
@@ -54,6 +55,7 @@ export default function Home() {
       <main>
         <LiveStream />
       </main>
+      <SponsorBanner mainText={"感谢DESU.Life的盛情赞助！"}/>
     </Layout>
   );
 }

@@ -1,7 +1,19 @@
+.staff-board-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* or use space-around, or space-evenly */
+  gap: 20px; /* Adjust the gap between the cards as needed */
+}
+
+.h1{
+  margin: 1, 0, 0;
+}
+
 .card {
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
+  max-height: 400px;
   margin: auto;
   text-align: center;
   background: rgba(101, 171, 217, 0.28  );
@@ -29,6 +41,7 @@
   .card-title {
     /*color: grey;*/
     font-size: 18px;
+    margin-top: -12px;
   }
   
 
@@ -120,6 +133,9 @@
 }
 .h-5 {
   height: 1.25rem;
+}
+.top-0{
+  margin-top: 4px;
 }
 .text-green-400 {
   --tw-text-opacity: 1;
