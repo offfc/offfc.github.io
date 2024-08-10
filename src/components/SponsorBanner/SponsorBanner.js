@@ -17,9 +17,6 @@ const SponsorBanner = ({imageUrl, mainText, altText}) => {
                 <span><p>{altText}</p></span>
               </div>
             </div>
-            <div className={styles.blockImage}>
-              <img src={imageUrl} alt="Sponsor" style={{ cursor: 'pointer' }} width={'20%'}/>
-            </div>
           </div>
         </div>
       </div>

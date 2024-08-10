@@ -5,8 +5,9 @@
 }
 
 .mainText{
-  font-size: 45rem;
+  font-size: 450em;
   font-weight: 1000;
+  text-align: center;
 }
 
 .wrapperV1 {

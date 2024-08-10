@@ -70,7 +70,7 @@ export default function Home() {
       <main>
         <LiveStream />
       </main>
-      <SponsorBanner />
+      <SponsorBanner mainText={"感谢DESU.Life的盛情赞助！"}/>
     </Layout>
   );
 }
