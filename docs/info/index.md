@@ -6,29 +6,29 @@ displayed_sidebar: mainSidebar
 title: 简介
 ---
 
-# 简介·<Highlight color="#198dff">OFFC cirno</Highlight>
+# 简介·<FntColor color="#198dff">OFFC cirno</FntColor>
 
 人间之里平常的一天里，琪露诺和大妖精有说有笑地在街上闲逛着。突然，一张纸条随风落在琪露诺的脸上。
 
-<Highlight color="#198dff">“谁呀！竟然在大街上偷袭咱幻想乡最强妖精！”</Highlight>琪露诺愤怒地把纸条拿下，挥拳大喊道。
+<FntColor color="#198dff">“谁呀！竟然在大街上偷袭咱幻想乡最强妖精！”</FntColor>琪露诺愤怒地把纸条拿下，挥拳大喊道。
 
-一旁的大酱盯着琪露诺手里的纸条，好像发现了什么有趣的地方。她对琪露诺说道：<Highlight color="#8f3fcf">“咦，琪露诺酱，你快看这张纸条上写的是什么？”</Highlight>
+一旁的大酱盯着琪露诺手里的纸条，好像发现了什么有趣的地方。她对琪露诺说道：<FntColor color="#8f3fcf">“咦，琪露诺酱，你快看这张纸条上写的是什么？”</FntColor>
 
-<Highlight color="#198dff">“什么东西呀！”</Highlight>琪露诺拿好手上的纸条，仔细端详了起来。只见纸条上写着......
+<FntColor color="#198dff">“什么东西呀！”</FntColor>琪露诺拿好手上的纸条，仔细端详了起来。只见纸条上写着......
 
 :::note 纸条
 
-<Highlight color="#198dff">**OFFC**</Highlight> (*osu! FumoFumo Cup*) 火热举办中！
+<FntColor color="#198dff">**OFFC**</FntColor> (*osu! FumoFumo Cup*) 火热举办中！
 
 全新的 Bingo 决胜创意玩法，
 
-由<Highlight color="#232323">**DESU.Life**</Highlight>盛情赞助的冠军全队猫盘，
+由<FntColor color="#232323">**DESU.Life**</FntColor>盛情赞助的冠军全队猫盘，
 
-更有<Highlight color="#198dff">**fumo大奖**</Highlight>等你来拿！
+更有<FntColor color="#198dff">**fumo大奖**</FntColor>等你来拿！
 
 :::
 
-本次比赛为 4v4 团队赛，采用双败淘汰制，将视报名情况决定每队7-8人，欢迎各位选手和观众加入OFFC群<Highlight color="#198dff">619943512</Highlight>。
+本次比赛为 4v4 团队赛，采用双败淘汰制，将视报名情况决定每队7-8人，欢迎各位选手和观众加入OFFC群<FntColor color="#198dff">619943512</FntColor>。
 
 <Highlight color="#198dff">转发此消息，琪露诺将为你带来一个清凉的夏天！</Highlight>
 
