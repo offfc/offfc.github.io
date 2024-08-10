@@ -81,9 +81,9 @@ const config = {
           src: common.icon,
         },
         items: [
+          { to: "/docs/info/", label: "简介", position: "left" },
           { to: "/docs/handbook", label: "参赛手册", position: "left" },
           { to: "/docs/mainChart/", label: "主表格", position: "left" },
-          { to: "/docs/contact/", label: "相关信息", position: "left" },
           { to: "/blog", label: "动态", position: "left" },
           { to: "/docs/staff", label: "Staff", position: "left" },
           {
