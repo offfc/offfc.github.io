@@ -38,7 +38,7 @@ function HomepageHeader() {
             spacing="1em"
           />
           <FeatureButton
-            link="/docs/handbook"
+            link="https://docs.qq.com/form/page/DV1hXY1RMU1FOeGlM"
             buttonText="立即报名！"
             spacing="1em"
           />
