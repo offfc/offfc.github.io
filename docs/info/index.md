@@ -32,6 +32,8 @@ title: 简介
 
 <Highlight color="#198dff">转发此消息，琪露诺将为你带来一个清凉的夏天！</Highlight>
 
+![报名卡片](/img/info-card.jpg)
+
 ---
 
 报名时间：8.10-8.30
