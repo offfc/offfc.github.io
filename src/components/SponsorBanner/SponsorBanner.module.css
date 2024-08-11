@@ -1,6 +1,6 @@
 .containerV1 {
   width: 100%;
-  background-color: #f4f4f4;
+  /*background-color: #f4f4f4;*/
   padding: 20px 0;
 }
 
@@ -26,8 +26,12 @@
   padding: 10px;
 }
 
-.green {
-  background-color: #e0f7e7;
+.bannerBackground {
+  background-color: #4e46dc;
+}
+
+.bannerText {
+  color: white;
 }
 
 .imageAlignSide {

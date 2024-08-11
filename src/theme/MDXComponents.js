@@ -4,6 +4,7 @@ import MDXComponents from "@theme-original/MDXComponents";
 import Highlight from "@site/src/components/Highlight";
 import FntColor from "@site/src/components/FntColor";
 import StaffBoard from "@site/src/components/StaffBoard/StaffBoard";
+import FeatureButton from "@site/src/components/FeatureButton";
 
 export default {
   // Re-use the default mapping
@@ -13,4 +14,5 @@ export default {
   Highlight,
   FntColor,
   StaffBoard,
+  FeatureButton,
 };
