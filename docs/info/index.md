@@ -22,7 +22,7 @@ title: 简介
 
 全新的 Bingo 决胜创意玩法，
 
-由<FntColor color="#232323">**DESU.Life**</FntColor>盛情赞助的冠军全队猫盘，
+由<Highlight color="#232323">**DESU.Life**</Highlight>盛情赞助的冠军全队猫盘，
 
 更有<FntColor color="#198dff">**fumo大奖**</FntColor>等你来拿！
 
