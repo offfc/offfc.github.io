@@ -9,6 +9,7 @@ import styles from "./index.module.css";
 import HomepageTitle from "@site/src/components/HomepageTitle/HomepageTitle.js";
 import FeatureButton from "@site/src/components/FeatureButton.js";
 import SponsorBanner from "@site/src/components/SponsorBanner/SponsorBanner.js";
+import Highlight from "@site/src/components/Highlight";
 
 const common = require("../../common.js");
 
@@ -24,7 +25,7 @@ function HomepageHeader() {
       <div className="container">
         <HomepageTitle />
         <br />
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle"><b>面向中分段的 <Highlight color="#ff66aa">osu!Standard</Highlight> 特色比赛</b></p>
         <br />
         <div className={styles.buttons}>
           <FeatureButton

@@ -11,9 +11,16 @@
 .text-7xl {
     line-height: 1
 }
-@media (min-width: 640px) {
+@media (max-width: 1024px) {
     .md\:text-8xl {
-        font-size: 4.5rem;
+        font-size: 2.5rem;
         line-height: 1
+    }
+}
+
+@media (min-width: 1024px) {
+    .md\:text-8xl {
+        font-size: 4rem;
+        line-height: 1;
     }
 }
