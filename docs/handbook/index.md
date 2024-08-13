@@ -137,6 +137,18 @@ title: 参赛手册
 
 ## 五、图池 (<Highlight color="#198dff">Bingo</Highlight> 玩法)
 
+:::info
+
+如果你觉得下方的规则太过复杂，OFFC Staff为你准备了精简版规则！
+
+<br />
+
+<FeatureButton link="/docs/handbook/shortHandbook" buttonText="点我跳转！"/>
+
+:::
+
+
+
 ### 5-1 图池
 
 在OFFC中，有<Highlight color="#535353">**NM**</Highlight>、<Highlight color="#ffbf05">**HD**</Highlight>、<Highlight color="#f86264">**HR**</Highlight>、<Highlight color="#63c6f5">**DT**</Highlight>、<Highlight color="#27efcb">**FM**</Highlight>、<Highlight color="#7d75ee">**EX**</Highlight>共 6 个图池 20 张图。以下对各个图池及其MOD规则进行详述：
