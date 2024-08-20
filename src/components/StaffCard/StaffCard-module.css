@@ -5,10 +5,6 @@
   gap: 20px; /* Adjust the gap between the cards as needed */
 }
 
-.h1 {
-  margin: 1, 0, 0;
-}
-
 .card {
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -39,31 +35,12 @@
 }
 
 .card-title {
-  /*color: grey;*/
+  font-size: 30px;
+  font-weight: 700;
+  margin: 1rem, 0, 1rem;
+}
+
+.card-subtitle {
   font-size: 18px;
-  margin-top: -12px;
-}
-
-.card-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-.acard {
-  text-decoration: none;
-  font-size: 22px;
-  color: black;
-}
-
-.card-button:hover,
-.acard:hover {
-  opacity: 0.7;
+  font-weight: 400;
 }
