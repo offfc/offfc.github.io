@@ -1,6 +1,6 @@
 import React from "react";
 import "./StaffBoard-module.css";
-import FeatureButton from "../FeatureButton";
+import FeatureButton from "../FeatureButton/FeatureButton.js";
 
 function StaffBoard({ uid, userName, role }) {
   return (
@@ -10,10 +10,6 @@ function StaffBoard({ uid, userName, role }) {
         alt=""
         style={{ width: 100 + "%" }}
       />
-      <link
-        rel="stylesheet"
-        href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css"
-      ></link>
       <h1>{userName}</h1>
       <p class="card-title">{role}</p>
       <p style={{ marginTop: "10px" }}>

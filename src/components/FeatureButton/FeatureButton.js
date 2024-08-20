@@ -1,4 +1,5 @@
 import React from "react";
+import "./FeatureButton-module.css";
 
 export default function FeatureButton({ link, buttonText, spacing }) {
   return (
