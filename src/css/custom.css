@@ -23,6 +23,8 @@ Use these if you need'em
   --ifm-font-family-base: "Torus", "HarmonyOS", sans-serif;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
+  --background-image: url("assets/trianglesNavbar.png");
+
   h1 {
     font-size: 2rem;
   }
@@ -34,11 +36,10 @@ Use these if you need'em
   .navbar {
     background: rgba(118, 183, 227, 0.6);
     backdrop-filter: blur(25px);
-    background-image: url("assets/trianglesNavbar.png");
+    background-image: var(--background-image);
     background-position: bottom;
     background-size: auto 100%;
     background-repeat: repeat-x;
-    /*filter: hue-rotate(0deg) saturate(.5);*/
   }
 
   .navbar-sidebar {
@@ -46,7 +47,7 @@ Use these if you need'em
     .navbar-sidebar__brand {
       background: rgba(48, 206, 234, 0.6);
       backdrop-filter: blur(25px);
-      background-image: url("assets/trianglesNavbar.png");
+      background-image: var(--background-image);
       background-position: bottom;
       background-size: auto 100%;
       background-repeat: repeat-x;
@@ -54,26 +55,16 @@ Use these if you need'em
   }
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
-  --ifm-color-primary: #12bbe6;
-  --ifm-color-primary-dark: #0e7fd5;
-  --ifm-color-primary-darker: #1365ca;
-  --ifm-color-primary-darkest: #015ddd;
-  --ifm-color-primary-light: #4bd3ee;
-  --ifm-color-primary-lighter: #4fd3ee;
-  --ifm-color-primary-lightest: #6ad3f0;
-  --ifm-font-family-base: "Torus", "HarmonyOS", sans-serif;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 
   .navbar {
     background: rgba(53, 189, 234, 0.6);
     backdrop-filter: blur(25px);
-    background-image: url("assets/trianglesNavbar.png");
+    background-image: var(--background-image);
     background-position: bottom;
     background-size: auto 100%;
     background-repeat: repeat-x;
-    /*filter: hue-rotate(0deg) saturate(.5);*/
   }
 
   .navbar-sidebar {
@@ -81,7 +72,7 @@ Use these if you need'em
     .navbar-sidebar__brand {
       background: rgba(44, 190, 230, 0.6);
       backdrop-filter: blur(25px);
-      background-image: url("assets/trianglesNavbar.png");
+      background-image: var(--background-image);
       background-position: bottom;
       background-size: auto 100%;
       background-repeat: repeat-x;
