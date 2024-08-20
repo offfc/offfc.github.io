@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import styles from './LiveIndicator.module.css';
 
+// This won't show the live status as
 export default function LiveIndicator() {
   const [isLive, setIsLive] = useState(false);
 
   useEffect(() => {
     const checkStreamStatus = () => {
       // Check for the presence of the <video> element in the DOM
-      const videoElement = document.querySelector('video');
-      setIsLive(!!videoElement); // Update the state based on whether the video element exists
+      const videoElement = document.querySelector("web-player-ending-panel");
+      setIsLive(videoElement == null); // Update the state based on whether the video element exists
     };
 
     // Initial check
