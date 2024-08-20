@@ -7,6 +7,7 @@ function StaffCard({ uid, userName, role }) {
   return (
       <div className="card">
       <img
+        className="fade-in"
         src={"https://a.ppy.sh/" + uid}
         alt="User Avatar"
         style={{ width: 100 + "%" }}
