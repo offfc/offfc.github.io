@@ -1,8 +1,8 @@
 import React from "react";
-import "./StaffBoard-module.css";
+import "./StaffCard-module.css";
 import FeatureButton from "../FeatureButton/FeatureButton.js";
 
-function StaffBoard({ uid, userName, role }) {
+function StaffCard({ uid, userName, role }) {
   return (
       <div className="card">
       <img
@@ -20,4 +20,4 @@ function StaffBoard({ uid, userName, role }) {
   );
 }
 
-export default StaffBoard;
+export default StaffCard;

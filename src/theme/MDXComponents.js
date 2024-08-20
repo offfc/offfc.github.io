@@ -3,7 +3,7 @@ import React from "react";
 import MDXComponents from "@theme-original/MDXComponents";
 import Highlight from "@site/src/components/Highlight";
 import FntColor from "@site/src/components/FntColor";
-import StaffBoard from "@site/src/components/StaffBoard/StaffBoard";
+import StaffCard from "@site/src/components/StaffCard/StaffCard";
 import FeatureButton from "@site/src/components/FeatureButton/FeatureButton";
 
 export default {
@@ -13,6 +13,6 @@ export default {
   // `Highlight` will receive all props that were passed to `<Highlight>` in MDX
   Highlight,
   FntColor,
-  StaffBoard,
+  StaffCard,
   FeatureButton,
 };

@@ -30,7 +30,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("./asset/triangles.svg");
+  background-image: url("/svg/triangles.svg");
   background-position: bottom;
   background-size: auto 60%;
   background-repeat: repeat-x;

@@ -23,7 +23,7 @@ Use these if you need'em
   --ifm-font-family-base: "Torus", "HarmonyOS", sans-serif;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
-  --background-image: url("assets/trianglesNavbar.png");
+  --background-image: url("/img/trianglesNavbar.png");
 
   h1 {
     font-size: 2rem;
