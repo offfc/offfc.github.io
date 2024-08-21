@@ -18,78 +18,82 @@ iframe {
   aspect-ratio: 21 / 9;
 }
 
+.spinner {
+  margin: -6rpx 0rpx 0rpx 2rpx;
+  width: 25rpx;
+  height: 18rpx;
+  font-size: 10px;
+}
 
+.spinner > view {
+  background-color: #ffffff;
+  height: 100%;
+  width: 7rpx;
+  margin-left: 2rpx;
+  display: inline-block;
+  -webkit-animation: stretchdelay 1.9s infinite ease-in-out;
+  animation: stretchdelay 1.2s infinite ease-in-out;
+}
 
-    .spinner {
-        margin: -6rpx 0rpx 0rpx 2rpx;
-        width: 25rpx;
-        height: 18rpx;
-        font-size: 10px;
-    }
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
 
-    .spinner>view {
-        background-color: #ffffff;
-        height: 100%;
-        width: 7rpx;
-        margin-left: 2rpx;
-        display: inline-block;
-        -webkit-animation: stretchdelay 1.9s infinite ease-in-out;
-        animation: stretchdelay 1.2s infinite ease-in-out;
-    }
+.spinner .rect3 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
 
-    .spinner .rect2 {
-        -webkit-animation-delay: -1.1s;
-        animation-delay: -1.1s;
-    }
+@-webkit-keyframes stretchdelay {
+  0%,
+  40%,
+  100% {
+    -webkit-transform: scaleY(0.4);
+  }
+  20% {
+    -webkit-transform: scaleY(1);
+  }
+}
 
-    .spinner .rect3 {
-        -webkit-animation-delay: -1.0s;
-        animation-delay: -1.0s;
-    }
+@keyframes stretchdelay {
+  10% {
+    height: 10%;
+  }
 
-    @-webkit-keyframes stretchdelay {
-         0%, 40%, 100% { -webkit-transform: scaleY(0.4) } 
-         20% { -webkit-transform: scaleY(1.0) }
-    }
+  15% {
+    height: 30%;
+  }
 
-    @keyframes stretchdelay {
-        10% {
-            height: 10%;
-        }
+  5% {
+    height: 100%;
+  }
 
-        15% {
-            height: 30%;
-        }
+  32% {
+    height: 70%;
+  }
 
-        5% {
-            height: 100%;
-        }
+  36% {
+    height: 30%;
+  }
 
-        32% {
-            height: 70%;
-        }
+  48% {
+    height: 40%;
+  }
 
-        36% {
-            height: 30%;
-        }
+  60% {
+    height: 5%;
+  }
 
-        48% {
-            height: 40%;
-        }
+  80% {
+    height: 30%;
+  }
 
-        60% {
-            height: 5%;
-        }
+  88% {
+    height: 60%;
+  }
 
-        80% {
-            height: 30%;
-        }
-
-        88% {
-            height: 60%;
-        }
-
-        100% {
-            height: 90%;
-        }
-    }
+  100% {
+    height: 90%;
+  }
+}

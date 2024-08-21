@@ -1,13 +1,10 @@
 import clsx from "clsx";
-import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import LiveStream from "@site/src/components/HomepageLiveStream/index.js";
-import Heading from "@theme/Heading";
 import styles from "./index.module.css";
 import HomepageTitle from "@site/src/components/HomepageTitle/HomepageTitle.js";
-import FeatureButton from "@site/src/components/FeatureButton.js";
+import FeatureButton from "@site/src/components/FeatureButton/FeatureButton";
 import SponsorBanner from "@site/src/components/SponsorBanner/SponsorBanner.js";
 import Highlight from "@site/src/components/Highlight";
 
@@ -20,7 +17,6 @@ function HomepageHeader() {
   return (
     <header
       className={clsx("hero hero--primary", styles.heroBanner)}
-      // style={{ backgroundImage: "url('/img/landing.gif')" }}
     >
       <div className="container">
         <HomepageTitle />

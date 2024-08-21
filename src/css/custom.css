@@ -10,6 +10,49 @@
 https://gist.github.com/abhigyantrips/b828ca46b2460c6699c73e0162f6be80
 Use these if you need'em
 */
+@import url("https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css");
+
+@keyframes shrink {
+  from {
+    transform: scale(1.15);
+    font-weight: 800;
+  }
+  to {
+    transform: scale(1);
+    font-weight: 400;
+  }
+}
+
+@keyframes enlarge {
+  from {
+    transform: scale(1);
+    font-weight: 400;
+    color: black;
+  }
+  to {
+    transform: scale(1.15);
+    font-weight: 800;
+    color: var(--ifm-color-primary);
+  }
+}
+
+@keyframes hueblue {
+  from {
+    background: rgba(101, 171, 217, 0.28);
+  }
+  to {
+    background: rgba(101, 171, 217, 0.7);
+  }
+}
+
+@keyframes hueblueback {
+  from {
+    background: rgba(101, 171, 217, 0.7);
+  }
+  to {
+    background: rgba(101, 171, 217, 0.28);
+  }
+}
 
 :root {
   --ifm-color-primary: #12bbe6;
@@ -23,9 +66,12 @@ Use these if you need'em
   --ifm-font-family-base: "Torus", "HarmonyOS", sans-serif;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
+  --background-image: url("/img/trianglesNavbar.png");
+
   h1 {
     font-size: 2rem;
   }
+
   h2 {
     font-size: 1.5rem;
   }
@@ -33,11 +79,15 @@ Use these if you need'em
   .navbar {
     background: rgba(118, 183, 227, 0.6);
     backdrop-filter: blur(25px);
-    background-image: url("assets/trianglesNavbar.png");
+    background-image: var(--background-image);
     background-position: bottom;
     background-size: auto 100%;
     background-repeat: repeat-x;
-    /*filter: hue-rotate(0deg) saturate(.5);*/
+  }
+
+  .navbar__link--active {
+    color: rgba(25, 141, 255, 1);
+    animation: enlarge 0.5s ease forwards;
   }
 
   .navbar-sidebar {
@@ -45,7 +95,7 @@ Use these if you need'em
     .navbar-sidebar__brand {
       background: rgba(48, 206, 234, 0.6);
       backdrop-filter: blur(25px);
-      background-image: url("assets/trianglesNavbar.png");
+      background-image: var(--background-image);
       background-position: bottom;
       background-size: auto 100%;
       background-repeat: repeat-x;
@@ -53,26 +103,21 @@ Use these if you need'em
   }
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
-  --ifm-color-primary: #12bbe6;
-  --ifm-color-primary-dark: #0e7fd5;
-  --ifm-color-primary-darker: #1365ca;
-  --ifm-color-primary-darkest: #015ddd;
-  --ifm-color-primary-light: #4bd3ee;
-  --ifm-color-primary-lighter: #4fd3ee;
-  --ifm-color-primary-lightest: #6ad3f0;
-  --ifm-font-family-base: "Torus", "HarmonyOS", sans-serif;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 
   .navbar {
     background: rgba(53, 189, 234, 0.6);
     backdrop-filter: blur(25px);
-    background-image: url("assets/trianglesNavbar.png");
+    background-image: var(--background-image);
     background-position: bottom;
     background-size: auto 100%;
     background-repeat: repeat-x;
-    /*filter: hue-rotate(0deg) saturate(.5);*/
+  }
+
+  .navbar__link--active {
+    color: var(--ifm-color-primary);
+    animation: enlarge 0.5s ease forwards;
   }
 
   .navbar-sidebar {
@@ -80,7 +125,7 @@ Use these if you need'em
     .navbar-sidebar__brand {
       background: rgba(44, 190, 230, 0.6);
       backdrop-filter: blur(25px);
-      background-image: url("assets/trianglesNavbar.png");
+      background-image: var(--background-image);
       background-position: bottom;
       background-size: auto 100%;
       background-repeat: repeat-x;
@@ -90,7 +135,7 @@ Use these if you need'em
 
 @font-face {
   font-family: "Torus";
-  src: url("/fonts/Torus-Bold.otf");
+  src: url("/fonts/Torus/Torus-Bold.otf");
   font-weight: 800;
   font-stretch: 75% 125%;
   unicode-range: U+0000-00FF, U+0100-017F, U+0180-024F;
@@ -98,7 +143,7 @@ Use these if you need'em
 
 @font-face {
   font-family: "Torus";
-  src: url("/fonts/Torus-Regular.otf");
+  src: url("/fonts/Torus/Torus-Regular.otf");
   font-weight: 400;
   font-stretch: 75% 125%;
   unicode-range: U+0000-00FF, U+0100-017F, U+0180-024F;
@@ -106,7 +151,7 @@ Use these if you need'em
 
 @font-face {
   font-family: "Torus";
-  src: url("/fonts/Torus-SemiBold.otf");
+  src: url("/fonts/Torus/Torus-SemiBold.otf");
   font-weight: 700;
   font-stretch: 75% 125%;
   unicode-range: U+0000-00FF, U+0100-017F, U+0180-024F;
@@ -119,6 +164,7 @@ Use these if you need'em
   unicode-range: U+2000-209F, U+3000-303F, U+3400-4DBF, U+4E00-9FFF, U+FF00-FFEF,
     U+20000-2A6DF, U+2A700-2B73F, U+2B740-2B81F, U+2B820-2CEAF;
 }
+
 @font-face {
   font-family: "HarmonyOS";
   src: url("/fonts/HarmonyOS Sans/HarmonyOS_Sans_SC_Bold.ttf");
