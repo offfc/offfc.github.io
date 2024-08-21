@@ -13,7 +13,7 @@ function StaffCard({ uid, userName, role }) {
         />
       </div>
       <p className="card-title fade-in">{userName}</p>
-      <p className="card-subtitle fade-in">
+      <p className="card-subtitle fade-in" style={{ userSelect: "none" }}>
         <i className="fa fa-rocket"></i> {role}
       </p>
       <p style={{ marginTop: "1rem", marginBottom: "1rem" }}>
