@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import styles from "./styles.module.css";
-import "./LiveIndicator.css"; // Import the CSS file
+import LiveIndicator from "./LiveIndicator.js";
 
 // Function to resize iframe
 function resizeIframe() {
@@ -9,24 +9,6 @@ function resizeIframe() {
   const height = (width * 9) / 16;
   iframe.width = width;
   iframe.height = height;
-}
-
-function LiveIndicator() {
-  return (
-    <div className="live-indicator-block">
-      <span className="live-indicator">
-        <link
-          rel="stylesheet"
-          href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css"
-        ></link>
-        <i
-          className="fa fa-circle blink"
-          aria-hidden="true"
-        ></i>
-        Live
-      </span>
-    </div>
-  );
 }
 
 export default function LiveStream() {
