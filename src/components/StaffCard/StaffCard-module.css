@@ -79,7 +79,8 @@
   background-position: bottom;
   background-size: auto 60%;
   background-repeat: repeat;
-  overflow: hidden; /* Ensure that the overlay does not go outside the card */
+  overflow: hidden;
+  transition: transform 0.05s ease, background-color 0.005s ease;
 }
 
 .card::before {
@@ -103,11 +104,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.5); /* Default color */
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(160, 218, 228, 0.5)); /* Initial gradient */
   mix-blend-mode: color-dodge; /* Apply the color-dodge blend mode */
   z-index: 0;
   pointer-events: none; /* Prevent the overlay from interfering with mouse events */
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 .card:hover {
