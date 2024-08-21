@@ -18,7 +18,7 @@ function StaffCard({ uid, userName, role }) {
       </p>
       <p style={{ marginTop: "1rem", marginBottom: "1rem" }}>
         <FeatureButton
-          link={"https://osu.ppy.sh/users" + uid}
+          link={"https://osu.ppy.sh/users/" + uid}
           buttonText="在 osu! 查看"
         />
       </p>
