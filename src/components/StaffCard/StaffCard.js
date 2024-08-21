@@ -34,7 +34,7 @@ function StaffCard({ uid, userName, role }) {
     // Calculate the gradient angle with reduced sensitivity
     const angle = Math.atan2(mouseY, mouseX) * (180 / Math.PI) + 90;
     const adjustedAngle = angle * 0.5; // Reduce sensitivity by adjusting the angle
-    const gradient = `linear-gradient(${adjustedAngle}deg, rgba(255, 255, 255, 0.2), rgba(82, 148, 226, 0.9))`;
+    const gradient = `linear-gradient(${adjustedAngle}deg, rgba(233, 140, 211, 0.43), rgba(82, 148, 226, 1))`;
 
     setOverlayGradient(gradient);
 
