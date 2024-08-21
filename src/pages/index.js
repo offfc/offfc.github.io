@@ -7,6 +7,7 @@ import HomepageTitle from "@site/src/components/HomepageTitle/HomepageTitle.js";
 import FeatureButton from "@site/src/components/FeatureButton/FeatureButton";
 import SponsorBanner from "@site/src/components/SponsorBanner/SponsorBanner.js";
 import Highlight from "@site/src/components/Highlight";
+import { Analytics } from "@vercel/analytics/react"
 
 const common = require("../../common.js");
 
@@ -54,6 +55,7 @@ export default function Home() {
         <LiveStream />
       </main>
       <SponsorBanner mainText={"感谢DESU.Life的盛情赞助！"}/>
+      <Analytics/>
     </Layout>
   );
 }
