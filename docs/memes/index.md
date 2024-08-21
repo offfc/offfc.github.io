@@ -12,3 +12,9 @@ title: 梗图集合
 # true Blue Archive player
 
 <img src="/img/memes/1.png" width="400px" />
+
+---
+
+# My angel juroe
+
+<img src="/img/memes/2.jpg" width="500px" />
