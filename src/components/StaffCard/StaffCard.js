@@ -1,9 +1,10 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./StaffCard-module.css";
 import FeatureButton from "../FeatureButton/FeatureButton.js";
 
 function StaffCard({ uid, userName, role }) {
   const cardRef = useRef(null);
+  const [overlayColor, setOverlayColor] = useState("rgba(101, 171, 217, 0.28)"); // Initial color
 
   const handleMouseMove = (event) => {
     const card = cardRef.current;
@@ -22,10 +23,21 @@ function StaffCard({ uid, userName, role }) {
     const tiltY = -(mouseX / cardWidth) * 15;
 
     card.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
+
+    // Calculate the color based on mouse position
+    const maxDistance = Math.sqrt(cardWidth ** 2 + cardHeight ** 2);
+    const distance = Math.sqrt(mouseX ** 2 + mouseY ** 2);
+    const colorIntensity = Math.min(distance / maxDistance, 1);
+    const r = Math.floor(101 + (255 - 101) * colorIntensity);
+    const g = Math.floor(171 + (255 - 171) * colorIntensity);
+    const b = Math.floor(217 + (255 - 217) * colorIntensity);
+    
+    setOverlayColor(`rgba(${r}, ${g}, ${b}, 0.5)`);
   };
 
   const resetTilt = () => {
     cardRef.current.style.transform = "perspective(1000px) rotateX(0) rotateY(0)";
+    setOverlayColor("rgba(101, 171, 217, 0.28)"); // Reset color
   };
 
   return (
@@ -35,6 +47,7 @@ function StaffCard({ uid, userName, role }) {
       onMouseMove={handleMouseMove}
       onMouseLeave={resetTilt}
     >
+      <div className="card-overlay" style={{ backgroundColor: overlayColor }}></div>
       <div>
         <img
           className="card-img"
