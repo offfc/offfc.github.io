@@ -4,7 +4,7 @@ import FeatureButton from "../FeatureButton/FeatureButton.js";
 
 function StaffCard({ uid, userName, role }) {
   const cardRef = useRef(null);
-  const [overlayColor, setOverlayColor] = useState("rgba(101, 171, 217, 0.28)"); // Initial color
+  const [overlayColor, setOverlayColor] = useState("rgba(160, 218, 228, 0.5)"); // Initial color
 
   const handleMouseMove = (event) => {
     const card = cardRef.current;
@@ -28,16 +28,17 @@ function StaffCard({ uid, userName, role }) {
     const maxDistance = Math.sqrt(cardWidth ** 2 + cardHeight ** 2);
     const distance = Math.sqrt(mouseX ** 2 + mouseY ** 2);
     const colorIntensity = Math.min(distance / maxDistance, 1);
-    const r = Math.floor(101 + (255 - 101) * colorIntensity);
-    const g = Math.floor(171 + (255 - 171) * colorIntensity);
-    const b = Math.floor(217 + (255 - 217) * colorIntensity);
+
+    const r = Math.floor(255 * colorIntensity);
+    const g = Math.floor(100 + (255 - 100) * colorIntensity);
+    const b = Math.floor(100 + (255 - 100) * colorIntensity);
     
-    setOverlayColor(`rgba(${r}, ${g}, ${b}, 0.5)`);
+    setOverlayColor(`rgba(${r}, ${g}, ${b}, 0.1)`); // Adjust alpha for more visibility
   };
 
   const resetTilt = () => {
     cardRef.current.style.transform = "perspective(1000px) rotateX(0) rotateY(0)";
-    setOverlayColor("rgba(101, 171, 217, 0.28)"); // Reset color
+    setOverlayColor("rgba(160, 218, 228, 0.5)"); // Reset to initial color
   };
 
   return (
