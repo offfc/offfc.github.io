@@ -30,7 +30,7 @@
 
 @keyframes hueblue {
   from {
-    background: rgba(101, 171, 217, 0.28);
+    background: rgba(101, 171, 217, 0.2);
   }
   to {
     background: rgba(101, 171, 217, 0.7);
@@ -42,7 +42,7 @@
     background: rgba(101, 171, 217, 0.7);
   }
   to {
-    background: rgba(101, 171, 217, 0.28);
+    background: rgba(101, 171, 217, 0.2);
   }
 }
 
