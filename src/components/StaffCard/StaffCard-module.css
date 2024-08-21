@@ -8,12 +8,50 @@
   }
 }
 
+@keyframes shrink {
+  from {
+    transform: scale(1.15);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes enlarge {
+  from {
+    transform: scale(1);
+    font-weight: 400;
+  }
+  to {
+    transform: scale(1.15);
+    font-weight: 800;
+  }
+}
+
+@keyframes hueblue {
+  from {
+    background: rgba(101, 171, 217, 0.28);
+  }
+  to {
+    background: rgba(101, 171, 217, 0.7);
+  }
+}
+
+@keyframes hueblueback {
+  from {
+    background: rgba(101, 171, 217, 0.7);
+  }
+  to {
+    background: rgba(101, 171, 217, 0.28);
+  }
+}
+
 /* TODO: Can we add animation on image load complete? */
-img.fade-in {
+*.fade-in {
   animation-name: fade-in;
   animation-duration: 0.8s;
   animation-fill-mode: forwards; /* Keep 100% opacity on animation end. */
-  /*animation-delay: 0s;*/
+  animation-delay: 0s;
   transition: ease-in-out;
 }
 
@@ -26,16 +64,21 @@ img.fade-in {
 
 .card {
   position: relative;
+  display: flex;
+  flex-direction: column;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  max-height: 400px;
+  width: 256px;
+  height: 350px;
   margin: auto;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  animation: hueblueback 0.3s ease forwards;
   background: rgba(101, 171, 217, 0.28);
   backdrop-filter: blur(25px);
   background-position: bottom;
   background-size: auto 60%;
-  background-repeat: repeat-x;
+  background-repeat: repeat;
 }
 
 .card::before {
@@ -48,9 +91,13 @@ img.fade-in {
   background-image: url("/svg/triangles.svg");
   background-position: bottom;
   background-size: auto 60%;
-  background-repeat: repeat-x;
+  background-repeat: repeat;
   opacity: 0.4;
   z-index: -1;
+}
+
+.card:hover {
+  animation: hueblue 0.3s ease forwards;
 }
 
 .card-title {
@@ -60,6 +107,32 @@ img.fade-in {
 }
 
 .card-subtitle {
+  animation: shrink 0.3s ease forwards;
   font-size: 18px;
   font-weight: 400;
+}
+
+.card-subtitle:hover {
+  animation: enlarge 0.3s ease forwards;
+}
+
+.card-subtitle:active {
+  animation: shrink 0.3s ease forwards;
+}
+
+.card-img {
+  border-radius: var(--ifm-card-border-radius);
+  animation: shrink 0.3s ease forwards;
+  /* Use fixed size for better appearance */
+  width: 128px;
+  height: 128px;
+  margin-top: 2rem;
+}
+
+.card-img:hover {
+  animation: enlarge 0.3s ease forwards;
+}
+
+.card-img:active {
+  animation: shrink 0.3s ease forwards; /* 鼠标移出时缩小，持续0.5秒 */
 }
