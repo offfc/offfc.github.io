@@ -119,12 +119,14 @@
   font-size: 30px;
   font-weight: 700;
   margin: 1rem, 0, 1rem;
+  transition: transform 0.05s ease; /* Smooth movement for parallax */
 }
 
 .card-subtitle {
   animation: shrink 0.3s ease forwards;
   font-size: 18px;
   font-weight: 400;
+  transition: transform 0.05s ease; /* Smooth movement for parallax */
 }
 
 .card-subtitle:hover {
@@ -142,6 +144,7 @@
   width: 128px;
   height: 128px;
   margin-top: 2rem;
+  transition: transform 0.05s ease; /* Smooth movement for parallax */
 }
 
 .card-img:hover {

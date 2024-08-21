@@ -4,6 +4,11 @@ import FeatureButton from "../FeatureButton/FeatureButton.js";
 
 function StaffCard({ uid, userName, role }) {
   const cardRef = useRef(null);
+  const imgRef = useRef(null);
+  const titleRef = useRef(null);
+  const subtitleRef = useRef(null);
+  const buttonRef = useRef(null);
+
   const [overlayGradient, setOverlayGradient] = useState(
     "linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(160, 218, 228, 0.5))"
   ); // Initial gradient
@@ -31,6 +36,16 @@ function StaffCard({ uid, userName, role }) {
     const gradient = `linear-gradient(${angle}deg, rgba(255, 255, 255, 0.2), rgba(160, 218, 228, 0.5))`;
 
     setOverlayGradient(gradient);
+
+    const parallaxFactor = 3; // Control the intensity of the parallax effect
+    const translateX = -(mouseX / cardWidth) * parallaxFactor;
+    const translateY = -(mouseY / cardHeight) * parallaxFactor;
+
+    [imgRef, titleRef, subtitleRef, buttonRef].forEach((ref) => {
+      if (ref.current) {
+        ref.current.style.transform = `translateX(${translateX}px) translateY(${translateY}px)`;
+      }
+    });
   };
 
   const resetTilt = () => {
@@ -38,6 +53,12 @@ function StaffCard({ uid, userName, role }) {
     setOverlayGradient(
       "linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(160, 218, 228, 0.5))"
     ); // Reset to initial gradient
+
+    [imgRef, titleRef, subtitleRef, buttonRef].forEach((ref) => {
+      if (ref.current) {
+        ref.current.style.transform = "translateX(0) translateY(0)";
+      }
+    });
   };
 
   return (
@@ -56,13 +77,14 @@ function StaffCard({ uid, userName, role }) {
           className="card-img"
           src={"https://a.ppy.sh/" + uid}
           alt="User Avatar"
+          ref={imgRef}
         />
       </div>
-      <p className="card-title fade-in">{userName}</p>
-      <p className="card-subtitle fade-in">
+      <p className="card-title fade-in" ref={titleRef}>{userName}</p>
+      <p className="card-subtitle fade-in" ref={subtitleRef}>
         <i className="fa fa-rocket"></i> {role}
       </p>
-      <p style={{ marginTop: "1rem", marginBottom: "1rem" }}>
+      <p style={{ marginTop: "1rem", marginBottom: "1rem" }} ref={buttonRef}>
         <FeatureButton
           link={"https://osu.ppy.sh/users/" + uid}
           buttonText="在 osu! 查看"
