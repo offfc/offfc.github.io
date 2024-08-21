@@ -31,9 +31,10 @@ function StaffCard({ uid, userName, role }) {
 
     card.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
 
-    // Calculate the gradient angle based on the mouse position
+    // Calculate the gradient angle with reduced sensitivity
     const angle = Math.atan2(mouseY, mouseX) * (180 / Math.PI) + 90;
-    const gradient = `linear-gradient(${angle}deg, rgba(255, 255, 255, 0.2), rgba(82, 148, 226, 0.9))`;
+    const adjustedAngle = angle * 0.5; // Reduce sensitivity by adjusting the angle
+    const gradient = `linear-gradient(${adjustedAngle}deg, rgba(255, 255, 255, 0.2), rgba(82, 148, 226, 0.9))`;
 
     setOverlayGradient(gradient);
 
