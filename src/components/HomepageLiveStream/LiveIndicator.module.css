@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+@keyframes huelive {
+  from {
+    background: #232323;
+  }
+  to {
+    background: #ea2429;
+  }
+}
+
+@keyframes hueoff {
+  from {
+    background: #ea2429;
+  }
+  to {
+    background: #232323;
+  }
+}
+
 .live-indicator-block {
   position: relative;
   left: 0%;
@@ -9,7 +27,24 @@
 
 .live-indicator {
   font-family: 'Roboto', sans-serif;
+  animation: huelive 0.5s ease forwards;
   background: #ea2429; /* Red live color */
+  color: #fff; /* White color */
+  padding: 6px 7px;
+  line-height: 1;
+  border-radius: 6px;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  font-weight: bold;
+  width: auto;
+}
+
+.offline-indicator {
+  font-family: 'Roboto', sans-serif;
+  animation: hueoff 0.5s ease forwards;
+  background: #232323; /* Red live color */
   color: #fff; /* White color */
   padding: 6px 7px;
   line-height: 1;

@@ -8,8 +8,8 @@ export default function LiveIndicator() {
   useEffect(() => {
     const checkStreamStatus = () => {
       // Check for the presence of the <video> element in the DOM
-      const videoElement = document.querySelector("web-player-ending-panel");
-      setIsLive(videoElement == null); // Update the state based on whether the video element exists
+      const videoElement = document.querySelector(".web-player-ending-panel");
+      setIsLive(!!videoElement); // Update the state based on whether the video element exists
     };
 
     // Initial check
@@ -23,10 +23,12 @@ export default function LiveIndicator() {
   }, []);
 
   return (
-    <div className={styles.liveIndicatorBlock}>
-      <span className={`${styles.liveIndicator} ${isLive ? styles.blink : ''}`}>
-        <i className={`fa fa-circle ${styles.icon}`} aria-hidden="true"></i>
-        {isLive ? 'LIVE' : 'offline'}
+    <div className={styles["live-indicator-block"]}>
+      <span
+        className={`${ isLive ? styles["live-indicator"] : styles["offline-indicator"] } ${ isLive ? styles.blink : "" }`}
+      >
+        <i className={`fa ${ isLive ? "fa-circle" : "fa-circle-o" }`} aria-hidden="true"></i>
+        &nbsp;{isLive ? "LIVE" : "OFFLINE"}
       </span>
     </div>
   );
