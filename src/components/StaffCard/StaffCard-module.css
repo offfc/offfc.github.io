@@ -123,18 +123,9 @@
 }
 
 .card-subtitle {
-  animation: shrink 0.3s ease forwards;
   font-size: 18px;
   font-weight: 400;
   transition: transform 0.05s ease; /* Smooth movement for parallax */
-}
-
-.card-subtitle:hover {
-  animation: enlarge 0.3s ease forwards;
-}
-
-.card-subtitle:active {
-  animation: shrink 0.3s ease forwards;
 }
 
 .card-img {
