@@ -1,10 +1,40 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./StaffCard-module.css";
 import FeatureButton from "../FeatureButton/FeatureButton.js";
 
 function StaffCard({ uid, userName, role }) {
+  const cardRef = useRef(null);
+
+  const handleMouseMove = (event) => {
+    const card = cardRef.current;
+    const rect = card.getBoundingClientRect();
+    const cardWidth = rect.width;
+    const cardHeight = rect.height;
+
+    // Calculate the mouse position relative to the card's center
+    const centerX = rect.left + cardWidth / 2;
+    const centerY = rect.top + cardHeight / 2;
+    const mouseX = event.clientX - centerX;
+    const mouseY = event.clientY - centerY;
+
+    // Invert the tilt direction
+    const tiltX = (mouseY / cardHeight) * 15;
+    const tiltY = -(mouseX / cardWidth) * 15;
+
+    card.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
+  };
+
+  const resetTilt = () => {
+    cardRef.current.style.transform = "perspective(1000px) rotateX(0) rotateY(0)";
+  };
+
   return (
-    <div className="card">
+    <div
+      className="card"
+      ref={cardRef}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={resetTilt}
+    >
       <div>
         <img
           className="card-img"
