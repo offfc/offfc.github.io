@@ -1,0 +1,147 @@
+/* Animation definitions. */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes shrink {
+  from {
+    transform: scale(1.15);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes enlarge {
+  from {
+    transform: scale(1);
+    font-weight: 400;
+  }
+  to {
+    transform: scale(1.15);
+    font-weight: 800;
+  }
+}
+
+@keyframes hueblue {
+  from {
+    background: rgba(101, 171, 217, 0.2);
+  }
+  to {
+    background: rgba(101, 171, 217, 0.7);
+  }
+}
+
+@keyframes hueblueback {
+  from {
+    background: rgba(101, 171, 217, 0.7);
+  }
+  to {
+    background: rgba(101, 171, 217, 0.2);
+  }
+}
+
+/* TODO: Can we add animation on image load complete? */
+*.fade-in {
+  animation-name: fade-in;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards; /* Keep 100% opacity on animation end. */
+  animation-delay: 0s;
+  transition: ease-in-out;
+}
+
+.staff-board-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* or use space-around, or space-evenly */
+  gap: 20px; /* Adjust the gap between the cards as needed */
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 256px;
+  height: 350px;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  animation: hueblueback 0.3s ease forwards;
+  background: rgba(101, 171, 217, 0.28);
+  backdrop-filter: blur(25px);
+  background-position: bottom;
+  background-size: auto 60%;
+  background-repeat: repeat;
+  overflow: hidden;
+  transition: transform 0.05s ease, background-color 0.005s ease;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/svg/triangles.svg");
+  background-position: bottom;
+  background-size: auto 60%;
+  background-repeat: repeat;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(160, 218, 228, 0.5)); /* Initial gradient */
+  mix-blend-mode: color-dodge; /* Apply the color-dodge blend mode */
+  z-index: 0;
+  pointer-events: none; /* Prevent the overlay from interfering with mouse events */
+  transition: background 0.3s ease;
+}
+
+.card:hover {
+  animation: hueblue 0.3s ease forwards;
+}
+
+.card-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 1rem, 0, 1rem;
+  transition: transform 0.05s ease; /* Smooth movement for parallax */
+}
+
+.card-subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  transition: transform 0.05s ease; /* Smooth movement for parallax */
+}
+
+.card-img {
+  border-radius: var(--ifm-card-border-radius);
+  animation: shrink 0.3s ease forwards;
+  /* Use fixed size for better appearance */
+  width: 128px;
+  height: 128px;
+  margin-top: 2rem;
+  transition: transform 0.05s ease; /* Smooth movement for parallax */
+}
+
+.card-img:hover {
+  animation: enlarge 0.3s ease forwards;
+}
+
+.card-img:active {
+  animation: shrink 0.3s ease forwards; /* 鼠标移出时缩小，持续0.5秒 */
+}

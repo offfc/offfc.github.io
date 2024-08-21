@@ -39,11 +39,11 @@ export default function DocItemLayout({ children }) {
     <React.Fragment>
       <Giscus
         id="comments"
-        repo="osu-atri/osu-dictionary"
-        repoId="R_kgDOMN7Jkg"
+        repo="offfc/offfc.github.io"
+        repoId="R_kgDOMSC04Q"
         category="General"
-        categoryId="DIC_kwDOMN7Jks4CgXXQ"
-        mapping="og:title"
+        categoryId="DIC_kwDOMSC04c4ChbTs"
+        mapping="title"
         reactionsEnabled="1"
         emitMetadata="0"
         inputPosition="top"

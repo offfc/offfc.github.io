@@ -5,8 +5,9 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import { themes as prismThemes } from "prism-react-renderer";
-
 const common = require("./common.js");
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -16,10 +17,10 @@ const config = {
 
   // Set the production url of your site here
   // TODO: Change this part
-  url: "https://localhost:3000/",
+  url: "https://offfc.github.io/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/offfc.github.io/",
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   organizationName: "offfc", // Usually your GitHub org/user name.
@@ -42,6 +43,8 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
           sidebarPath: "./sidebars.js",
           // The base URL to the project root.
           editUrl: "https://github.com/offfc/offfc.github.io/tree/main/",
@@ -62,6 +65,16 @@ const config = {
       }),
     ],
   ],
+  
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+      type: 'text/css',
+      integrity:
+        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      crossorigin: 'anonymous',
+    },
+  ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -81,22 +94,27 @@ const config = {
           src: common.icon,
         },
         items: [
-          {
-            type: "docSidebar",
-            sidebarId: "mainSidebar",
-            position: "left",
-            label: "参赛手册",
-            to: "/docs/",
-          },
+          { to: "/docs/info/", label: "简介", position: "left" },
+          { to: "/docs/handbook", label: "参赛手册", position: "left" },
           { to: "/docs/mainChart/", label: "主表格", position: "left" },
-          { to: "/docs/contact/", label: "相关信息", position: "left" },
           { to: "/blog", label: "动态", position: "left" },
+          { to: "/docs/staff", label: "Staff", position: "left" },
+          { to: "/docs/easteregg", label: "     ", position: "left" },
+          { to: "/docs/memes", label: "梗图", position: "left" },
           {
             href: common.src,
             label: "GitHub",
             position: "right",
           },
         ],
+      },
+      announcementBar: {
+        id: 'Announcement',
+        content:
+          'OFFC Cirno组队规则现已公布！点击<a href="./blog/Teaming">这里</a>查看！',
+        backgroundColor: '#ffffff',
+        textColor: '#091E42',
+        isCloseable: true,
       },
       footer: {
         style: "dark",
@@ -135,7 +153,7 @@ const config = {
                 href: "https://docs.google.com/spreadsheets/d/14ZFqYajLDRjr863hDo5n5xvGQMoDZPmNwJycgQXr3YQ/edit?usp=sharing",
               },
               {
-                label: "参赛手册",
+                label: "参赛手册（腾讯文档）",
                 href: "https://docs.qq.com/doc/DV2VOWlZJdFZWZUpB?from_page=save",
               },
             ],

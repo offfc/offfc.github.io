@@ -1,0 +1,99 @@
+.liveStream {
+  margin-bottom: 2rem;
+}
+
+.liveStreamContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.liveStreamTitle {
+  margin-bottom: 1rem;
+}
+
+iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 21 / 9;
+}
+
+.spinner {
+  margin: -6rpx 0rpx 0rpx 2rpx;
+  width: 25rpx;
+  height: 18rpx;
+  font-size: 10px;
+}
+
+.spinner > view {
+  background-color: #ffffff;
+  height: 100%;
+  width: 7rpx;
+  margin-left: 2rpx;
+  display: inline-block;
+  -webkit-animation: stretchdelay 1.9s infinite ease-in-out;
+  animation: stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+@-webkit-keyframes stretchdelay {
+  0%,
+  40%,
+  100% {
+    -webkit-transform: scaleY(0.4);
+  }
+  20% {
+    -webkit-transform: scaleY(1);
+  }
+}
+
+@keyframes stretchdelay {
+  10% {
+    height: 10%;
+  }
+
+  15% {
+    height: 30%;
+  }
+
+  5% {
+    height: 100%;
+  }
+
+  32% {
+    height: 70%;
+  }
+
+  36% {
+    height: 30%;
+  }
+
+  48% {
+    height: 40%;
+  }
+
+  60% {
+    height: 5%;
+  }
+
+  80% {
+    height: 30%;
+  }
+
+  88% {
+    height: 60%;
+  }
+
+  100% {
+    height: 90%;
+  }
+}

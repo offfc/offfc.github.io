@@ -1,33 +1,44 @@
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import clsx from "clsx";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Layout from "@theme/Layout";
+import LiveStream from "@site/src/components/HomepageLiveStream/index.js";
+import styles from "./index.module.css";
+import HomepageTitle from "@site/src/components/HomepageTitle/HomepageTitle.js";
+import FeatureButton from "@site/src/components/FeatureButton/FeatureButton";
+import SponsorBanner from "@site/src/components/SponsorBanner/SponsorBanner.js";
+import Highlight from "@site/src/components/Highlight";
 
-import Heading from '@theme/Heading';
-import styles from './index.module.css';
-
-const common = require('../../common.js');
+const common = require("../../common.js");
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   // Should we keep this button?
+  // RE: sure we're gonna keep this.
   return (
     <header
-      className={clsx('hero hero--primary', styles.heroBanner)}
-      style={{ backgroundImage: "url('/img/landing.gif')" }}
+      className={clsx("hero hero--primary", styles.heroBanner)}
     >
       <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <HomepageTitle />
+        <br />
+        <p className="hero__subtitle"><b>面向中分段的 <Highlight color="#ff66aa">osu!Standard</Highlight> 特色比赛</b></p>
+        <br />
         <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/">
-            进入参赛手册
-          </Link>
+          <FeatureButton
+            link="/docs/info"
+            buttonText="了解一下"
+            spacing="1em"
+          />
+          <FeatureButton
+            link="/docs/handbook"
+            buttonText="查看参赛手册"
+            spacing="1em"
+          />
+          <FeatureButton
+            link="https://docs.qq.com/form/page/DV1hXY1RMU1FOeGlM"
+            buttonText="立即报名！"
+            spacing="1em"
+          />
         </div>
       </div>
     </header>
@@ -35,15 +46,14 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout
-      title={`${siteConfig.title}`}
-      description={`${common.description}`}>
+    <Layout title={`${siteConfig.title}`} description={`${common.description}`}>
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <LiveStream />
       </main>
+      <SponsorBanner mainText={"感谢DESU.Life的盛情赞助！"}/>
     </Layout>
   );
 }
