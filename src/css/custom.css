@@ -12,6 +12,48 @@ Use these if you need'em
 */
 @import url("https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css");
 
+@keyframes shrink {
+  from {
+    transform: scale(1.15);
+    font-weight: 800;
+  }
+  to {
+    transform: scale(1);
+    font-weight: 400;
+  }
+}
+
+@keyframes enlarge {
+  from {
+    transform: scale(1);
+    font-weight: 400;
+    color: black;
+  }
+  to {
+    transform: scale(1.15);
+    font-weight: 800;
+    color: var(--ifm-color-primary);
+  }
+}
+
+@keyframes hueblue {
+  from {
+    background: rgba(101, 171, 217, 0.28);
+  }
+  to {
+    background: rgba(101, 171, 217, 0.7);
+  }
+}
+
+@keyframes hueblueback {
+  from {
+    background: rgba(101, 171, 217, 0.7);
+  }
+  to {
+    background: rgba(101, 171, 217, 0.28);
+  }
+}
+
 :root {
   --ifm-color-primary: #12bbe6;
   --ifm-color-primary-dark: #0e7fd5;
@@ -43,6 +85,11 @@ Use these if you need'em
     background-repeat: repeat-x;
   }
 
+  .navbar__link--active {
+    color: rgba(25, 141, 255, 1);
+    animation: enlarge 0.5s ease forwards;
+  }
+
   .navbar-sidebar {
     bottom: auto;
     .navbar-sidebar__brand {
@@ -66,6 +113,11 @@ Use these if you need'em
     background-position: bottom;
     background-size: auto 100%;
     background-repeat: repeat-x;
+  }
+
+  .navbar__link--active {
+    color: var(--ifm-color-primary);
+    animation: enlarge 0.5s ease forwards;
   }
 
   .navbar-sidebar {
