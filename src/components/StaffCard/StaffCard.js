@@ -81,7 +81,7 @@ function StaffCard({ uid, userName, role }) {
           ref={imgRef}
         />
       </div>
-      <p className="card-title fade-in">{userName}</p>
+      <p className="card-title fade-in" style={{ userSelect: "none" }}>{userName}</p>
       <p className="card-subtitle fade-in" style={{ userSelect: "none" }}>
         <i className="fa fa-rocket"></i> {role}
       </p>
