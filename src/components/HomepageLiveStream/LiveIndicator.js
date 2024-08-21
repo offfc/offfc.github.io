@@ -28,7 +28,7 @@ export default function LiveIndicator() {
         className={`${ isLive ? styles["live-indicator"] : styles["offline-indicator"] } ${ isLive ? styles.blink : "" }`}
       >
         <i className={`fa ${ isLive ? "fa-circle" : "fa-circle-o" }`} aria-hidden="true"></i>
-        &nbsp;{isLive ? "LIVE" : "OFFLINE"}
+        &nbsp;{isLive ? "LIVE" : " OFFLINE"}
       </span>
     </div>
   );
