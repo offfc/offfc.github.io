@@ -139,6 +139,11 @@ img.auto-invert {
   filter: var(--invert-filter);
 }
 
+div.align-center {
+  display: flex;
+  justify-content: center;
+}
+
 @font-face {
   font-family: "Torus";
   src: url("/fonts/Torus/Torus-Bold.otf");
