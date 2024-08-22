@@ -77,6 +77,7 @@ function StaffCard({ uid, userName, role }) {
         <img
           className="card-img"
           src={"https://a.ppy.sh/" + uid}
+          style={{ userSelect: "none" }}
           alt="User Avatar"
           ref={imgRef}
         />

@@ -71,6 +71,7 @@ Use these if you need'em
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
   --background-image: url("/img/trianglesNavbar.png");
+  --invert-filter: none;
 
   h1 {
     font-size: 2rem;
@@ -109,6 +110,7 @@ Use these if you need'em
 
 [data-theme="dark"] {
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --invert-filter: invert(100%);
 
   .navbar {
     background: rgba(53, 189, 234, 0.6);
@@ -135,6 +137,15 @@ Use these if you need'em
       background-repeat: repeat-x;
     }
   }
+}
+
+img.auto-invert {
+  filter: var(--invert-filter);
+}
+
+div.align-center {
+  display: flex;
+  justify-content: center;
 }
 
 @font-face {

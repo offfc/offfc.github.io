@@ -111,9 +111,9 @@ const config = {
       announcementBar: {
         id: "Announcement",
         content:
-          '📣OFFC Cirno组队规则现已公布！点击<a href="./blog/Teaming">这里</a>查看！📣',
-        backgroundColor: "#ffffff",
-        textColor: "#091E42",
+          'OFFC Cirno组队规则现已公布！点击<a href="/blog/Teaming">这里</a>查看！',
+        backgroundColor: '#ffffff',
+        textColor: '#091E42',
         isCloseable: true,
       },
       footer: {
