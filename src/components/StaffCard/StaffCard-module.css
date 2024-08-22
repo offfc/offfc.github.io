@@ -129,7 +129,7 @@
   width: 125%;
   height: 100%;
   opacity: 0.2;
-  background: radial-gradient(circle at left, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 30%);
+  background: radial-gradient(circle at left, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 30%);
   pointer-events: none;
   mix-blend-mode: overlay;
   z-index: 0.5;

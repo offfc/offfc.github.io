@@ -91,7 +91,7 @@ function StaffCard({ uid, userName, role }) {
       <div
         className="card-highlight"
         style={{
-          background: `radial-gradient(circle at ${highlightPosition.x}% ${highlightPosition.y}%, rgba(255, 255, 255, 0.7), transparent)`,
+          background: `radial-gradient(circle at ${highlightPosition.x}% ${highlightPosition.y}%, rgba(255, 255, 255, 0.5), transparent)`,
         }}
       ></div>
       <p className="card-title fade-in" style={{ userSelect: "none" }}>{userName}</p>
