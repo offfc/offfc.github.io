@@ -123,6 +123,10 @@ const config = {
             title: "跳转到：",
             items: [
               {
+                label: "简介",
+                to: "/docs/info",
+              },
+              {
                 label: "参赛手册",
                 to: "/docs/handbook",
               },
@@ -133,6 +137,14 @@ const config = {
               {
                 label: "动态",
                 to: "/blog",
+              },
+              {
+                label: "Staff",
+                to: "/docs/staff",
+              },
+              {
+                label: "梗图",
+                to: "/docs/memes",
               },
             ],
           },
