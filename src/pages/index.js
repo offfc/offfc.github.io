@@ -54,8 +54,8 @@ export default function Home() {
       <main>
         <LiveStream />
       </main>
-      <SponsorBanner mainText={"感谢DESU.Life的盛情赞助！"}/>
-      <Analytics/>
+      <SponsorBanner mainText={"感谢DESU.Life的盛情赞助！"} />
+      <Analytics />
     </Layout>
   );
 }
