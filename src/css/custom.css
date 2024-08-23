@@ -198,8 +198,9 @@ div[class^="announcementBar_"] {
 
 .announcement-link,
 .navbar__link {
-  margin: auto 0.25rem auto;
+  margin: auto 0.35rem auto;
   border-radius: 0.5rem;
+  padding: 4px 6px;
   animation: hueback 0.25s ease forwards, shrink 0.25s ease forwards;
 }
 
