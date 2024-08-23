@@ -101,8 +101,6 @@ Use these if you need'em
 [data-theme="dark"] {
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --invert-filter: invert(100%);
-  /* This seems to be ignored on build. */
-  --link-accent: var(--ifm-color-primary);
 
   .navbar {
     background: rgba(53, 189, 234, 0.6);
