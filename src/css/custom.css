@@ -27,30 +27,32 @@ Use these if you need'em
   from {
     transform: scale(1);
     font-weight: 400;
-    color: black;
   }
   to {
     transform: scale(1.15);
     font-weight: 800;
-    color: var(--ifm-color-primary);
   }
 }
 
 @keyframes hueblue {
   from {
-    background: rgba(101, 171, 217, 0.28);
+    background: rgba(101, 171, 217, 0);
+    color: black;
   }
   to {
-    background: rgba(101, 171, 217, 0.7);
+    background: rgba(255, 255, 255, 1);
+    color: white;
   }
 }
 
 @keyframes hueblueback {
   from {
-    background: rgba(101, 171, 217, 0.7);
+    background: rgba(255, 255, 255, 1);
+    color: white;
   }
   to {
-    background: rgba(101, 171, 217, 0.28);
+    background: rgba(255, 255, 255, 0);
+    color: black;
   }
 }
 
@@ -67,6 +69,8 @@ Use these if you need'em
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
   --background-image: url("/img/trianglesNavbar.png");
+  --invert-filter: none;
+  --link-accent: rgba(255, 255, 255, 1);
 
   h1 {
     font-size: 2rem;
@@ -85,11 +89,6 @@ Use these if you need'em
     background-repeat: repeat-x;
   }
 
-  .navbar__link--active {
-    color: rgba(25, 141, 255, 1);
-    animation: enlarge 0.5s ease forwards;
-  }
-
   .navbar-sidebar {
     bottom: auto;
     .navbar-sidebar__brand {
@@ -105,6 +104,9 @@ Use these if you need'em
 
 [data-theme="dark"] {
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --invert-filter: invert(100%);
+  /* This seems to be ignored on build. */
+  --link-accent: var(--ifm-color-primary);
 
   .navbar {
     background: rgba(53, 189, 234, 0.6);
@@ -113,11 +115,6 @@ Use these if you need'em
     background-position: bottom;
     background-size: auto 100%;
     background-repeat: repeat-x;
-  }
-
-  .navbar__link--active {
-    color: var(--ifm-color-primary);
-    animation: enlarge 0.5s ease forwards;
   }
 
   .navbar-sidebar {
@@ -131,6 +128,15 @@ Use these if you need'em
       background-repeat: repeat-x;
     }
   }
+}
+
+img.auto-invert {
+  filter: var(--invert-filter);
+}
+
+div.align-center {
+  display: flex;
+  justify-content: center;
 }
 
 @font-face {
@@ -179,4 +185,33 @@ Use these if you need'em
   font-weight: 500;
   unicode-range: U+2000-209F, U+3000-303F, U+3400-4DBF, U+4E00-9FFF, U+FF00-FFEF,
     U+20000-2A6DF, U+2A700-2B73F, U+2B740-2B81F, U+2B820-2CEAF;
+}
+
+div[class^="announcementBar_"] {
+  --site-announcement-bar-stripe-color1: rgba(25, 141, 255, 0.2);
+  --site-announcement-bar-stripe-color2: rgba(238, 249, 253, 1);
+  height: fit-content;
+  font-size: 20px;
+  font-weight: 700;
+  background: repeating-linear-gradient(
+    35deg,
+    var(--site-announcement-bar-stripe-color1),
+    var(--site-announcement-bar-stripe-color1) 20px,
+    var(--site-announcement-bar-stripe-color2) 10px,
+    var(--site-announcement-bar-stripe-color2) 40px
+  );
+}
+
+.announcement-link,
+.navbar__link {
+  margin: auto 0.25rem auto;
+  border-radius: 0.25rem;
+  animation: hueblueback 0.25s ease forwards, shrink 0.25s ease forwards;
+}
+
+.announcement-link:hover,
+.navbar__link--active,
+.navbar__link:hover {
+  color: var(--link-accent);
+  animation: hueblue 0.25s ease forwards, enlarge 0.25s ease forwards;
 }

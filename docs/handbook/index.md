@@ -409,6 +409,6 @@ title: 参赛手册
 2. 感谢[My Angel Kuroe](https://osu.ppy.sh/users/13217389)为SVP赞助碧蓝档案设定集！
 3. 如果您愿意赞助OFFC，欢迎通过QQ联系赛事主办kitakore（<Highlight color="#198dff">**273772334**</Highlight>）。OFFC Staff感谢您对本赛事的支持！
 
-<img src="/img/OFFCstaff.png" width={500} alt="Staff card" /> <img src="/img/sponsor.png" width={200} alt="Sponsor logo" />
+<img src="/img/OFFCstaff.png" width={500} alt="Staff card" /> <img src="/img/sponsor.png" class="auto-invert" width={200} alt="Sponsor logo" />
 
 ---
