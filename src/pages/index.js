@@ -8,6 +8,7 @@ import FeatureButton from "@site/src/components/FeatureButton/FeatureButton";
 import SponsorBanner from "@site/src/components/SponsorBanner/SponsorBanner.js";
 import Highlight from "@site/src/components/Highlight";
 import { Analytics } from "@vercel/analytics/react"
+import HomepageNotification from "../components/HomepageNotification/HomepageNotification.js";
 
 const common = require("../../common.js");
 
@@ -51,6 +52,8 @@ export default function Home() {
   return (
     <Layout title={`${siteConfig.title}`} description={`${common.description}`}>
       <HomepageHeader />
+      <HomepageNotification type={"warning"} message={"在这里输入公告内容"} icon={true}/>
+      <br />
       <main>
         <LiveStream />
       </main>
