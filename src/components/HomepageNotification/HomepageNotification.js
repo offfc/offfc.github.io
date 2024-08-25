@@ -1,6 +1,10 @@
 import React from 'react';
 import styles from './HomepageNotification.module.css';
 
+// Use in this format:
+// <HomepageNotification type={"warning"} message={"在这里输入公告内容"} icon={true}/>
+
+
 const HomepageNotification = ({ type, message, icon }) => {
   // Set the title based on the type
   const title = type === 'warning' ? '公告' : type === 'info' ? '通知' : '';

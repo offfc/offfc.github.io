@@ -52,7 +52,6 @@ export default function Home() {
   return (
     <Layout title={`${siteConfig.title}`} description={`${common.description}`}>
       <HomepageHeader />
-      <HomepageNotification type={"warning"} message={"在这里输入公告内容"} icon={true}/>
       <br />
       <main>
         <LiveStream />
