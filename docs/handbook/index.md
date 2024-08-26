@@ -13,8 +13,6 @@ title: 参赛手册
 # <Highlight color="#198dff">OFFC cirno</Highlight> 参赛手册
 
 
-:::warning
-
 :::info 版本信息
 
 **你现在阅读的是参赛手册的最新版本！** 本手册页面更新于 2024 年 8 月 26 日。
