@@ -323,7 +323,7 @@ title: 参赛手册
 
 :::
 
-1. <FntColor color="#27efcb">Protect</FntColor>、<FntColor color="#232323">Ban</FntColor>、<FntColor color="#198dff">Pick</FntColor>、<FntColor color="#7d75ee">Trap</FntColor>、<FntColor color="#ffbf05">上人</FntColor>，是每支队伍需要进行的五项行动。这五项行动均有对应的默认时限，该默认时限每回合重新计算。此外，每支队伍还拥有一定的补充时间。补充时间在每场比赛中具有全局性，即在该场比赛中不会恢复、不会重新计算。<FntColor color="#9a38d7">一类补充时间</FntColor>和<FntColor color="#ffa500">二类补充时间</FntColor>单独计算、互不影响。
+1. **Protect、Ban、Pick、Trap、上人**，是每支队伍需要进行的五项行动。这五项行动均有对应的默认时限，该默认时限每回合重新计算。此外，每支队伍还拥有一定的补充时间。补充时间在每场比赛中具有全局性，即在该场比赛中不会恢复、不会重新计算。<FntColor color="#9a38d7">一类补充时间</FntColor>和<FntColor color="#ffa500">二类补充时间</FntColor>单独计算、互不影响。
 2. 如 [6-2.7](#6-2-比赛流程) 所述，双方决定Protect、Ban、Pick的默认时限为<FntColor color="#198dff">**120秒**</FntColor>，决定Trap的时限为<FntColor color="#7d75ee">**180秒**</FntColor>。若在上述时间用尽后，该方仍未决定要Protect、Ban、Pick、Trap的谱面，则裁判将给出警告，并开始消耗该队伍的<FntColor color="#9a38d7">**一类补充时间**</FntColor>。一类补充时间共有<Highlight color="#9a38d7">**90秒**</Highlight>，且具有全局性。
    - 举例：在一场比赛中，红队在Ban图时用尽了默认时间，随后消耗了29秒的补充时间才完成Ban图。那么，在红队选图时，其可以利用的时间是120秒（默认）+<FntColor color="#ffa500">60秒（一类补充）</FntColor>。若此后红队又消耗了29秒的补充时间，则其Pick时可以利用的时间变为120秒（默认）+<FntColor color="#ffa500">30秒（一类补充）</FntColor>。
 3. 如 [6-2.8](#6-2-比赛流程) 所述，双方上人的默认时限为<FntColor color="#198dff">**120秒**</FntColor>（常规阶段）或<FntColor color="#7d75ee">**180秒**</FntColor>（EX阶段）。若在时间用尽后，任意一方队伍仍未上齐选手或选手的Mod不正确，则裁判将给出警告，并开始消耗该队伍的<FntColor color="#ffa500">**二类补充时间**</FntColor>。二类补充时间共有<Highlight color="#ffa500">**90秒**</Highlight>，且具有全局性。
@@ -415,6 +415,5 @@ title: 参赛手册
 3. 感谢[Dr_Shindo](https://osu.ppy.sh/users/30895664)为TVP赞助osu!主题马克杯！
 3. 如果您愿意赞助OFFC，欢迎通过QQ联系赛事主办kitakore（<Highlight color="#198dff">**273772334**</Highlight>）。OFFC Staff感谢您对本赛事的支持！
 
-<img src="/img/OFFCstaff.png" width={500} /> <img src="/img/sponsor.png" width={200} />
-
+<img src="/img/OFFCstaff.png" width={500} alt="Staff card" /> <img src="/img/sponsor.png" class="auto-invert" width={200} alt="Sponsor logo" />
 ---
