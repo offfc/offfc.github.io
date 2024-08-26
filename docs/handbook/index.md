@@ -15,9 +15,11 @@ title: 参赛手册
 
 :::warning
 
-**本页文档现已过时！** 本手册页面更新于 2024 年 8 月 9 日。
+:::info 版本信息
 
-你可以在[**腾讯文档**](https://docs.qq.com/doc/DV2VOWlZJdFZWZUpB)阅读参赛手册的最新版本。
+**你现在阅读的是参赛手册的最新版本！** 本手册页面更新于 2024 年 8 月 26 日。
+
+你也可以在[**腾讯文档**](https://docs.qq.com/doc/DV2VOWlZJdFZWZUpB)阅读参赛手册的最新版本。
 
 :::
 
@@ -41,15 +43,16 @@ title: 参赛手册
 
 ### 2.1 报名
 
-1. 原则上，玩家在**报名时**须满足如下条件，方可获得 OFFC cirno 的**参与资格**：
+1. 具有**参赛资格**的玩家，只要在报名期间内如实填写报名表，在通过审查后即可参加OFFC cirno。所谓**参赛资格**指的是如下条件：
    - **报名结束时**，osu!std 模式表现分（PP，Performance Point）在 <Highlight color="#198dff">**4700-6500**</Highlight> 范围内。
    - **报名结束时，ETX≤6.4**。
    - 无小号、代打、外挂等相关情况。账号无禁言以外的不良记录。
    - 能够使用中文交流，能够使用 QQ 或 Discord 进行即时通讯。
    - 在 2024.7.1 至 2024.8.30 有一定的 osu!Standard 游玩记录。
-2. 若玩家不满足 2.1.1 的 PP 要求，但其 PP 在 <Highlight color="#8f3fcf">**4500-6700**</Highlight> 范围内且满足所有其他要求，则该玩家仍可先报名。报名后，该玩家将进入<Highlight color="#8f3fcf">待定区</Highlight>。在总报名人数未达到预期人数时，OFFC 的工作人员会视实际情况，按如下顺序允许待定区的选手参与比赛：
-   - 报名时间较早者优先，时间精确到分钟；
-   - 报名时间相同的，报名时 PP 更接近 4700 或 6500 者优先。
+2. 若玩家**报名结束时**不满足 2.1.1 的 pp 要求，但其 pp 在 <Highlight color="#8f3fcf">**4500-6800**</Highlight><sub>**原6700，据8月20日群公告调整为6800**</sub>  范围内且满足所有其他要求，则该玩家仍可先报名。报名后，该玩家将进入<Highlight color="#8f3fcf">待定区</Highlight>。在总报名人数未达到预期人数时，OFFC 的工作人员会视实际情况，按如下顺序允许待定区的选手参与比赛：
+   - OFFC的工作人员将按如下顺序判断先邀请待定区的哪些选手参加比赛：
+      - 报名时间较早者优先，时间精确到分钟；
+      - 报名时间相同的，报名时 PP 更接近 4700 或 6500 者优先。
 3. 若玩家报名时不满足<FntColor color="#e0424d">ETX、语言、不良记录、游玩记录</FntColor>等方面的要求，则该玩家<Highlight color="#e0424d">不具备参赛资格，也不会进入待定区</Highlight>。
 4. OFFC cirno会通过Discord频道或QQ总群公布最新通知，请各位玩家至少加入其中一项，以便交流。非队长的玩家可以选择其一加入，或二者都加入。队长则必须加入QQ总群和QQ队长群。
    - Discord 频道：[https://discord.gg/YYprGehNxD](https://discord.gg/YYprGehNxD)
@@ -60,8 +63,8 @@ title: 参赛手册
 ### 2.2 审查
 
 1. 比赛有报名人数上限，报名人数以最后通过玩家审查（*Screening*，检查你的账号是否符合参赛规则）的人数为准。
-2. OFFC Staff 团队会通过选手的历史比赛数据进行比赛实力分析，并可能对组队用PP（即“最终锁定PP”）进行调整。如果选手的实力**远高于** OFFC 的目标分段则无法参加比赛。
-3. 最终锁定PP将在报名阶段临近结束时确定，组队时须以最终锁定PP为依据组队。
+2. OFFC Staff团队会通过选手的历史比赛数据进行比赛实力分析，并可能对组队用cost进行调整。如果选手的实力**远高于**OFFC的目标分段则无法参加比赛。
+3. 组队用cost将在报名阶段临近结束时确定，组队时须以组队用cost为依据组队。
 4. 每位选手须在报名后一周内、报名阶段结束前加入QQ群或Discord群组，否则该选手将被移出报名表。进入比赛群后，在赛选手必须修改群昵称为游戏账号的ID。
 
 ---
@@ -70,18 +73,19 @@ title: 参赛手册
 
 ### 3-1 形式要求
 
-1. 本届 OFFC cirno 预计将有8支队伍，每支队伍8人或7人。除此之外，视报名情况，也可能采取6队或10队的比赛规模。
+1. 本届OFFC cirno预计将有8支队伍，每支队伍8人。除此之外，视报名情况，也可能采取6队或10队的比赛规模。
 2. 本届比赛采取<Highlight color="#198dff">**自由组队**</Highlight>，各位选手可以自行组建队伍，每支队伍必须推选一位队长。队伍人数**大于等于4**以后，队长可将自己的队伍信息私信发送给 OFFC 工作人员。当队伍出现在主表格的队伍信息表上时，该队组队成功。
-   - 若队伍信息登记时人数不满，队长后续仍可通过将信息私发给 OFFC 工作人员来补全信息。
+   - 若队伍信息登记时人数不满，那么后续该队伍可以补全信息。补全信息的方式是由队长将信息私聊给OFFC工作人员。
 3. 每支队伍必须拥有队名和队旗。
    - 队伍名称须在**14字以内**，不可包含特殊字符与除空格外的不可见字符。队伍信息与队旗中严禁使用违反国家法律法规、有冒犯性或过度暴露的内容。
-   - 提交的队旗大小最小为 270x180，宽高比为 3:2。
+   - 提交的队旗大小最小为 270x180，或以此比例进行制作。
 
-### 3-2 PP 要求
+### 3-2 组队的cost要求
 
-每支队伍必须满足一定的 PP 限制。队伍 PP 限制将在报名阶段临近结束时公布，届时该比赛手册的此段内容也将更新。
-
-要获取最新内容，建议您查看[腾讯文档](https://docs.qq.com/doc/DV2VOWlZJdFZWZUpB)。
+1. 每支队伍必须满足一定的cost限制。选手个人的具体cost见主表格，公式为：
+<div class="align-center"><img src="/img/teamup_formula.svg" class="auto-invert" alt="Cost formula" /></div>
+2. 每队前四**cost之和≤24.6**。
+3. 每队**至多三名etx≥6.0**的选手。
 
 ## 四、赛程与赛制
 
@@ -114,11 +118,11 @@ title: 参赛手册
 ### 4-3 对阵表分配
 
 1. 图池展示 (SC, Showcase) 结束后，所有队伍的队长或代理队员需要进行roll点，roll点将决定各队伍第一轮比赛的位置。
-   - 在<FntColor color="#198dff">双败淘汰赛</FntColor>赛制中，第一轮比赛 (QF) 的对阵双方为：点数最大者对阵点数最小者、点数第二大者对阵点数第二小者，以此类推。
+   - 在<FntColor color="#198dff">双败淘汰赛</FntColor>赛制中，第一轮比赛 (QF) 的对阵双方为：点数最大者（roll点#1）对阵点数最小者（roll点#8）、点数第二大者（roll点#2）对阵点数第二小者（roll点#7），以此类推。
    - 在<FntColor color="#8f3fcf">小组赛+淘汰赛</FntColor>赛制中，小组赛的分组为：点数最大的四个队伍为 A 组，点数最小的四个队伍为 B 组。
 2. 若有多个队伍roll到相同点数，则这些得到相同点数的队伍需要重新进行roll点。对阵表分配以重新roll点的结果为准。
 3. 对阵表确定后，表格内将预填默认比赛时间。请各队注意自己对局的时间安排，并及时与队员沟通协调比赛时间。如果有修改比赛时间的想法，请在队长群与该轮对局的另一方队长进行沟通。沟通完毕后，请联系 OFFC 工作人员确认修改时间。
-4. 若双方无法协商出合适的比赛时间段，建议挑选双方选手尽可能多选手能同时到场的时间段。
+   - 若双方无法协商出合适的比赛时间段，建议挑选双方选手尽可能多选手能同时到场的时间段：
 
 :::tip 建议对局时间
 
@@ -151,12 +155,12 @@ title: 参赛手册
 - <Highlight color="#ffbf05">**HD (Hidden)**</Highlight>：所有人强制携带**NF+HD**，禁止携带其他Mod。
 - <Highlight color="#f86264">**HR (HardRock)**</Highlight>：所有人强制携带**NF+HR**，禁止携带其他Mod。
 - <Highlight color="#63c6f5">**DT (DoubleTime)**</Highlight>：所有人强制携带**NF+DT**，队伍可向当局裁判申请允许上场队员至多一人开启HDDT。
-  - 双方队长同意的情况下，可以将DT换为NC (NightCore)。
-- <Highlight color="#27efcb">**FM (Free Mod)**</Highlight>：除所有人强制携带NF外，整支队伍的上场人员须满足一定Mod构成上的要求。
-   1. 至少一人携带HD或EZ或HDEZ（HD位）；至少一人携带HR或HDHR（HR位）；
-   2. 在满足5.1所述条件的基础上，额外一人必须携带HD、EZ、HR中的一个或多个（任意Mod位）；
-   3. 在满足5.1和5.2所述条件的基础上，再有额外一人可不携带任意Mod（NF除外），或也可携带HD、EZ、HR中的一个或多个（自由位）。
-   4. 当选手携带EZ或HDEZ时，以游戏内分数为基础，以1.75为倍率计算其最终得分。
+- <Highlight color="#27efcb">**FM (Free Mod)**</Highlight>：除所有人强制携带NF外，整支队伍的上场人员须满足一定Mod构成上的要求。（简略表述：1人HD位、1人HR位、1人必须开MOD、1人可自选开不开MOD）
+
+   1. 至少一人携带<Highlight color="#ffbf05">HD或EZ或HDEZ（HD位）</Highlight>；至少一人携带<Highlight color="#f86264">HR或HDHR（HR位）</Highlight>；
+   2. 在满足5.1所述条件的基础上，额外一人必须携带<Highlight color="#ffbf05">HD</Highlight>、<Highlight color="#ffbf05">EZ</Highlight>、<Highlight color="#f86264">HR</Highlight>中的一个或多个<u>（任意Mod位）</u>；
+   3. 在满足5.1和5.2所述条件的基础上，再有额外一人可不携带任意Mod（NF除外），或也可携带<Highlight color="#ffbf05">HD</Highlight>、<Highlight color="#ffbf05">EZ</Highlight>、<Highlight color="#f86264">HR</Highlight>中的一个或多个<u>（自由位）</u>。
+   4. 当选手携带<Highlight color="#ffbf05">EZ</Highlight>或HDEZ时，以游戏内分数为基础，以**1.75**为倍率计算其最终得分。
 - <Highlight color="#7d75ee">**EX (Extra)**</Highlight>：仅在**EX**阶段时开启，所有人强制携带NF，仅可选择HD、HR两种 Mod 或不使用 Mod 搭配组合。
 - 图池中各Mod对应谱面的数量如下：<Highlight color="#535353">4NM</Highlight> <Highlight color="#ffbf05">2HD</Highlight> <Highlight color="#f86264">2HR</Highlight> <Highlight color="#63c6f5">4DT</Highlight> <Highlight color="#27efcb">4FM</Highlight> <Highlight color="#7d75ee">4EX</Highlight>。
 
@@ -193,14 +197,14 @@ title: 参赛手册
 ### 5-3 玩法
 
 1. 在图池展示结束后，对于每一轮比赛，图池中除**EX**外的16张谱面将被Staff按**既定顺序**填入 4x4 表格（我们称之为棋盘）中并提前公布，格子最初均未染色。
-2. 双方可通过各种行动将格子染色，不同的颜色代表不同含义。另外，双方也可以通过Protect为格子附上保护标记。
+2. 双方可通过各种行动将格子染色，不同的颜色代表不同含义。另外，双方也可以通过Protect为格子附上<u>保护标记</u>。
    - **未染色的格子**：双方可以Pick此格子上的图。
    - <Highlight color="#f86264"><i class="fa fa-trophy"></i> **红色**</Highlight>：红方**赢得**某图后，对应格子被染成红色。该格子上的图不能被再次Pick。
    - <Highlight color="#198dff"><i class="fa fa-trophy"></i> **蓝色**</Highlight>：蓝方**赢得**某图后，对应格子被染成蓝色。该格子上的图不能被再次Pick。
    - <Highlight color="#232323"><i class="fa fa-ban"></i> **黑色**</Highlight>：任意一方**Ban**某图后，格子被染成黑色。双方均不能Pick此格子上的图。
    - <Highlight color="#27efcb"><i class="fa fa-lock"></i> **保护标记**</Highlight>：任意一方**Protect**某图后，对应格子被附上<u>保护标记</u>。带有标记的格子不能被Ban，**对方**无法重新染色，但仍旧可以被双方Pick。
-3. <Highlight color="#39e367"><i class="fa fa-ban"></i> <i class="fa fa-lock"></i> **BP 阶段**</Highlight>，每支队伍各有**一次 Protect 与一次 Ban**的机会，具体顺序将在后文详述。
-   - Protect可以保护一个格子，即为一个格子附上**保护标记**。该格子上的图不能被Ban，不能在EX局面中被**对方**染色，但仍旧可以被双方Pick。
+3. <Highlight color="#39e367"><i class="fa fa-ban"></i> <i class="fa fa-lock"></i> **BP 阶段**</Highlight>，每支队伍各有**一次 Protect 与一次 Ban**的机会，具体顺序将在后文详述。此处仅对二者的作用进行说明。
+   - Protect可以保护一个格子，即为一个格子附上<u>保护标记</u>。该格子上的图不能被Ban，不能在EX局面中被**对方**染色，但仍旧可以被双方Pick。
    - Ban可以将一个格子染成黑色。双方均不能Pick此格子上的图。被染成黑色的格子也不受陷阱效果影响。
 4. <Highlight color="#198dff"><i class="fa fa-check"></i> **常规阶段**</Highlight>：红蓝两队轮流pick，胜者可将被pick的对应格子染成红（蓝）色，被染过色的棋子不能被pick，率先在棋盘上己方颜色棋子连成一条线（横纵斜均可）的队伍获胜。
 5. 双方二选结束后，将进入<Highlight color="#7d75ee"><i class="fa fa-exclamation-circle"></i> **陷阱 (Trap) 阶段**</Highlight>，每支队伍各有一次放置陷阱的机会。**当一方Pick了对方放置的陷阱格后，陷阱生效**。陷阱生效后便会消失。
@@ -211,7 +215,7 @@ title: 参赛手册
 
 1. <Highlight color="#87ceeb"><i class="fa fa-clock-o"></i> **时空之门**</Highlight>：陷阱触发时，该小局比赛暂停，暂时视为放置陷阱方赢得此小局，首先对格子进行染色并结算。若任意一方连成一线，则游戏结束；若形成EX局面，则进入EX阶段。上述结算完成后，格子变回未染色情况，陷阱失效，该小局比赛继续进行，仿佛触发陷阱方刚刚选择此图一般。
    - 特别说明：若染色后进入EX阶段，则双方须先打完EX阶段，待比赛**回到常规阶段后**，才能继续刚才暂停的小局。
-   - 示例：NM2陷阱触发 - NM2染色 - EX阶段开始 - NM2变回无色 - EX阶段结束 - NM2比赛 - 根据比赛结果对NM2染色 - 下一个小局
+      - 示例：NM2陷阱触发 - NM2染色 - EX阶段开始 - NM2变回无色 - EX阶段结束 - NM2比赛 - 根据比赛结果对NM2染色 - 下一个小局
 2. <Highlight color="#ffa500"><i class="fa fa-exchange"></i> **大陆漂移**</Highlight>：本小局结束后，先对此格子染色，不进行最终结算和EX结算，将此格子与另一个提前选择的格子进行交换（连带着格子上的颜色和陷阱），随后再进行结算。
    - 布置陷阱方应提前告知裁判要交换的格子对象。
    - 要交换的格子对象不可以选择被Ban的黑色格子和被保护的格子。
@@ -220,6 +224,7 @@ title: 参赛手册
 :::
 
 6. <Highlight color="#7d75ee"><i class="fa fa-bolt" style={{color: '#ffa500'}}></i> **EX 阶段**</Highlight>：比赛过程中，若一个小局结束后，任意一条横、纵、斜线都满足以下条件之一：
+
 
    - 存在黑色格子
    - 同时存在红蓝两色格子
@@ -262,12 +267,12 @@ title: 参赛手册
 ### 6-2 比赛流程
 
 1. 比赛开始后，首先进入<Highlight color="#39e367"><i class="fa fa-ban"></i> <i class="fa fa-lock"></i> BP环节</Highlight>。BP环节将按照“<Highlight color="#27efcb"><i class="fa fa-lock"></i> Protect阶段</Highlight> - <Highlight color="#232323"><i class="fa fa-ban"></i> Ban阶段</Highlight> - <Highlight color="#198dff"><i class="fa fa-check"></i> Pick阶段（前段）</Highlight> - <Highlight color="#7d75ee"><i class="fa fa-exclamation-circle"></i> Trap阶段</Highlight> - <Highlight color="#198dff"><i class="fa fa-check"></i> Pick阶段（后段）</Highlight>”的顺序进行。对于各个阶段双方的具体行动顺序，可由Roll点点数更大的一方在两种行动模式之中进行选择。两种行动模式分别是“先Ban”和“后Ban”。
-   - “先Ban”指的是：在Protect阶段较晚行动，在Ban阶段较早行动，在Pick阶段较早行动，在Trap阶段和对方同时行动。（先Ban方先选）
-   - “后Ban”指的是：在Protect阶段较早行动，在Ban阶段较晚行动，在Pick阶段较晚行动，在Trap阶段和对方同时行动。（后Ban方后选）
-   - 为更清楚地说明BP顺序，此处给出示例。假设红队选择了后Ban，那么此局的BP顺序为：
-         Protect - Protect - Ban - Ban - Pick(1) - Pick(1) - Pick(2) - Pick(2) - Trap - Pick(3) - Pick(3) ......
+   - “先Ban”指的是：在Protect阶段较晚行动，<u>在Ban阶段较早行动，在Pick阶段较早行动</u>，在Trap阶段和对方同时行动。（先Ban方先选）
+   - “后Ban”指的是：在Protect阶段较早行动，<u>在Ban阶段较晚行动，在Pick阶段较晚行动</u>，在Trap阶段和对方同时行动。（后Ban方后选）
+   - 为更清楚地说明BP顺序，此处给出示例。假设<FntColor color="#f86264">红队</FntColor>选择了<FntColor color="#f86264">后Ban</FntColor>，那么此局的BP顺序为：
+         <FntColor color="#f86264">Protect</FntColor> - <FntColor color="#198dff">Protect</FntColor> - <FntColor color="#198dff">Ban</FntColor> - <FntColor color="#f86264">Ban</FntColor> - <FntColor color="#198dff">Pick(1)</FntColor> - <FntColor color="#f86264">Pick(1)</FntColor> - <FntColor color="#198dff">Pick(2)</FntColor> - <FntColor color="#f86264">Pick(2)</FntColor> - <FntColor color="#7d75ee"><u>Trap</u></FntColor> - <FntColor color="#198dff">Pick(3)</FntColor> - <FntColor color="#f86264">Pick(3)</FntColor> ......
    - 若比赛进入EX阶段，则之前“双方轮流选图”的流程暂停。比赛从EX阶段回到常规阶段后，此前的选图流程继续。此处给出示例：
-         ...... Pick(2) - Trap - Pick(3) - EX1 - Pick(3) - Pick(4) - Pick(4) ......
+         ...... <FntColor color="#f86264">Pick(2)</FntColor> - <FntColor color="#7d75ee">Trap</FntColor> - <FntColor color="#198dff">Pick(3)</FntColor> - <FntColor color="#7d75ee">EX1</FntColor> - <FntColor color="#f86264">Pick(3)</FntColor> - <FntColor color="#198dff">Pick(4)</FntColor> - <FntColor color="#f86264">Pick(4)</FntColor> ......
 2. 比赛正式开始后，首先进行roll点。双方队长（或代理队长）各进行一次roll点。点数较大的一方可以选择先Ban或后Ban。
    - 在裁判发出“请双方队长roll点”的指令或类似指令后，roll出的结果有效。发出指令前roll出的结果无效。
       - 若有一队进行了多次roll点，则在所有有效的结果中按最先roll出的点数为依据进行比较。
@@ -275,7 +280,7 @@ title: 参赛手册
 3. <Highlight color="#232323"><i class="fa fa-ban"></i> **Ban**</Highlight> 指的是将一个格子变为黑色。被变为黑色的格子无法被选用 (Pick)。
    - 一张谱面只能被Ban一次。
    - 任何一方不可以放弃己方的Ban机会。
-4. <Highlight color="#27efcb"><i class="fa fa-lock"></i> **Protect**</Highlight> 指的是保护一个格子，即为一个格子附上保护标记。被保护的格子无法被禁用 (Ban)，且无法在EX阶段被对方染色。但可以被双方设置陷阱 (Trap)。
+4. <Highlight color="#27efcb"><i class="fa fa-lock"></i> **Protect**</Highlight> 指的是保护一个格子，即为一个格子附上<u>保护标记</u>。被保护的格子无法被禁用 (Ban)，且无法在EX阶段**被对方**染色。但可以被双方设置陷阱 (Trap)。
    - 一张谱面只能被Protect一次。
    - 任何一方不可以放弃己方的Protect机会。
 5. <Highlight color="#198dff"><i class="fa fa-check"></i> **Pick**</Highlight> 指的是将特定格子中的谱面作为该小局的比赛谱面。在该小局中胜利的一方可以将该格子染成己方颜色。
@@ -293,7 +298,7 @@ title: 参赛手册
 
 ### 6-3 投降
 
-1. 一方投降 (FF) 意味着该方自动输掉对应比赛中未进行的所有小局。
+1. 一方<u>投降 (FF) </u>意味着该方自动输掉对应比赛中未进行的所有小局。
    - 可以推知，一方投降之后，对应场次的比赛将自动结束。任何一方不得仅对特定小局投降，并主张继续完成该场剩余的小局。
 2. 在对局表分配完成后，比赛的任意一方可以在赛前或赛中的任意时间点提出投降。
 3. 投降的一方须由队长或队员向Staff发出文字说明，并在文字声明中包含特定内容。
@@ -316,31 +321,31 @@ title: 参赛手册
 
 :::info 这里在说什么？
 
-如果您不知道下面的一大段话在讲什么，没关系！只要您的队伍能按裁判指示在规定的时限内完成指定操作，且能按FM规则正确上人，不故意拖延，那么以下规则您完全可以不看。我们的裁判会监督任何队伍（包括您的对手）的违规行为。
+如果您不知道下面的一大段话在讲什么，没关系！只要您的队伍能<u>按裁判指示在规定的时限内完成指定操作</u>，且能<u>按FM规则正确上人</u>，<u>不故意拖延</u>，那么以下规则您完全可以不看。我们的裁判会监督任何队伍（包括您的对手）的违规行为。
 
 :::
 
-1. Protect、Ban、Pick、Trap、上人，是每支队伍需要进行的五项行动。这五项行动均有对应的默认时限，该默认时限每回合重新计算。此外，每支队伍还拥有一定的补充时间。补充时间在每场比赛中具有全局性，即在该场比赛中不会恢复、不会重新计算。一类补充时间和二类补充时间单独计算、互不影响。
-2. 如 [6-2.7](#6-2-比赛流程) 所述，双方决定Protect、Ban、Pick的默认时限为<FntColor color="#198dff">**120秒**</FntColor>，决定Trap的时限为<FntColor color="#7d75ee">**180秒**</FntColor>。若在上述时间用尽后，该方仍未决定要Protect、Ban、Pick、Trap的谱面，则裁判将给出警告，并开始消耗该队伍的<FntColor color="#ffa500">一类补充时间</FntColor>。一类补充时间共有<Highlight color="#ffa500">**90秒**</Highlight>，且具有全局性。
-   - 举例：在一场比赛中，红队在Ban图时用尽了默认时间，随后消耗了30秒的补充时间才完成Ban图。那么，在红队选图时，其可以利用的时间是120秒（默认）+60秒（一类补充）。若此后红队又消耗了30秒的补充时间，则其Pick时可以利用的时间变为120秒（默认）+30秒（一类补充）。
-3. 如 [6-2.8](#6-2-比赛流程) 所述，双方上人的默认时限为<FntColor color="#198dff">**120秒**</FntColor>（常规阶段）或<FntColor color="#7d75ee">**180秒**</FntColor>（EX阶段）。若在时间用尽后，任意一方队伍仍未上齐选手或选手的Mod不正确，则裁判将给出警告，并开始消耗该队伍的<FntColor color="#ffa500">二类补充时间</FntColor>。二类补充时间共有<Highlight color="#ffa500">**90秒**</Highlight>，且具有全局性。
-   - 举例：在一场比赛中，红队在第一次上人时用尽了默认时间，随后消耗了30秒的补充时间才完成上人。那么，在下一张图上人时，其可以利用的时间是120秒（默认）+60秒（二类补充）。若此后红队又消耗了30秒的补充时间，且进入EX阶段，则其上人时可以利用的时间变为180秒（EX默认）+30秒（二类补充）。
-4. 一类补充时间用尽后，在默认时间用尽的情况下，视正在进行的行动判断处理方法。
+1. <FntColor color="#27efcb">Protect</FntColor>、<FntColor color="#232323">Ban</FntColor>、<FntColor color="#198dff">Pick</FntColor>、<FntColor color="#7d75ee">Trap</FntColor>、<FntColor color="#ffbf05">上人</FntColor>，是每支队伍需要进行的五项行动。这五项行动均有对应的默认时限，该默认时限每回合重新计算。此外，每支队伍还拥有一定的补充时间。补充时间在每场比赛中具有全局性，即在该场比赛中不会恢复、不会重新计算。<FntColor color="#9a38d7">一类补充时间</FntColor>和<FntColor color="#ffa500">二类补充时间</FntColor>单独计算、互不影响。
+2. 如 [6-2.7](#6-2-比赛流程) 所述，双方决定Protect、Ban、Pick的默认时限为<FntColor color="#198dff">**120秒**</FntColor>，决定Trap的时限为<FntColor color="#7d75ee">**180秒**</FntColor>。若在上述时间用尽后，该方仍未决定要Protect、Ban、Pick、Trap的谱面，则裁判将给出警告，并开始消耗该队伍的<FntColor color="#9a38d7">**一类补充时间**</FntColor>。一类补充时间共有<Highlight color="#9a38d7">**90秒**</Highlight>，且具有全局性。
+   - 举例：在一场比赛中，红队在Ban图时用尽了默认时间，随后消耗了29秒的补充时间才完成Ban图。那么，在红队选图时，其可以利用的时间是120秒（默认）+<FntColor color="#ffa500">60秒（一类补充）</FntColor>。若此后红队又消耗了29秒的补充时间，则其Pick时可以利用的时间变为120秒（默认）+<FntColor color="#ffa500">30秒（一类补充）</FntColor>。
+3. 如 [6-2.8](#6-2-比赛流程) 所述，双方上人的默认时限为<FntColor color="#198dff">**120秒**</FntColor>（常规阶段）或<FntColor color="#7d75ee">**180秒**</FntColor>（EX阶段）。若在时间用尽后，任意一方队伍仍未上齐选手或选手的Mod不正确，则裁判将给出警告，并开始消耗该队伍的<FntColor color="#ffa500">**二类补充时间**</FntColor>。二类补充时间共有<Highlight color="#ffa500">**90秒**</Highlight>，且具有全局性。
+   - 举例：在一场比赛中，红队在第一次上人时用尽了默认时间，随后消耗了29秒的补充时间才完成上人。那么，在下一张图上人时，其可以利用的时间是120秒（默认）+<FntColor color="#ffa500">60秒（二类补充）</FntColor>。若此后红队又消耗了29秒的补充时间，且进入EX阶段，则其上人时可以利用的时间变为180秒（EX默认）+<FntColor color="#ffa500">30秒（二类补充）</FntColor>。
+4. <FntColor color="#ffa500">一类补充时间</FntColor>用尽后，在默认时间用尽的情况下，视正在进行的行动判断处理方法。
    - 若正在进行的行动是Protect或Ban，则用尽补充时间的一方视为**投降**。
    - 若正在进行的行动是Trap，则用尽补充时间的一方视为**放弃**本次Trap机会。
    - 若正在进行的行动是Pick，则选图权强制从用尽补充时间的一方**转移**至对方。
       - 选图权转移至对方后，重新开始计算默认时限。若对方同样用尽了其默认时间和一类补充时间，则裁判将从剩下的谱面中roll一张作为本回合比赛谱面。
-      - 为更清楚地说明“选图权移交”的效果，此处给出示例。红队选图超时，那么该小局的选图权交给蓝队。蓝队使用从红队获得的选图权选择一张图并完成了该小局。下一小局中，蓝队可以使用自己的选图权选图。
-5. 二类补充时间用尽后，只要默认时间用尽，那么不论如何比赛都将**强制开始**。
-6. 补充时间所剩秒数的计算，以timer的提示为准，分为90秒、60秒、30秒、0秒共4个区间，且向下取整。一般情况下该计算以裁判收到的信息为准。若选手能截图证明己方拥有更多的补充时间，则可以以截图为准。
-   - 举例：每场开始队伍拥有90秒的一类补充时间，若队伍只使用了20秒，则队伍做出决策时屏幕上尚未出现“Countdown ends in 1 minute”的提示。在下一次队伍需要使用一类补充时间时，应向下取整，认为一类补充时间离开90秒的区间，进入60秒的区间，即从60秒开始倒数。
-   - 接上例，此后的另一小局里，该队伍又使用了50秒的一类补充时间，则队伍做出决策时屏幕上已经出现“Countdown ends in 30 seconds”的提示。此时应认为一类补充时间接连经过60秒和30秒的区间，按向下取整，进入0秒的区间，即“用尽”。本场比赛的后续环节，该队伍不再拥有更多的一类补充时间。
+      - 为更清楚地说明“选图权移交”的效果，此处给出示例。红队选图超时，那么该小局的选图权交给蓝队。蓝队使用**从红队获得的选图权**选择一张图并完成了该小局。下一小局中，蓝队可以使用**自己的选图权**选图。
+5. <FntColor color="#ffa500">二类补充时间</FntColor>用尽后，只要默认时间用尽，那么不论如何比赛都将**强制开始**。
+6. 补充时间所剩秒数的计算，以timer的提示为准，分为<u>90秒</u>、<u>60秒</u>、<u>30秒</u>、<u>0秒</u>共4个区间，且<u>向下取整</u>>。一般情况下该计算以裁判收到的信息为准。若选手能截图证明己方拥有更多的补充时间，则可以以截图为准。
+   - 举例：每场开始队伍拥有90秒的<FntColor color="#ffa500">一类补充时间</FntColor>，若队伍只使用了20秒，则队伍做出决策时屏幕上尚未出现“Countdown ends in 1 minute”的提示。在下一次队伍需要使用<FntColor color="#ffa500">一类补充时间</FntColor>时，应向下取整，认为一类补充时间离开90秒的区间，进入60秒的区间，即从60秒开始倒数。
+   - 接上例，此后的另一小局里，该队伍又使用了50秒的<FntColor color="#ffa500">一类补充时间</FntColor>，则队伍做出决策时屏幕上已经出现“Countdown ends in 30 seconds”的提示。此时应认为<FntColor color="#ffa500">一类补充时间</FntColor>接连经过60秒和30秒的区间，按向下取整，进入0秒的区间，即“用尽”。本场比赛的后续环节，该队伍不再拥有更多的<FntColor color="#ffa500">一类补充时间</FntColor>。
 7. 比赛开始后，若发现有选手Mod配置不正确（包括位置重复、未携带NF等），则按不同情况分别处理：
    - 若该选手所属队伍在本局游戏中尚未收到前述警告，则该小局将立即中止并重新开始。
    - 若该选手所属队伍在本局游戏中收到过前述警告，则游戏仍将继续。Mod配置不正确的选手分数无效。除非该小局内同时有2.1所述之情况。
    - 在2.2之基础上，在FM的情况下，若某队伍位置重复（例如，没有HR但有多个HD），则应从重复位置中去除多余的高分，并在所有排列中选择分数最低的排列方式。
-      - 例如，在20w(HD)，30w(HD)，40w(NM)，60w(HD)的情况下，应认为60w与30w构成对HD位的冲突，故除去60w的成绩。最终该队伍本小局得分为30w(HD位)+20w(任意Mod位)+40w(自由位)=90w。
-      - 在上例中，不能认为：60w是HD位且30w与20w构成对任意Mod位的冲突。此种计算标准并非2.3所述之“在所有排列中选择分数最低的排列方式”。
+      - 例如，在20w(HD)，30w(HD)，40w(NM)，60w(HD)的情况下，应认为60w与30w构成对<u>HD位</u>的冲突，故除去60w的成绩。最终该队伍本小局得分为30w(HD位)+20w(任意Mod位)+40w(自由位)=90w。
+      - 在上例中，不能认为：60w是HD位且30w与20w构成对<u>任意Mod位</u>的冲突。此种计算标准并非2.3所述之“在所有排列中选择分数最低的排列方式”。
 
 ## 七、奖品
 
@@ -356,6 +361,7 @@ title: 参赛手册
 
 1. **MVP（Most Valuable Player）**：出自冠军队伍，由OFFC赛群内玩家共同评选。可获得<Highlight color="#198dff">amiami琪露诺fumo</Highlight>一只。
 2. **SVP（Second Valuable Player）**：出自亚军队伍，由OFFC赛群内玩家共同评选。可获得<Highlight color="#198dff">碧蓝档案设定集</Highlight>一本。
+3. **TVP（Third Valuable Player）**：出自季军队伍，由OFFC赛群内玩家共同评选。可获得<Highlight color="#ff9c99">osu!主题马克杯</Highlight>一只。
 
 ---
 
@@ -364,7 +370,7 @@ title: 参赛手册
 ### 8-1 退出比赛
 
 1. 若在报名阶段选择退赛，选手只需要通知工作人员，并提供退赛的正当理由即可。
-2. 若在比赛阶段选择退赛，选手必须说明自己因不可抗力而无法继续参加比赛，在这种情况下工作人员将会接受退赛请求。若不能提供这类理由，选手就必须继续参加本届比赛。
+2. 若在比赛阶段选择退赛，选手必须说明自己因**不可抗力而**无法继续参加比赛，在这种情况下工作人员将会接受退赛请求。若不能提供这类理由，选手就必须继续参加本届比赛。
    - 一般情况下，“不可抗力”是指**不能预见、不能避免并不能克服的客观情况**。
    - 您需要慎重考虑来决定是否退出比赛，您所做出的选择将会在后续所在队伍的比赛带来影响，且OFFC工作人员将尽到提醒的责任。
 
@@ -408,8 +414,9 @@ title: 参赛手册
 
 1. 感谢 <Highlight color="#232323">**DESU.Life**</Highlight> 为冠军队伍赞助猫盘！欢迎访问他们的[官网](https://desu.life/#meowpad)和[旗舰店](https://kagamistudio.taobao.com)，了解关于猫盘的更多信息！
 2. 感谢[My Angel Kuroe](https://osu.ppy.sh/users/13217389)为SVP赞助碧蓝档案设定集！
+3. 感谢[Dr_Shindo](https://osu.ppy.sh/users/30895664)为TVP赞助osu!主题马克杯！
 3. 如果您愿意赞助OFFC，欢迎通过QQ联系赛事主办kitakore（<Highlight color="#198dff">**273772334**</Highlight>）。OFFC Staff感谢您对本赛事的支持！
 
-<img src="/img/OFFCstaff.png" width={500} alt="Staff card" /> <img src="/img/sponsor.png" class="auto-invert" width={200} alt="Sponsor logo" />
+<img src="/img/OFFCstaff.png" width={500} /> <img src="/img/sponsor.png" width={200} />
 
 ---
