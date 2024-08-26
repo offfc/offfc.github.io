@@ -18,3 +18,17 @@ title: 梗图集合
 # My angel juroe
 
 <img src="/img/memes/2.jpg" width="500px" />
+
+---
+
+# 三毛staff记
+
+<img src="/img/memes/3.jpg" width="400px" />
+
+---
+
+# 原图我在下面
+
+<img src="/img/memes/4.jpg" width="400px" />
+
+---
