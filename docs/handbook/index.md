@@ -412,7 +412,8 @@ title: 参赛手册
 1. 感谢 <Highlight color="#232323">**DESU.Life**</Highlight> 为冠军队伍赞助猫盘！欢迎访问他们的[官网](https://desu.life/#meowpad)和[旗舰店](https://kagamistudio.taobao.com)，了解关于猫盘的更多信息！
 2. 感谢[My Angel Kuroe](https://osu.ppy.sh/users/13217389)为SVP赞助碧蓝档案设定集！
 3. 感谢[Dr_Shindo](https://osu.ppy.sh/users/30895664)为TVP赞助osu!主题马克杯！
-3. 如果您愿意赞助OFFC，欢迎通过QQ联系赛事主办kitakore（<Highlight color="#198dff">**273772334**</Highlight>）。OFFC Staff感谢您对本赛事的支持！
+4. 如果您愿意赞助OFFC，欢迎通过QQ联系赛事主办kitakore（<Highlight color="#198dff">**273772334**</Highlight>）。OFFC Staff感谢您对本赛事的支持！
 
 <img src="/img/OFFCstaff.png" width={500} alt="Staff card" /> <img src="/img/sponsor.png" class="auto-invert" width={200} alt="Sponsor logo" />
+
 ---
