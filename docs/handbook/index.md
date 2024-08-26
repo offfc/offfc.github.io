@@ -12,7 +12,6 @@ title: 参赛手册
 
 # <Highlight color="#198dff">OFFC cirno</Highlight> 参赛手册
 
-
 :::info 版本信息
 
 **你现在阅读的是参赛手册的最新版本！** 本手册页面更新于 2024 年 8 月 26 日。
@@ -81,6 +80,7 @@ title: 参赛手册
 ### 3-2 组队的cost要求
 
 1. 每支队伍必须满足一定的cost限制。选手个人的具体cost见主表格，公式为：
+
 <div class="align-center"><img src="/img/teamup_formula.svg" class="auto-invert" alt="Cost formula" /></div>
 2. 每队前四**cost之和≤24.6**。
 3. 每队**至多三名etx≥6.0**的选手。
@@ -222,7 +222,6 @@ title: 参赛手册
 :::
 
 6. <Highlight color="#7d75ee"><i class="fa fa-bolt" style={{color: '#ffa500'}}></i> **EX 阶段**</Highlight>：比赛过程中，若一个小局结束后，任意一条横、纵、斜线都满足以下条件之一：
-
 
    - 存在黑色格子
    - 同时存在红蓝两色格子
