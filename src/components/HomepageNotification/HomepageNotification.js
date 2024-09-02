@@ -25,7 +25,7 @@ import styles from './HomepageNotification.module.css';
 
 const HomepageNotification = ({ type, message, icon }) => {
   // Set the title based on the type
-  const title = type === 'warning' ? '警告' : type === 'info' ? '通知' : '';
+  const title = type === 'warning' ? '公告' : type === 'info' ? '通知' : '';
 
   return (
     <div className={`${styles.Banner} ${styles[`Banner--${type}`]}`}>

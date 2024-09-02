@@ -52,7 +52,12 @@ export default function Home() {
   return (
     <Layout title={`${siteConfig.title}`} description={`${common.description}`}>
       <HomepageHeader />
-      <HomepageNotification type={"warning"} message={"于2024.8.26 19:00 发布了有关退赛事件全梳理的公告。您可点击动态页查看"} icon={true}/>
+      <HomepageNotification
+          type={"warning"}
+          message={`
+              于<em>2024.8.26 19:00</em> 发布了有关退赛事件全梳理的公告。你可以点击<a href="/blog/History">本动态页</a>查看。
+          `}
+          icon={true}/>
       <br />
       <main>
         <LiveStream />
