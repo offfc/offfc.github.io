@@ -14,7 +14,7 @@ title: 参赛手册
 
 :::info 版本信息
 
-**你现在阅读的是参赛手册的最新版本！** 本手册页面更新于 2024 年 8 月 26 日。
+**你现在阅读的是参赛手册的最新版本！** 本手册页面更新于 2024 年 9 月 2 日。
 
 你也可以在[**腾讯文档**](https://docs.qq.com/doc/DV2VOWlZJdFZWZUpB)阅读参赛手册的最新版本。
 
@@ -287,7 +287,7 @@ title: 参赛手册
    - 队长应将己方选择的陷阱名称和对应格子在游戏内私聊发送给本场裁判。由裁判将相关信息告知导播，导播在画面中为对应格子播放陷阱放置动画，但不向观众告知陷阱的名称。
    - 一个格子可以被双方同时放置陷阱。
    - 任何一方可以主动放弃己方的Trap机会。若在Trap时超时，则视为放弃本次Trap机会。
-7. 每队决定Ban 、Protect、Pick的时限均为<FntColor color="#198dff">**120秒**</FntColor>；决定Trap的时限为<FntColor color="#7d75ee">**180秒**</FntColor>。
+7. 每队决定Protect、Pick的时限均为<FntColor color="#198dff">**120秒**</FntColor>；决定Ban、Trap的时限为<FntColor color="#7d75ee">**180秒**</FntColor>。
 8. Pick完成后，双方另有<FntColor color="#198dff">**120秒**</FntColor>的时间上人。在EX阶段中，该等待时间调整为<FntColor color="#7d75ee">**180秒**</FntColor>。
 9. Protect/Ban/Pick时表述不清的，须以清楚的表述方式重新说明己方队伍的意图。如<Highlight color="#f86264">牛魔4</Highlight>不能被认可为一次清晰的选图。唯一清晰的表述是<Highlight color="#198dff">NM4</Highlight>。
 10. Protect/Ban/Pick时，应由队长发出指令。若队长和队员均发出指令且内容不同，则队长的指令有效。
@@ -323,10 +323,10 @@ title: 参赛手册
 :::
 
 1. **Protect、Ban、Pick、Trap、上人**，是每支队伍需要进行的五项行动。这五项行动均有对应的默认时限，该默认时限每回合重新计算。此外，每支队伍还拥有一定的补充时间。补充时间在每场比赛中具有全局性，即在该场比赛中不会恢复、不会重新计算。<FntColor color="#9a38d7">一类补充时间</FntColor>和<FntColor color="#ffa500">二类补充时间</FntColor>单独计算、互不影响。
-2. 如 [6-2.7](#6-2-比赛流程) 所述，双方决定Protect、Ban、Pick的默认时限为<FntColor color="#198dff">**120秒**</FntColor>，决定Trap的时限为<FntColor color="#7d75ee">**180秒**</FntColor>。若在上述时间用尽后，该方仍未决定要Protect、Ban、Pick、Trap的谱面，则裁判将给出警告，并开始消耗该队伍的<FntColor color="#9a38d7">**一类补充时间**</FntColor>。一类补充时间共有<Highlight color="#9a38d7">**90秒**</Highlight>，且具有全局性。
-   - 举例：在一场比赛中，红队在Ban图时用尽了默认时间，随后消耗了29秒的补充时间才完成Ban图。那么，在红队选图时，其可以利用的时间是120秒（默认）+<FntColor color="#ffa500">60秒（一类补充）</FntColor>。若此后红队又消耗了29秒的补充时间，则其Pick时可以利用的时间变为120秒（默认）+<FntColor color="#ffa500">30秒（一类补充）</FntColor>。
+2. 如 [6-2.7](#6-2-比赛流程) 所述，双方决定Protect、Pick的默认时限为<FntColor color="#198dff">**120秒**</FntColor>，决定Ban、Trap的时限为<FntColor color="#7d75ee">**180秒**</FntColor>。若在上述时间用尽后，该方仍未决定要Protect、Ban、Pick、Trap的谱面，则裁判将给出警告，并开始消耗该队伍的<FntColor color="#9a38d7">**一类补充时间**</FntColor>。一类补充时间共有<Highlight color="#9a38d7">**120秒**</Highlight>，且具有全局性。
+   - 举例：在一场比赛中，红队在Ban图时用尽了默认时间，随后消耗了30秒的补充时间才完成Ban图。那么，在红队选图时，其可以利用的时间是120秒（默认）+<FntColor color="#ffa500">90秒（一类补充）</FntColor>。若此后红队又消耗了30秒的补充时间，则其Pick时可以利用的时间变为120秒（默认）+<FntColor color="#ffa500">60秒（一类补充）</FntColor>。
 3. 如 [6-2.8](#6-2-比赛流程) 所述，双方上人的默认时限为<FntColor color="#198dff">**120秒**</FntColor>（常规阶段）或<FntColor color="#7d75ee">**180秒**</FntColor>（EX阶段）。若在时间用尽后，任意一方队伍仍未上齐选手或选手的Mod不正确，则裁判将给出警告，并开始消耗该队伍的<FntColor color="#ffa500">**二类补充时间**</FntColor>。二类补充时间共有<Highlight color="#ffa500">**90秒**</Highlight>，且具有全局性。
-   - 举例：在一场比赛中，红队在第一次上人时用尽了默认时间，随后消耗了29秒的补充时间才完成上人。那么，在下一张图上人时，其可以利用的时间是120秒（默认）+<FntColor color="#ffa500">60秒（二类补充）</FntColor>。若此后红队又消耗了29秒的补充时间，且进入EX阶段，则其上人时可以利用的时间变为180秒（EX默认）+<FntColor color="#ffa500">30秒（二类补充）</FntColor>。
+   - 举例：在一场比赛中，红队在第一次上人时用尽了默认时间，随后消耗了30秒的补充时间才完成上人。那么，在下一张图上人时，其可以利用的时间是120秒（默认）+<FntColor color="#ffa500">60秒（二类补充）</FntColor>。若此后红队又消耗了30秒的补充时间，且进入EX阶段，则其上人时可以利用的时间变为180秒（EX默认）+<FntColor color="#ffa500">30秒（二类补充）</FntColor>。
 4. <FntColor color="#ffa500">一类补充时间</FntColor>用尽后，在默认时间用尽的情况下，视正在进行的行动判断处理方法。
    - 若正在进行的行动是Protect或Ban，则用尽补充时间的一方视为**投降**。
    - 若正在进行的行动是Trap，则用尽补充时间的一方视为**放弃**本次Trap机会。
