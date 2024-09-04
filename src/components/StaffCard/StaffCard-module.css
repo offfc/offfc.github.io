@@ -1,171 +1,172 @@
 /* Animation definitions. */
 @keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes shrink {
-  from {
-    transform: scale(1.15);
-  }
-  to {
-    transform: scale(1);
-  }
+    from {
+        transform: scale(1.15);
+    }
+    to {
+        transform: scale(1);
+    }
 }
 
 @keyframes enlarge {
-  from {
-    transform: scale(1);
-    font-weight: 400;
-  }
-  to {
-    transform: scale(1.15);
-    font-weight: 800;
-  }
+    from {
+        transform: scale(1);
+        font-weight: 400;
+    }
+    to {
+        transform: scale(1.15);
+        font-weight: 800;
+    }
 }
 
 @keyframes hueblue {
-  from {
-    background: rgba(104, 168, 210, 0.218);
-  }
-  to {
-    background: rgba(80, 160, 214, 0.807);
-  }
+    from {
+        background: rgba(104, 168, 210, 0.218);
+    }
+    to {
+        background: rgba(80, 160, 214, 0.807);
+    }
 }
 
 @keyframes hueblueback {
-  from {
-    background: rgba(101, 171, 217, 0.7);
-  }
-  to {
-    background: rgba(101, 171, 217, 0.2);
-  }
+    from {
+        background: rgba(101, 171, 217, 0.7);
+    }
+    to {
+        background: rgba(101, 171, 217, 0.2);
+    }
 }
 
 /* TODO: Can we add animation on image load complete? */
 *.fade-in {
-  animation-name: fade-in;
-  animation-duration: 0.8s;
-  animation-fill-mode: forwards; /* Keep 100% opacity on animation end. */
-  animation-delay: 0s;
-  transition: ease-in-out;
+    animation-name: fade-in;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards; /* Keep 100% opacity on animation end. */
+    animation-delay: 0s;
+    transition: ease-in-out;
 }
 
 .staff-board-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; /* or use space-around, or space-evenly */
-  gap: 20px; /* Adjust the gap between the cards as needed */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* or use space-around, or space-evenly */
+    gap: 20px; /* Adjust the gap between the cards as needed */
 }
 
 .card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 256px;
-  height: 350px;
-  margin: auto;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  animation: hueblueback 0.3s ease forwards;
-  background: rgba(101, 171, 217, 0.28);
-  backdrop-filter: blur(25px);
-  background-position: bottom;
-  background-size: auto 60%;
-  background-repeat: repeat;
-  overflow: hidden;
-  transition: transform 0.05s ease, background-color 0.005s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 256px;
+    height: 350px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    animation: hueblueback 0.3s ease forwards;
+    background: rgba(101, 171, 217, 0.28);
+    backdrop-filter: blur(25px);
+    background-position: bottom;
+    background-size: auto 60%;
+    background-repeat: repeat;
+    overflow: hidden;
+    transition: transform 0.05s ease, background-color 0.005s ease;
 }
 
 .card .card-highlight {
-  opacity: 0; /* Hide the highlight by default */
-  transition: opacity 0.3s ease;
+    opacity: 0; /* Hide the highlight by default */
+    transition: opacity 0.3s ease;
 }
 
 .card:hover .card-highlight {
-  opacity: 1; /* ...and show the highlight on hover */
+    opacity: 1; /* ...and show the highlight on hover */
 }
 
 .card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url("/svg/triangles.svg");
-  background-position: bottom;
-  background-size: auto 60%;
-  background-repeat: repeat;
-  opacity: 0.4;
-  z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("/svg/triangles.svg");
+    background-position: bottom;
+    background-size: auto 60%;
+    background-repeat: repeat;
+    opacity: 0.4;
+    z-index: -1;
 }
 
 .card-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(160, 218, 228, 0.5));
-  mix-blend-mode: color-dodge;
-  z-index: 0;
-  pointer-events: none;
-  transition: background 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(160, 218, 228, 0.5));
+    mix-blend-mode: color-dodge;
+    z-index: 0;
+    pointer-events: none;
+    transition: background 0.3s ease;
 }
 
 /* New highlight layer */
 .card-highlight {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  width: 125%;
-  height: 100%;
-  opacity: 0.2;
-  background: radial-gradient(circle at left, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 30%);
-  pointer-events: none;
-  mix-blend-mode: overlay;
-  z-index: 0.5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 125%;
+    height: 100%;
+    opacity: 0.2;
+    background: radial-gradient(circle at left, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 30%);
+    pointer-events: none;
+    mix-blend-mode: overlay;
+    z-index: 0.5;
 }
 
 .card:hover {
-  animation: hueblue 0.3s ease forwards;
+    animation: hueblue 0.3s ease forwards;
 }
 
 .card-title {
-  font-size: 30px;
-  font-weight: 700;
-  margin: 1rem, 0, 1rem;
-  transition: transform 0.05s ease; /* Smooth movement for parallax */
+    font-size: 30px;
+    font-weight: 700;
+    margin: 3px 0 0;
+    transition: transform 0.05s ease; /* Smooth movement for parallax */
 }
 
 .card-subtitle {
-  font-size: 18px;
-  font-weight: 400;
-  transition: transform 0.05s ease; /* Smooth movement for parallax */
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 0;
+    transition: transform 0.05s ease; /* Smooth movement for parallax */
 }
 
 .card-img {
-  border-radius: var(--ifm-card-border-radius);
-  animation: shrink 0.3s ease forwards;
-  /* Use fixed size for better appearance */
-  width: 128px;
-  height: 128px;
-  margin-top: 2rem;
-  transition: transform 0.05s ease; /* Smooth movement for parallax */
+    border-radius: var(--ifm-card-border-radius);
+    animation: shrink 0.3s ease forwards;
+    /* Use fixed size for better appearance */
+    width: 128px;
+    height: 128px;
+    margin-top: 2rem;
+    transition: transform 0.05s ease; /* Smooth movement for parallax */
 }
 
 .card-img:hover {
-  animation: enlarge 0.3s ease forwards;
+    animation: enlarge 0.3s ease forwards;
 }
 
 .card-img:active {
-  animation: shrink 0.3s ease forwards; /* 鼠标移出时缩小，持续0.5秒 */
+    animation: shrink 0.3s ease forwards; /* 鼠标移出时缩小，持续0.5秒 */
 }
