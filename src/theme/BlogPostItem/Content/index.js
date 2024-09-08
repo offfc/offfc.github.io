@@ -6,7 +6,7 @@ import MDXContent from '@theme/MDXContent';
 import Giscus from '@giscus/react';
 import { useColorMode } from '@docusaurus/theme-common';
 export default function BlogPostItemContent({children, className}) {
-  const {isBlogPostPage} = useBlogPost();
+  const { isBlogPostPage } = useBlogPost();
   const { colorMode } = useColorMode();
   const giscus = (
     <React.Fragment>

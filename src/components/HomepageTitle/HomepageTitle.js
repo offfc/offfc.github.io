@@ -14,6 +14,18 @@ export default function HomepageTitle() {
             >
                 osu! FumoFumo Cup
             </span>
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
         </div>
     );
 }
