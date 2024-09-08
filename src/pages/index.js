@@ -9,6 +9,7 @@ import SponsorBanner from "@site/src/components/SponsorBanner/SponsorBanner.js";
 import Highlight from "@site/src/components/Highlight";
 import { Analytics } from "@vercel/analytics/react"
 import HomepageNotification from "../components/HomepageNotification/HomepageNotification.js";
+import MatchBoard from "../components/MatchBoard/MatchBoard.js";
 
 const common = require("../../common.js");
 
@@ -56,6 +57,7 @@ export default function Home() {
       <br />
       <main>
         <LiveStream />
+        <MatchBoard />
       </main>
       <SponsorBanner type={"info"} message={
           "<br>" +
