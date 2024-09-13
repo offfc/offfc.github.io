@@ -34,6 +34,11 @@ h2.heroTagline {
   filter: drop-shadow(2px 2px 2px #666);
 }
 
+.hero__subtitle {
+  position: relative;
+  z-index: 4;
+}
+
 .buttons {
   display: flex;
   align-items: left;
