@@ -65,14 +65,14 @@ const config = {
       }),
     ],
   ],
-  
+
   stylesheets: [
     {
-      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
-      type: 'text/css',
+      href: "https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css",
+      type: "text/css",
       integrity:
-        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
-      crossorigin: 'anonymous',
+        "sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM",
+      crossorigin: "anonymous",
     },
   ],
 
@@ -109,9 +109,9 @@ const config = {
         ],
       },
       announcementBar: {
-        id: 'Announcement',
+        id: "Announcement",
         content:
-          'OFFC Cirno组队规则现已公布！点击<a href="/blog/Teaming">这里</a>查看！',
+          '📣OFFC Cirno组队规则现已公布！点击<a class="announcement-link" href="/blog/Teaming">这里</a>查看！📣',
         backgroundColor: '#ffffff',
         textColor: '#091E42',
         isCloseable: true,
@@ -123,6 +123,10 @@ const config = {
             title: "跳转到：",
             items: [
               {
+                label: "简介",
+                to: "/docs/info",
+              },
+              {
                 label: "参赛手册",
                 to: "/docs/handbook",
               },
@@ -133,6 +137,14 @@ const config = {
               {
                 label: "动态",
                 to: "/blog",
+              },
+              {
+                label: "Staff",
+                to: "/docs/staff",
+              },
+              {
+                label: "梗图",
+                to: "/docs/memes",
               },
             ],
           },

@@ -6,64 +6,49 @@
     border-radius: 1rem;
     margin: 1rem auto;
     margin-bottom: 1rem;
-    width: 80%;
+    width: 60%;
     position: relative;
     overflow: hidden;
-}
-
-.BannerVisual {
-    display: flex;
+  }
+  
+  .BannerVisual {
     margin-right: 1rem;
     position: absolute;
     left: -2rem; /* Adjust this to position the icon */
     top: 0%;
-    opacity: 0.77; /* Controls the opacity of the icon */
-}
-
-.BannerIcon {
-    align-self: center;
-    margin: 1rem 4rem auto;
-    width: 15%;
-    height: auto;
-}
-
-.BannerMessage {
-    display: flex;
-    align-items: center;
+    transform: translateX(35%) translateY(-20%) rotate(-40deg); /* Center the icon vertically and rotate */
+    opacity: 0.07; /* Controls the opacity of the icon */
+  }
+  
+  .BannerIcon {
+    width: 65px; /* Adjust width as needed */
+    height: 65px; /* Adjust height as needed */
+    fill: var(--fgColor-default);
+  }
+  
+  .BannerMessage {
     flex-grow: 1;
-    justify-content: space-between;
     margin-left: 1.6rem; /* Adjust based on icon positioning */
-}
-
-.BannerTitle {
+  }
+  
+  .BannerTitle {
     margin-left: -10px;
     font-weight: bold;
-}
-
-.BannerContent {
-    font-size: larger;
-    flex: 1;
+  }
+  
+  .BannerContent {
     margin: 0;
-}
-
-.Banner--warning {
+  }
+  
+  .Banner--warning {
     background-image: linear-gradient(#fff8c5, #fff8c5);
     border-color: #d4a72c66;
     color: #1f2328;
-}
-
-.Banner--info {
+  }
+  
+  .Banner--info {
     background-image: linear-gradient(#c5f0ff, #c5f0ff);
     border-color: #2c96d4;
     color: #1f2328;
-}
-
-p1 {
-    font-size: 45px;
-    margin: auto;
-}
-
-p2 {
-    font-size: 25px;
-    margin: auto auto 5%;
-}
+  }
+  

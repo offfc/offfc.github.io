@@ -8,6 +8,8 @@ import FeatureButton from "@site/src/components/FeatureButton/FeatureButton";
 import SponsorBanner from "@site/src/components/SponsorBanner/SponsorBanner.js";
 import Highlight from "@site/src/components/Highlight";
 import { Analytics } from "@vercel/analytics/react"
+import HomepageNotification from "../components/HomepageNotification/HomepageNotification.js";
+import MatchBoard from "../components/MatchBoard/MatchBoard.js";
 
 const common = require("../../common.js");
 
@@ -51,11 +53,20 @@ export default function Home() {
   return (
     <Layout title={`${siteConfig.title}`} description={`${common.description}`}>
       <HomepageHeader />
+      <HomepageNotification type={"warning"} message={"于2024.8.26 19:00 发布了有关退赛事件全梳理的公告。您可点击动态页查看"} icon={true}/>
+      <br />
       <main>
         <LiveStream />
+        <MatchBoard />
       </main>
-      <SponsorBanner mainText={"感谢DESU.Life的盛情赞助！"}/>
-      <Analytics/>
+      <SponsorBanner type={"info"} message={
+          "<br>" +
+          "<p1><b>感谢DESU.Life的赞助！</b></p1>" +
+          "<br>" +
+          "<p2>前往<a href='https://cn.desu.life/'>DESU.Life</a>官网购买你的猫盘！</p2>" +
+          "<br><br>"
+      } iconPath={"./sponsor.png"}/>
+      <Analytics />
     </Layout>
   );
 }
