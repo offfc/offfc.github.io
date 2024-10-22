@@ -23,9 +23,6 @@ function HomepageHeader() {
     >
       <div className="container">
         <HomepageTitle />
-        <br />
-        <p className="hero__subtitle"><b>面向中分段的 <Highlight color="#ff66aa">osu!Standard</Highlight> 特色比赛</b></p>
-        <br />
         <div className={styles.buttons}>
           <FeatureButton
             link="/docs/info"
