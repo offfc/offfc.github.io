@@ -9,6 +9,7 @@ import SponsorBanner from "@site/src/components/SponsorBanner/SponsorBanner.js";
 import Highlight from "@site/src/components/Highlight";
 import { Analytics } from "@vercel/analytics/react"
 import HomepageNotification from "../components/HomepageNotification/HomepageNotification.js";
+import MatchBoard from "../components/MatchBoard/MatchBoard.js";
 
 const common = require("../../common.js");
 
@@ -61,8 +62,15 @@ export default function Home() {
       <br />
       <main>
         <LiveStream />
+        <MatchBoard />
       </main>
-      <SponsorBanner mainText={"感谢DESU.Life的盛情赞助！"} />
+      <SponsorBanner type={"info"} message={
+          "<br>" +
+          "<p1><b>感谢DESU.Life的赞助！</b></p1>" +
+          "<br>" +
+          "<p2>前往<a href='https://cn.desu.life/'>DESU.Life</a>官网购买你的猫盘！</p2>" +
+          "<br><br>"
+      } iconPath={"./sponsor.png"}/>
       <Analytics />
     </Layout>
   );
