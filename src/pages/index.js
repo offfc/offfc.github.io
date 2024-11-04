@@ -56,7 +56,6 @@ export default function Home() {
       <main>
         <MatchBoard />
           <br/>
-        <LiveStream />
       </main>
       <SponsorBanner type={"info"} message={
           "<br>" +
