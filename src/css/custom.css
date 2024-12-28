@@ -53,16 +53,18 @@ Use these if you need'em
 }
 
 :root {
-  --ifm-color-primary: #12bbe6;
-  --ifm-color-primary-dark: #0e7fd5;
-  --ifm-color-primary-darker: #1365ca;
-  --ifm-color-primary-darkest: #015ddd;
-  --ifm-color-primary-light: #4bd3ee;
-  --ifm-color-primary-lighter: #4fd3ee;
-  --ifm-color-primary-lightest: #6ad3f0;
+  --ifm-color-primary: #269ffe;
+  --ifm-color-primary-dark: #0992fe;
+  --ifm-color-primary-darker: #018bf7;
+  --ifm-color-primary-darkest: #0172cb;
+  --ifm-color-primary-light: #43acfe;
+  --ifm-color-primary-lighter: #52b2fe;
+  --ifm-color-primary-lightest: #7dc6fe;
   --ifm-code-font-size: 95%;
   --ifm-font-family-base: "Torus", "HarmonyOS", sans-serif;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  --variant-outlinedBorder: var(--ifm-color-primary) !important;
 
   --background-image: url("/img/trianglesNavbar.png");
   --invert-filter: none;
