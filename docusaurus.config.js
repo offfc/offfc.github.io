@@ -64,7 +64,7 @@ const config = {
                             }),
                 },
                 theme: {
-                    customCss: ["./src/css/custom.css", "./src/css/giscus.css"],
+                    customCss: ["./src/css/custom.css"],
                 },
             }),
         ],
