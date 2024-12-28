@@ -1,0 +1,15 @@
+﻿.navigationButton {
+  height: 6rem !important;
+}
+
+.buttonLeft {
+  justify-content: left !important;
+}
+
+.buttonRight {
+  justify-content: right !important;
+}
+
+.navigationTitle {
+  font-size: 20px !important;
+}

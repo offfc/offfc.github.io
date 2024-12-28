@@ -5,6 +5,7 @@ import Highlight from "@site/src/components/Highlight";
 import FntColor from "@site/src/components/FntColor";
 import StaffCard from "@site/src/components/StaffCard/StaffCard";
 import FeatureButton from "@site/src/components/FeatureButton/FeatureButton";
+import Button from "@mui/material/Button";
 
 export default {
   // Re-use the default mapping
@@ -15,4 +16,5 @@ export default {
   FntColor,
   StaffCard,
   FeatureButton,
+  Button
 };
