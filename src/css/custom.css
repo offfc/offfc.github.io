@@ -83,6 +83,10 @@ Use these if you need'em
     font-size: 1.5rem;
   }
 
+  .footer__link-item {
+    text-decoration: none !important;
+  }
+
   .navbar {
     background: rgba(118, 183, 227, 0.6);
     backdrop-filter: blur(25px);
