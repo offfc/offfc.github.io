@@ -64,6 +64,11 @@ Use these if you need'em
   --ifm-font-family-base: "Torus", "HarmonyOS", sans-serif;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
+  --ifm-alert-border-color: var(--ifm-color-primary);
+  --ifm-alert-background-color: var(--ifm-color-primary-dark) !important;
+  --ifm-color-info-contrast-background: rgba(4, 71, 160, 0.1) !important;
+  --ifm-color-info-dark: var(--ifm-color-primary-dark);
+
   --variant-outlinedBorder: var(--ifm-color-primary) !important;
 
   --background-image: url("/img/trianglesNavbar.png");
