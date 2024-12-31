@@ -39,13 +39,13 @@ Use these if you need'em
     background: rgba(255, 255, 255, 0);
   }
   to {
-    background: rgba(101, 171, 217, 0.7);
+    background: rgba(38, 159, 254, 0.7);
   }
 }
 
 @keyframes hueback {
   from {
-    background: rgba(101, 171, 217, 0.7);
+    background: rgba(38, 159, 254, 0.7);
   }
   to {
     background: rgba(255, 255, 255, 0);
@@ -53,18 +53,24 @@ Use these if you need'em
 }
 
 :root {
-  --ifm-color-primary: #12bbe6;
-  --ifm-color-primary-dark: #0e7fd5;
-  --ifm-color-primary-darker: #1365ca;
-  --ifm-color-primary-darkest: #015ddd;
-  --ifm-color-primary-light: #4bd3ee;
-  --ifm-color-primary-lighter: #4fd3ee;
-  --ifm-color-primary-lightest: #6ad3f0;
+  --ifm-color-primary: #269ffe;
+  --ifm-color-primary-dark: #0992fe;
+  --ifm-color-primary-darker: #018bf7;
+  --ifm-color-primary-darkest: #0172cb;
+  --ifm-color-primary-light: #43acfe;
+  --ifm-color-primary-lighter: #52b2fe;
+  --ifm-color-primary-lightest: #7dc6fe;
   --ifm-code-font-size: 95%;
   --ifm-font-family-base: "Torus", "HarmonyOS", sans-serif;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
-  --background-image: url("/img/trianglesNavbar.png");
+  --ifm-alert-border-color: var(--ifm-color-primary);
+  --ifm-alert-background-color: var(--ifm-color-primary-dark) !important;
+  --ifm-color-info-contrast-background: rgba(4, 71, 160, 0.1) !important;
+  --ifm-color-info-dark: var(--ifm-color-primary-dark);
+
+  --variant-outlinedBorder: var(--ifm-color-primary) !important;
+
   --invert-filter: none;
   --link-accent: rgba(255, 255, 255, 1);
 
@@ -76,52 +82,14 @@ Use these if you need'em
     font-size: 1.5rem;
   }
 
-  .navbar {
-    background: rgba(118, 183, 227, 0.6);
-    backdrop-filter: blur(25px);
-    background-image: var(--background-image);
-    background-position: bottom;
-    background-size: auto 100%;
-    background-repeat: repeat-x;
-  }
-
-  .navbar-sidebar {
-    bottom: auto;
-    .navbar-sidebar__brand {
-      background: rgba(48, 206, 234, 0.6);
-      backdrop-filter: blur(25px);
-      background-image: var(--background-image);
-      background-position: bottom;
-      background-size: auto 100%;
-      background-repeat: repeat-x;
-    }
+  .footer__link-item {
+    text-decoration: none !important;
   }
 }
 
 [data-theme="dark"] {
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --invert-filter: invert(100%);
-
-  .navbar {
-    background: rgba(53, 189, 234, 0.6);
-    backdrop-filter: blur(25px);
-    background-image: var(--background-image);
-    background-position: bottom;
-    background-size: auto 100%;
-    background-repeat: repeat-x;
-  }
-
-  .navbar-sidebar {
-    bottom: auto;
-    .navbar-sidebar__brand {
-      background: rgba(44, 190, 230, 0.6);
-      backdrop-filter: blur(25px);
-      background-image: var(--background-image);
-      background-position: bottom;
-      background-size: auto 100%;
-      background-repeat: repeat-x;
-    }
-  }
 }
 
 img.auto-invert {

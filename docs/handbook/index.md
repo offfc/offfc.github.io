@@ -6,7 +6,15 @@ id: index
 title: 参赛手册
 ---
 
-<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css"></link>
+import {
+    faTrophy,
+    faBan,
+    faLock,
+    faCheck,
+    faExclamationCircle,
+    faClock,
+    faExchange, faBolt
+} from "@fortawesome/free-solid-svg-icons";
 
 ![Cover](/img/handbookCover.png)
 
@@ -16,7 +24,7 @@ title: 参赛手册
 
 **你现在阅读的是参赛手册的最新版本！** 本手册页面更新于 2024 年 9 月 2 日。
 
-你也可以在[**腾讯文档**](https://docs.qq.com/doc/DV2VOWlZJdFZWZUpB)阅读参赛手册的最新版本。
+你也可以在 <Button size="small" variant="contained" href="https://docs.qq.com/doc/DV2VOWlZJdFZWZUpB">**腾讯文档**</Button> 阅读参赛手册的最新版本。
 
 :::
 
@@ -141,7 +149,7 @@ title: 参赛手册
 
 <br />
 
-<FeatureButton link="/docs/handbook/shortHandbook" buttonText="点我跳转！"/>
+<Button href="/docs/handbook/shortHandbook" variant="contained">点我跳转!</Button>
 
 :::
 
@@ -197,31 +205,31 @@ title: 参赛手册
 1. 在图池展示结束后，对于每一轮比赛，图池中除**EX**外的16张谱面将被Staff按**既定顺序**填入 4x4 表格（我们称之为棋盘）中并提前公布，格子最初均未染色。
 2. 双方可通过各种行动将格子染色，不同的颜色代表不同含义。另外，双方也可以通过Protect为格子附上<u>保护标记</u>。
    - **未染色的格子**：双方可以Pick此格子上的图。
-   - <Highlight color="#f86264"><i class="fa fa-trophy"></i> **红色**</Highlight>：红方**赢得**某图后，对应格子被染成红色。该格子上的图不能被再次Pick。
-   - <Highlight color="#198dff"><i class="fa fa-trophy"></i> **蓝色**</Highlight>：蓝方**赢得**某图后，对应格子被染成蓝色。该格子上的图不能被再次Pick。
-   - <Highlight color="#232323"><i class="fa fa-ban"></i> **黑色**</Highlight>：任意一方**Ban**某图后，格子被染成黑色。双方均不能Pick此格子上的图。
-   - <Highlight color="#27efcb"><i class="fa fa-lock"></i> **保护标记**</Highlight>：任意一方**Protect**某图后，对应格子被附上<u>保护标记</u>。带有标记的格子不能被Ban，**对方**无法重新染色，但仍旧可以被双方Pick。
-3. <Highlight color="#39e367"><i class="fa fa-ban"></i> <i class="fa fa-lock"></i> **BP 阶段**</Highlight>，每支队伍各有**一次 Protect 与一次 Ban**的机会，具体顺序将在后文详述。此处仅对二者的作用进行说明。
+   - <Highlight color="#f86264"><FontAwesomeIcon icon={faTrophy} /> **红色**</Highlight>：红方**赢得**某图后，对应格子被染成红色。该格子上的图不能被再次Pick。
+   - <Highlight color="#198dff"><FontAwesomeIcon icon={faTrophy} /> **蓝色**</Highlight>：蓝方**赢得**某图后，对应格子被染成蓝色。该格子上的图不能被再次Pick。
+   - <Highlight color="#232323"><FontAwesomeIcon icon={faBan} /> **黑色**</Highlight>：任意一方**Ban**某图后，格子被染成黑色。双方均不能Pick此格子上的图。
+   - <Highlight color="#27efcb"><FontAwesomeIcon icon={faLock} /> **保护标记**</Highlight>：任意一方**Protect**某图后，对应格子被附上<u>保护标记</u>。带有标记的格子不能被Ban，**对方**无法重新染色，但仍旧可以被双方Pick。
+3. <Highlight color="#39e367"><FontAwesomeIcon icon={faBan} /> <FontAwesomeIcon icon={faLock} /> **BP 阶段**</Highlight>，每支队伍各有**一次 Protect 与一次 Ban**的机会，具体顺序将在后文详述。此处仅对二者的作用进行说明。
    - Protect可以保护一个格子，即为一个格子附上<u>保护标记</u>。该格子上的图不能被Ban，不能在EX局面中被**对方**染色，但仍旧可以被双方Pick。
    - Ban可以将一个格子染成黑色。双方均不能Pick此格子上的图。被染成黑色的格子也不受陷阱效果影响。
-4. <Highlight color="#198dff"><i class="fa fa-check"></i> **常规阶段**</Highlight>：红蓝两队轮流pick，胜者可将被pick的对应格子染成红（蓝）色，被染过色的棋子不能被pick，率先在棋盘上己方颜色棋子连成一条线（横纵斜均可）的队伍获胜。
-5. 双方二选结束后，将进入<Highlight color="#7d75ee"><i class="fa fa-exclamation-circle"></i> **陷阱 (Trap) 阶段**</Highlight>，每支队伍各有一次放置陷阱的机会。**当一方Pick了对方放置的陷阱格后，陷阱生效**。陷阱生效后便会消失。
+4. <Highlight color="#198dff"><FontAwesomeIcon icon={faCheck} /> **常规阶段**</Highlight>：红蓝两队轮流pick，胜者可将被pick的对应格子染成红（蓝）色，被染过色的棋子不能被pick，率先在棋盘上己方颜色棋子连成一条线（横纵斜均可）的队伍获胜。
+5. 双方二选结束后，将进入<Highlight color="#7d75ee"><FontAwesomeIcon icon={faExclamationCircle} /> **陷阱 (Trap) 阶段**</Highlight>，每支队伍各有一次放置陷阱的机会。**当一方Pick了对方放置的陷阱格后，陷阱生效**。陷阱生效后便会消失。
    - 陷阱只能被放置在未染色的格子上。陷阱不会使格子染色，这意味着一个格子可以被双方同时放置陷阱（但陷阱内容可能相同，也可能不同）。
    - 选择己方放置的陷阱格时，陷阱不生效。
 
 :::info 陷阱内容
 
-1. <Highlight color="#87ceeb"><i class="fa fa-clock-o"></i> **时空之门**</Highlight>：陷阱触发时，该小局比赛暂停，暂时视为放置陷阱方赢得此小局，首先对格子进行染色并结算。若任意一方连成一线，则游戏结束；若形成EX局面，则进入EX阶段。上述结算完成后，格子变回未染色情况，陷阱失效，该小局比赛继续进行，仿佛触发陷阱方刚刚选择此图一般。
+1. <Highlight color="#87ceeb"><FontAwesomeIcon icon={faClock} /> **时空之门**</Highlight>：陷阱触发时，该小局比赛暂停，暂时视为放置陷阱方赢得此小局，首先对格子进行染色并结算。若任意一方连成一线，则游戏结束；若形成EX局面，则进入EX阶段。上述结算完成后，格子变回未染色情况，陷阱失效，该小局比赛继续进行，仿佛触发陷阱方刚刚选择此图一般。
    - 特别说明：若染色后进入EX阶段，则双方须先打完EX阶段，待比赛**回到常规阶段后**，才能继续刚才暂停的小局。
       - 示例：NM2陷阱触发 - NM2染色 - EX阶段开始 - NM2变回无色 - EX阶段结束 - NM2比赛 - 根据比赛结果对NM2染色 - 下一个小局
-2. <Highlight color="#ffa500"><i class="fa fa-exchange"></i> **大陆漂移**</Highlight>：本小局结束后，先对此格子染色，不进行最终结算和EX结算，将此格子与另一个提前选择的格子进行交换（连带着格子上的颜色和陷阱），随后再进行结算。
+2. <Highlight color="#ffa500"><FontAwesomeIcon icon={faExchange} /> **大陆漂移**</Highlight>：本小局结束后，先对此格子染色，不进行最终结算和EX结算，将此格子与另一个提前选择的格子进行交换（连带着格子上的颜色和陷阱），随后再进行结算。
    - 布置陷阱方应提前告知裁判要交换的格子对象。
    - 要交换的格子对象不可以选择被Ban的黑色格子和被保护的格子。
    - 若该陷阱导致双方同时获胜，则以下一张EX图定胜负。
 
 :::
 
-6. <Highlight color="#7d75ee"><i class="fa fa-bolt" style={{color: '#ffa500'}}></i> **EX 阶段**</Highlight>：比赛过程中，若一个小局结束后，任意一条横、纵、斜线都满足以下条件之一：
+6. <Highlight color="#7d75ee"><FontAwesomeIcon icon={faBolt} style={{color: '#ffa500'}} /> **EX 阶段**</Highlight>：比赛过程中，若一个小局结束后，任意一条横、纵、斜线都满足以下条件之一：
 
    - 存在黑色格子
    - 同时存在红蓝两色格子
@@ -237,10 +245,10 @@ title: 参赛手册
 
 | 0 | 1 | 2 | 3 | 4 |
 | :-: | :-: | :-: | :-: | :-: |
-| **1** | <Highlight color="#232323"><i class="fa fa-ban"></i> NM1</Highlight> | NM2 | NM3 | NM4 |
-| **2** | NM5 | NM6 | <Highlight color="#f86264"><i class="fa fa-trophy"></i> HD1</Highlight> | <Highlight color="#198dff"><i class="fa fa-trophy"></i> HD2</Highlight> |
-| **3** | HD3 | <Highlight color="#232323"><i class="fa fa-ban"></i> HR1</Highlight> | HR2 | HR3 |
-| **4** | DT1 | DT2 | <Highlight color="#198dff"><i class="fa fa-trophy"></i> DT3</Highlight> | <Highlight color="#f86264"><i class="fa fa-trophy"></i> DT4</Highlight> |
+| **1** | <Highlight color="#232323"><FontAwesomeIcon icon={faBan} /> NM1</Highlight> | NM2 | NM3 | NM4 |
+| **2** | NM5 | NM6 | <Highlight color="#f86264"><FontAwesomeIcon icon={faTrophy} /> HD1</Highlight> | <Highlight color="#198dff"><FontAwesomeIcon icon={faTrophy} /> HD2</Highlight> |
+| **3** | HD3 | <Highlight color="#232323"><FontAwesomeIcon icon={faBan} /> HR1</Highlight> | HR2 | HR3 |
+| **4** | DT1 | DT2 | <Highlight color="#198dff"><FontAwesomeIcon icon={faTrophy} /> DT3</Highlight> | <Highlight color="#f86264"><FontAwesomeIcon icon={faTrophy} /> DT4</Highlight> |
 
 :::
 
@@ -263,7 +271,7 @@ title: 参赛手册
 
 ### 6-2 比赛流程
 
-1. 比赛开始后，首先进入<Highlight color="#39e367"><i class="fa fa-ban"></i> <i class="fa fa-lock"></i> BP环节</Highlight>。BP环节将按照“<Highlight color="#27efcb"><i class="fa fa-lock"></i> Protect阶段</Highlight> - <Highlight color="#232323"><i class="fa fa-ban"></i> Ban阶段</Highlight> - <Highlight color="#198dff"><i class="fa fa-check"></i> Pick阶段（前段）</Highlight> - <Highlight color="#7d75ee"><i class="fa fa-exclamation-circle"></i> Trap阶段</Highlight> - <Highlight color="#198dff"><i class="fa fa-check"></i> Pick阶段（后段）</Highlight>”的顺序进行。对于各个阶段双方的具体行动顺序，可由Roll点点数更大的一方在两种行动模式之中进行选择。两种行动模式分别是“先Ban”和“后Ban”。
+1. 比赛开始后，首先进入<Highlight color="#39e367"><FontAwesomeIcon icon={faBan} /> <FontAwesomeIcon icon={faLock} /> BP环节</Highlight>。BP环节将按照“<Highlight color="#27efcb"><FontAwesomeIcon icon={faLock} /> Protect阶段</Highlight> - <Highlight color="#232323"><FontAwesomeIcon icon={faBan} /> Ban阶段</Highlight> - <Highlight color="#198dff"><FontAwesomeIcon icon={faCheck} /> Pick阶段（前段）</Highlight> - <Highlight color="#7d75ee"><FontAwesomeIcon icon={faExclamationCircle} /> Trap阶段</Highlight> - <Highlight color="#198dff"><FontAwesomeIcon icon={faCheck} /> Pick阶段（后段）</Highlight>”的顺序进行。对于各个阶段双方的具体行动顺序，可由Roll点点数更大的一方在两种行动模式之中进行选择。两种行动模式分别是“先Ban”和“后Ban”。
    - “先Ban”指的是：在Protect阶段较晚行动，<u>在Ban阶段较早行动，在Pick阶段较早行动</u>，在Trap阶段和对方同时行动。（先Ban方先选）
    - “后Ban”指的是：在Protect阶段较早行动，<u>在Ban阶段较晚行动，在Pick阶段较晚行动</u>，在Trap阶段和对方同时行动。（后Ban方后选）
    - 为更清楚地说明BP顺序，此处给出示例。假设<FntColor color="#f86264">红队</FntColor>选择了<FntColor color="#f86264">后Ban</FntColor>，那么此局的BP顺序为：
@@ -274,16 +282,16 @@ title: 参赛手册
    - 在裁判发出“请双方队长roll点”的指令或类似指令后，roll出的结果有效。发出指令前roll出的结果无效。
       - 若有一队进行了多次roll点，则在所有有效的结果中按最先roll出的点数为依据进行比较。
       - 若双方作为比较依据的点数相同，则本次roll点结果无效，由裁判重新发出指令，双方重新roll点。
-3. <Highlight color="#232323"><i class="fa fa-ban"></i> **Ban**</Highlight> 指的是将一个格子变为黑色。被变为黑色的格子无法被选用 (Pick)。
+3. <Highlight color="#232323"><FontAwesomeIcon icon={faBan} /> **Ban**</Highlight> 指的是将一个格子变为黑色。被变为黑色的格子无法被选用 (Pick)。
    - 一张谱面只能被Ban一次。
    - 任何一方不可以放弃己方的Ban机会。
-4. <Highlight color="#27efcb"><i class="fa fa-lock"></i> **Protect**</Highlight> 指的是保护一个格子，即为一个格子附上<u>保护标记</u>。被保护的格子无法被禁用 (Ban)，且无法在EX阶段**被对方**染色。但可以被双方设置陷阱 (Trap)。
+4. <Highlight color="#27efcb"><FontAwesomeIcon icon={faLock} /> **Protect**</Highlight> 指的是保护一个格子，即为一个格子附上<u>保护标记</u>。被保护的格子无法被禁用 (Ban)，且无法在EX阶段**被对方**染色。但可以被双方设置陷阱 (Trap)。
    - 一张谱面只能被Protect一次。
    - 任何一方不可以放弃己方的Protect机会。
-5. <Highlight color="#198dff"><i class="fa fa-check"></i> **Pick**</Highlight> 指的是将特定格子中的谱面作为该小局的比赛谱面。在该小局中胜利的一方可以将该格子染成己方颜色。
+5. <Highlight color="#198dff"><FontAwesomeIcon icon={faCheck} /> **Pick**</Highlight> 指的是将特定格子中的谱面作为该小局的比赛谱面。在该小局中胜利的一方可以将该格子染成己方颜色。
    - 一张谱面只能被Pick一次。
    - Pick不能被主动放弃。若在Pick时超时，则选图权移交给对面。
-6. <Highlight color="#7d75ee"><i class="fa fa-exclamation-circle"></i> **Trap**</Highlight> 指的是在特定格子中放置陷阱。其他信息参见本参赛手册 [5-3.5](#5-3-玩法) 对Trap的说明。在Trap阶段，双方**同时行动**。
+6. <Highlight color="#7d75ee"><FontAwesomeIcon icon={faExclamationCircle} /> **Trap**</Highlight> 指的是在特定格子中放置陷阱。其他信息参见本参赛手册 [5-3.5](#5-3-玩法) 对Trap的说明。在Trap阶段，双方**同时行动**。
    - 队长应将己方选择的陷阱名称和对应格子在游戏内私聊发送给本场裁判。由裁判将相关信息告知导播，导播在画面中为对应格子播放陷阱放置动画，但不向观众告知陷阱的名称。
    - 一个格子可以被双方同时放置陷阱。
    - 任何一方可以主动放弃己方的Trap机会。若在Trap时超时，则视为放弃本次Trap机会。
@@ -332,9 +340,9 @@ title: 参赛手册
    - 若正在进行的行动是Trap，则用尽补充时间的一方视为**放弃**本次Trap机会。
    - 若正在进行的行动是Pick，则用尽补充时间的一方在本小局中无权选择谱面。裁判将从剩下的谱面中roll一张作为本回合比赛谱面，此行为视为用尽补充时间的一方的一次选图（Pick）。
       - 在roll时，裁判将按照如下方法操作。
-      
+
         首先，裁判为每一张剩余谱面编号，编号规则为：“从第一行开始，先排同一行的，此后排下一行，以此类推”。
-        
+
         编号结束后，裁判统计尚未被选择的谱面数量，然后roll出一个数字，该数字小于等于剩余谱面数量，该数字对应序号的谱面即为本回合比赛谱面。
 
 5. <FntColor color="#ffa500">二类补充时间</FntColor>用尽后，只要默认时间用尽，那么不论如何比赛都将**强制开始**。

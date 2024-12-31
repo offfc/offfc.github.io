@@ -13,3 +13,5 @@ displayed_sidebar: mainSidebar
 比赛主表使用Google Docs创建，您可能需要特殊的网络环境才能访问。
 
 :::
+
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQzIOtou-IdpDVM7JtmnlASlbRO1yBFNB-lhLPyhknPtblpxJHnzRwarj1kLo-TrYCmuwkd24D2A6g2/pubhtml?widget=true&amp;headers=false&amp;chrome=true" aspect-ratio="16 / 9"></iframe>
