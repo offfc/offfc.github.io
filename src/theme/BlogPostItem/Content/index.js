@@ -5,12 +5,17 @@ import {useBlogPost} from '@docusaurus/plugin-content-blog/client';
 import MDXContent from '@theme/MDXContent';
 import Giscus from '@giscus/react';
 import {useColorMode} from '@docusaurus/theme-common';
+import ForumIcon from "@mui/icons-material/Forum";
 
 export default function BlogPostItemContent({children, className}) {
     const {isBlogPostPage} = useBlogPost();
     const {colorMode} = useColorMode();
     const giscus = (
         <React.Fragment>
+            <br/>
+            <span style={{fontWeight: "bold", color: "#269ffe", display: "flex", alignItems: "center"}}>
+                <ForumIcon/>&nbsp;留言
+            </span>
             <Giscus
                 id="comments"
                 repo="offfc/offfc.github.io"

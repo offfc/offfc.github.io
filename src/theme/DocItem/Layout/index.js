@@ -39,7 +39,10 @@ export default function DocItemLayout({children}) {
     const {colorMode} = useColorMode();
     const giscus = (
         <React.Fragment>
-            <ForumIcon/>
+            <br/>
+            <span style={{fontWeight: "bold", color: "#269ffe", display: "flex", alignItems: "center"}}>
+                <ForumIcon/>&nbsp;留言
+            </span>
             <Giscus
                 id="comments"
                 repo="offfc/offfc.github.io"
