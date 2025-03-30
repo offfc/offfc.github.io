@@ -14,4 +14,4 @@ displayed_sidebar: mainSidebar
 
 :::
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQzIOtou-IdpDVM7JtmnlASlbRO1yBFNB-lhLPyhknPtblpxJHnzRwarj1kLo-TrYCmuwkd24D2A6g2/pubhtml?widget=true&amp;headers=false&amp;chrome=true" width="640" height="718"></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQzIOtou-IdpDVM7JtmnlASlbRO1yBFNB-lhLPyhknPtblpxJHnzRwarj1kLo-TrYCmuwkd24D2A6g2/pubhtml?widget=true&amp;headers=false&amp;chrome=true" aspect-ratio="16 / 9"></iframe>
