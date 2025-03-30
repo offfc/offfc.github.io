@@ -101,7 +101,6 @@ const config = {
           { to: "/docs/staff", label: "Staff", position: "left" },
           { to: "/docs/easteregg", label: "     ", position: "left" },
           { to: "/docs/memes", label: "梗图", position: "left" },
-          { to: "/docs/forum", label: "讨论", position: "left" },
           {
             href: common.src,
             label: "GitHub",
