@@ -164,6 +164,13 @@ div[class^="announcementBar_"] {
   );
 }
 
+/* Unified section header design in the future. Subject for change. */
+.section-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .announcement-link,
 .navbar__link {
   margin: auto 0.35rem auto;
