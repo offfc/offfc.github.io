@@ -4,13 +4,13 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from "prism-react-renderer";
-import remarkMath from 'remark-math';
-import rehypeKatex from 'rehype-katex';
+import { themes as prismThemes } from "prism-react-renderer";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
 
 const common = require("./common.js");
 
-/** @type {import('@docusaurus/types').Config} */
+/** @type {import("@docusaurus/types").Config} */
 const config = {
     title: common.title,
     tagline: common.description,
@@ -30,6 +30,7 @@ const config = {
     onBrokenMarkdownLinks: "warn",
 
     future: {
+        v4: true,
         experimental_faster: true,
     },
 
@@ -44,7 +45,7 @@ const config = {
     presets: [
         [
             "classic",
-            /** @type {import('@docusaurus/preset-classic').Options} */
+            /** @type {import("@docusaurus/preset-classic").Options} */
             ({
                 docs: {
                     remarkPlugins: [remarkMath],
@@ -55,12 +56,12 @@ const config = {
                 },
                 blog: {
                     showReadingTime: true,
-                    readingTime: ({content, frontMatter, defaultReadingTime}) =>
+                    readingTime: ({ content, frontMatter, defaultReadingTime }) =>
                         frontMatter.hide_reading_time
                             ? undefined
                             : defaultReadingTime({
                                 content,
-                                options: {wordsPerMinute: 450},
+                                options: { wordsPerMinute: 450 },
                             }),
                 },
                 theme: {
@@ -81,7 +82,7 @@ const config = {
     ],
 
     themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    /** @type {import("@docusaurus/preset-classic").ThemeConfig} */
         ({
             docs: {
                 sidebar: {
@@ -98,14 +99,14 @@ const config = {
                     src: common.icon,
                 },
                 items: [
-                    {to: "/docs/info/", label: "简介", position: "left"},
-                    {to: "/docs/handbook", label: "参赛手册", position: "left"},
-                    {to: "/docs/mainChart/", label: "主表格", position: "left"},
-                    {to: "/blog", label: "动态", position: "left"},
-                    {to: "/docs/staff", label: "Staff", position: "left"},
-                    {to: "/docs/easteregg", label: "     ", position: "left"},
-                    {to: "/docs/memes", label: `梗图`, position: "left"},
-                    {to: "/docs/forum", label: "讨论", position: "left"},
+                    { to: "/docs/info/", label: "简介", position: "left" },
+                    { to: "/docs/handbook", label: "参赛手册", position: "left" },
+                    { to: "/docs/mainChart/", label: "主表格", position: "left" },
+                    { to: "/blog", label: "动态", position: "left" },
+                    { to: "/docs/staff", label: "Staff", position: "left" },
+                    { to: "/docs/easteregg", label: "     ", position: "left" },
+                    { to: "/docs/memes", label: `梗图`, position: "left" },
+                    { to: "/docs/forum", label: "讨论", position: "left" },
                     {
                         href: common.src,
                         label: "GitHub",
@@ -116,9 +117,9 @@ const config = {
             announcementBar: {
                 id: "Announcement",
                 content:
-                    '📣OFFC Cirno 已告一段落！点击<a class="announcement-link" href="/blog/Result">这里</a>查看详情！📣',
-                backgroundColor: '#ffffff',
-                textColor: '#091E42',
+                    "📣OFFC Cirno 已告一段落！点击<a class=\"announcement-link\" href=\"/blog/Result\">这里</a>查看详情！📣",
+                backgroundColor: "#ffffff",
+                textColor: "#091E42",
                 isCloseable: true,
             },
             footer: {
