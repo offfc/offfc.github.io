@@ -2,17 +2,14 @@ import clsx from "clsx";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import styles from "./index.module.css";
-import HomepageTitle from "@site/src/components/HomepageTitle/HomepageTitle.js";
-import FeatureButton from "@site/src/components/FeatureButton/FeatureButton";
+import HomepageTitle from "../components/HomepageTitle/HomepageTitle.js";
+import FeatureButton from "../components/FeatureButton/FeatureButton";
 import HomepageNotification from "../components/HomepageNotification/HomepageNotification.js";
 import MatchBoard from "../components/MatchBoard/MatchBoard.js";
 
 const common = require("../../common.js");
 
 function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
-  // Should we keep this button?
-  // RE: sure we're gonna keep this.
   return (
     <header
       className={clsx("hero hero--primary", styles.heroBanner)}
@@ -24,17 +21,14 @@ function HomepageHeader() {
           <FeatureButton
             link="/docs/info"
             buttonText="了解一下"
-            spacing="1em"
           />
           <FeatureButton
             link="/docs/handbook"
             buttonText="查看参赛手册"
-            spacing="1em"
           />
           <FeatureButton
             link="https://docs.qq.com/form/page/DV1hXY1RMU1FOeGlM"
             buttonText="立即报名！"
-            spacing="1em"
           />
         </div>
       </div>
