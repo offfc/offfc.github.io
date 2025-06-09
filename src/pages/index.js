@@ -4,7 +4,6 @@ import Layout from "@theme/Layout";
 import styles from "./index.module.css";
 import HomepageTitle from "@site/src/components/HomepageTitle/HomepageTitle.js";
 import FeatureButton from "@site/src/components/FeatureButton/FeatureButton";
-import { Analytics } from "@vercel/analytics/react";
 import HomepageNotification from "../components/HomepageNotification/HomepageNotification.js";
 import MatchBoard from "../components/MatchBoard/MatchBoard.js";
 
@@ -61,7 +60,6 @@ export default function Home() {
         "<br>" +
         "<p2 style='font-size: 24px'>前往<a href='https://cn.desu.life/'>DESU.Life</a>官网购买你的猫盘！</p2>"
       } imgPath="/img/sponsor.png"/>
-      <Analytics/>
     </Layout>
   );
 }
