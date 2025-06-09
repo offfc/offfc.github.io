@@ -13,155 +13,164 @@ Use these if you need'em
 @import url("https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css");
 
 @keyframes shrink {
-  from {
-    transform: scale(1.15);
-    font-weight: 800;
-  }
-  to {
-    transform: scale(1);
-    font-weight: 400;
-  }
+    from {
+        transform: scale(1.15);
+        font-weight: 800;
+    }
+    to {
+        transform: scale(1);
+        font-weight: 400;
+    }
 }
 
 @keyframes enlarge {
-  from {
-    transform: scale(1);
-    font-weight: 400;
-  }
-  to {
-    transform: scale(1.15);
-    font-weight: 800;
-  }
+    from {
+        transform: scale(1);
+        font-weight: 400;
+    }
+    to {
+        transform: scale(1.15);
+        font-weight: 800;
+    }
 }
 
 @keyframes hue {
-  from {
-    background: rgba(255, 255, 255, 0);
-  }
-  to {
-    background: rgba(38, 159, 254, 0.7);
-  }
+    from {
+        background: rgba(255, 255, 255, 0);
+    }
+    to {
+        background: rgba(38, 159, 254, 0.7);
+    }
 }
 
 @keyframes hueback {
-  from {
-    background: rgba(38, 159, 254, 0.7);
-  }
-  to {
-    background: rgba(255, 255, 255, 0);
-  }
+    from {
+        background: rgba(38, 159, 254, 0.7);
+    }
+    to {
+        background: rgba(255, 255, 255, 0);
+    }
 }
 
 :root {
-  --ifm-color-primary: #269ffe;
-  --ifm-color-primary-dark: #0992fe;
-  --ifm-color-primary-darker: #018bf7;
-  --ifm-color-primary-darkest: #0172cb;
-  --ifm-color-primary-light: #43acfe;
-  --ifm-color-primary-lighter: #52b2fe;
-  --ifm-color-primary-lightest: #7dc6fe;
-  --ifm-code-font-size: 95%;
-  --ifm-font-family-base: "Torus", "HarmonyOS", sans-serif;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+    --ifm-color-primary: #269ffe;
+    --ifm-color-primary-dark: #0992fe;
+    --ifm-color-primary-darker: #018bf7;
+    --ifm-color-primary-darkest: #0172cb;
+    --ifm-color-primary-light: #43acfe;
+    --ifm-color-primary-lighter: #52b2fe;
+    --ifm-color-primary-lightest: #7dc6fe;
+    --ifm-code-font-size: 95%;
+    --ifm-font-family-base: "Torus", "HarmonyOS", sans-serif;
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
-  --ifm-alert-border-color: var(--ifm-color-primary);
-  --ifm-alert-background-color: var(--ifm-color-primary-dark) !important;
-  --ifm-color-info-contrast-background: rgba(4, 71, 160, 0.1) !important;
-  --ifm-color-info-dark: var(--ifm-color-primary-dark);
+    --ifm-alert-border-color: var(--ifm-color-primary);
+    --ifm-alert-background-color: var(--ifm-color-primary-dark) !important;
+    --ifm-color-info-contrast-background: rgba(4, 71, 160, 0.1) !important;
+    --ifm-color-info-dark: var(--ifm-color-primary-dark);
 
-  --variant-outlinedBorder: var(--ifm-color-primary) !important;
+    --variant-outlinedBorder: var(--ifm-color-primary) !important;
 
-  --invert-filter: none;
-  --link-accent: rgba(255, 255, 255, 1);
+    --invert-filter: none;
+    --link-accent: rgba(255, 255, 255, 1);
 
-  h1 {
-    font-size: 2rem;
-  }
+    h1 {
+        font-size: 2rem;
+    }
 
-  h2 {
-    font-size: 1.5rem;
-  }
+    h2 {
+        font-size: 1.5rem;
+    }
 
-  .footer__link-item {
-    text-decoration: none !important;
-  }
+    .footer__link-item {
+        text-decoration: none !important;
+    }
 }
 
 [data-theme="dark"] {
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  --invert-filter: invert(100%);
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+    --invert-filter: invert(100%);
+
+    .navbar {
+        background: rgba(121, 161, 188, 0.6);
+    }
 }
 
 img.auto-invert {
-  filter: var(--invert-filter);
+    filter: var(--invert-filter);
 }
 
 div.align-center {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 @font-face {
-  font-family: "Torus";
-  src: url("/fonts/Torus/Torus-Bold.otf");
-  font-weight: 800;
-  font-stretch: 75% 125%;
-  unicode-range: U+0000-00FF, U+0100-017F, U+0180-024F;
+    font-family: "Torus";
+    src: url("/fonts/Torus/Torus-Bold.otf");
+    font-weight: 800;
+    font-stretch: 75% 125%;
+    unicode-range: U+0000-00FF, U+0100-017F, U+0180-024F;
 }
 
 @font-face {
-  font-family: "Torus";
-  src: url("/fonts/Torus/Torus-Regular.otf");
-  font-weight: 400;
-  font-stretch: 75% 125%;
-  unicode-range: U+0000-00FF, U+0100-017F, U+0180-024F;
+    font-family: "Torus";
+    src: url("/fonts/Torus/Torus-Regular.otf");
+    font-weight: 400;
+    font-stretch: 75% 125%;
+    unicode-range: U+0000-00FF, U+0100-017F, U+0180-024F;
 }
 
 @font-face {
-  font-family: "Torus";
-  src: url("/fonts/Torus/Torus-SemiBold.otf");
-  font-weight: 700;
-  font-stretch: 75% 125%;
-  unicode-range: U+0000-00FF, U+0100-017F, U+0180-024F;
+    font-family: "Torus";
+    src: url("/fonts/Torus/Torus-SemiBold.otf");
+    font-weight: 700;
+    font-stretch: 75% 125%;
+    unicode-range: U+0000-00FF, U+0100-017F, U+0180-024F;
 }
 
 @font-face {
-  font-family: "HarmonyOS";
-  src: url("/fonts/HarmonyOS Sans/HarmonyOS_Sans_SC_Regular.ttf");
-  font-weight: 400;
-  unicode-range: U+2000-209F, U+3000-303F, U+3400-4DBF, U+4E00-9FFF, U+FF00-FFEF,
+    font-family: "HarmonyOS";
+    src: url("/fonts/HarmonyOS Sans/HarmonyOS_Sans_SC_Regular.ttf");
+    font-weight: 400;
+    unicode-range: U+2000-209F, U+3000-303F, U+3400-4DBF, U+4E00-9FFF, U+FF00-FFEF,
     U+20000-2A6DF, U+2A700-2B73F, U+2B740-2B81F, U+2B820-2CEAF;
 }
 
 @font-face {
-  font-family: "HarmonyOS";
-  src: url("/fonts/HarmonyOS Sans/HarmonyOS_Sans_SC_Bold.ttf");
-  font-weight: 700;
-  unicode-range: U+2000-209F, U+3000-303F, U+3400-4DBF, U+4E00-9FFF, U+FF00-FFEF,
+    font-family: "HarmonyOS";
+    src: url("/fonts/HarmonyOS Sans/HarmonyOS_Sans_SC_Bold.ttf");
+    font-weight: 700;
+    unicode-range: U+2000-209F, U+3000-303F, U+3400-4DBF, U+4E00-9FFF, U+FF00-FFEF,
     U+20000-2A6DF, U+2A700-2B73F, U+2B740-2B81F, U+2B820-2CEAF;
 }
 
 @font-face {
-  font-family: "HarmonyOS";
-  src: url("/fonts/HarmonyOS Sans/HarmonyOS_Sans_SC_Medium.ttf");
-  font-weight: 500;
-  unicode-range: U+2000-209F, U+3000-303F, U+3400-4DBF, U+4E00-9FFF, U+FF00-FFEF,
+    font-family: "HarmonyOS";
+    src: url("/fonts/HarmonyOS Sans/HarmonyOS_Sans_SC_Medium.ttf");
+    font-weight: 500;
+    unicode-range: U+2000-209F, U+3000-303F, U+3400-4DBF, U+4E00-9FFF, U+FF00-FFEF,
     U+20000-2A6DF, U+2A700-2B73F, U+2B740-2B81F, U+2B820-2CEAF;
 }
 
 div[class^="announcementBar_"] {
-  --site-announcement-bar-stripe-color1: rgba(25, 141, 255, 0.2);
-  --site-announcement-bar-stripe-color2: rgba(238, 249, 253, 1);
-  height: fit-content;
-  font-size: 20px;
-  font-weight: 700;
-  background: repeating-linear-gradient(
-    35deg,
-    var(--site-announcement-bar-stripe-color1),
-    var(--site-announcement-bar-stripe-color1) 20px,
-    var(--site-announcement-bar-stripe-color2) 10px,
-    var(--site-announcement-bar-stripe-color2) 40px
-  );
+    --site-announcement-bar-stripe-color1: rgba(25, 141, 255, 0.2);
+    --site-announcement-bar-stripe-color2: rgba(238, 249, 253, 1);
+    height: fit-content;
+    font-size: 20px;
+    font-weight: 700;
+    background: repeating-linear-gradient(
+        35deg,
+        var(--site-announcement-bar-stripe-color1),
+        var(--site-announcement-bar-stripe-color1) 20px,
+        var(--site-announcement-bar-stripe-color2) 10px,
+        var(--site-announcement-bar-stripe-color2) 40px
+    );
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(25px);
 }
 
 /* Unified section header design in the future. Subject for change. */
@@ -173,15 +182,15 @@ div[class^="announcementBar_"] {
 
 .announcement-link,
 .navbar__link {
-  margin: auto 0.35rem auto;
-  border-radius: 0.5rem;
-  padding: 4px 6px;
-  animation: hueback 0.25s ease forwards, shrink 0.25s ease forwards;
+    margin: auto 0.35rem auto;
+    border-radius: 0.5rem;
+    padding: 4px 6px;
+    animation: hueback 0.25s ease forwards, shrink 0.25s ease forwards;
 }
 
 .announcement-link:hover,
 .navbar__link--active,
 .navbar__link:hover {
-  color: var(--link-accent);
-  animation: hue 0.25s ease forwards, enlarge 0.25s ease forwards;
+    color: var(--link-accent);
+    animation: hue 0.25s ease forwards, enlarge 0.25s ease forwards;
 }
