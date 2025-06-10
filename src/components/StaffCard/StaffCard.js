@@ -48,8 +48,8 @@ function StaffCard({ uid, userName, role }) {
     });
 
     // Set the highlight position based on the cursor's relative position
-    const posX = ((mouseX / cardWidth) * 100).toFixed(2);
-    const posY = ((mouseY / cardHeight) * 100).toFixed(2);
+    const posX = Number(((mouseX / cardWidth) * 100).toFixed(2));
+    const posY = Number(((mouseY / cardHeight) * 100).toFixed(2));
     setHighlightPosition({ x: posX, y: posY });
   };
 
