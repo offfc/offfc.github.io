@@ -13,6 +13,7 @@ function StaffCard({ uid, userName, role }) {
     "linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(160, 218, 228, 0.5))"
   );
   const [highlightPosition, setHighlightPosition] = useState({ x: 50, y: 50 });
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
 
   const handleMouseMove = (event) => {
     const card = cardRef.current;
@@ -81,11 +82,12 @@ function StaffCard({ uid, userName, role }) {
       ></div>
       <div>
         <img
-          className="card-img"
+          className={`card-img ${isImageLoaded ? "loaded" : ""}`}
           src={"https://a.ppy.sh/" + uid}
           style={{ userSelect: "none" }}
           alt="User Avatar"
           ref={imgRef}
+          onLoad={() => setIsImageLoaded(true)}
         />
       </div>
       <div
