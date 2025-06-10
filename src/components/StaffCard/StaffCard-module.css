@@ -169,11 +169,3 @@
 .card-img.loaded {
     animation: shrink 0.3s ease forwards, fade-in 0.3s ease forwards;
 }
-
-.card-img:hover {
-    animation: enlarge 0.3s ease forwards;
-}
-
-.card-img:active {
-    animation: shrink 0.3s ease forwards; /* 鼠标移出时缩小，持续0.5秒 */
-}
