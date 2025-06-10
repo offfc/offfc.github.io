@@ -1,5 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import styles from './LiveIndicator.module.css';
+import React, { useState, useEffect } from "react";
+import styles from "./LiveIndicator.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircle as fasCircle } from "@fortawesome/free-solid-svg-icons";
+import { faCircle as farCircle } from "@fortawesome/free-regular-svg-icons";
 
 // This won't show the live status as
 export default function LiveIndicator() {
@@ -25,10 +28,13 @@ export default function LiveIndicator() {
   return (
     <div className={styles["live-indicator-block"]}>
       <span
-        className={`${ isLive ? styles["live-indicator"] : styles["offline-indicator"] } ${ isLive ? styles.blink : "" }`}
+        className={`${styles["live-indicator"]} ${isLive ? styles.live : ""}`}
       >
-        <i className={`fa ${ isLive ? "fa-circle" : "fa-circle-o" }`} aria-hidden="true"></i>
-        &nbsp;{isLive ? "LIVE" : " OFFLINE"}
+        {
+          isLive ? <FontAwesomeIcon icon={fasCircle} className={styles.blink}/>
+            : <FontAwesomeIcon icon={farCircle}/>
+        }
+        {isLive ? "LIVE" : "OFFLINE"}
       </span>
     </div>
   );
