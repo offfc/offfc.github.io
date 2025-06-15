@@ -136,7 +136,7 @@
 .titleBadge {
   display: inline-block;
   background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(55px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 2rem;
   padding: 0.5rem 1.2rem;
@@ -152,12 +152,11 @@
 }
 
 .titleUnderline {
-  width: 120px;
+  width: 500px;
   height: 4px;
   background: linear-gradient(90deg,
-    rgba(255, 255, 255, 0.8) 0%,
-    rgba(255, 255, 255, 0.4) 50%,
-    rgba(255, 255, 255, 0.1) 100%
+    rgb(255, 255, 255, 1) 0%,
+    rgba(76, 141, 249, 0.5) 100%
   );
   border-radius: 2px;
   margin-top: 1rem;
@@ -202,7 +201,7 @@
   text-align: center;
   padding: 1.5rem 1rem;
   background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(55px);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 1rem;
   transition: all 0.3s ease;
@@ -221,6 +220,11 @@
     rgba(255, 255, 255, 0.6) 0%,
     rgba(255, 255, 255, 0.2) 100%
   );
+  backdrop-filter: blur(0px);
+}
+
+.heroBanner::after {
+    z-index: 1;
 }
 
 .statItem:hover {
@@ -253,8 +257,11 @@
 }
 
 .actionPanel {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(25px);
+  background: linear-gradient(90deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  backdrop-filter: blur(45px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 1.5rem;
   padding: 2.5rem 2rem;
