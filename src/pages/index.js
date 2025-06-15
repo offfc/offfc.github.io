@@ -25,11 +25,6 @@ function HomepageHeader() {
             </div>
 
             <div className={styles.descriptionSection}>
-              <h2 className={styles.tagline}>h2写这里</h2>
-              <p className={styles.heroDescription}>
-                内容写这里
-              </p>
-
               <div className={styles.statsGrid}>
                 <div className={styles.statItem}>
                   <div className={styles.statNumber}>4v4</div>
