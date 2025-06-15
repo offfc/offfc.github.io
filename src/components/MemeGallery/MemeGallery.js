@@ -14,6 +14,11 @@ export default function MemeGallery() {
 
 const itemData = [
   {
+    img: "/img/memes/wrong-group-chat.jpg",
+    title: "\"发错了\"",
+    description: "🙄+😦=?",
+  },
+  {
     img: "/img/memes/fire-truck.png",
     title: "火个几把",
     description: "🔥🔥🤓🔥🔥",
