@@ -22,11 +22,11 @@ function HomepageHeader() {
         <br/>
         <div className={styles.buttons}>
           <FeatureButton
-            link="/docs/info"
+            link={`/docs/${common.currentSeason}`}
             buttonText="了解一下"
           />
           <FeatureButton
-            link="/docs/handbook"
+            link={`/docs/${common.currentSeason}/handbook`}
             buttonText="查看参赛手册"
           />
           <FeatureButton
