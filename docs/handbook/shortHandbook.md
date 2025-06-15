@@ -6,7 +6,7 @@ id: shortHandbook
 title: 精简版规则
 ---
 
-<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css"></link>
 
 # <Highlight color="#198dff">OFFC cirno</Highlight>·Bingo 玩法 <FntColor color="#198dff">精简版</FntColor>
 
@@ -16,11 +16,7 @@ title: 精简版规则
 
 你可以在[**腾讯文档**](https://docs.qq.com/doc/DVHZoWWl3Rkt5aldD)阅读最新版本。
 
-<<<<<<< HEAD:docs/handbook/shortHandbook.md
-若要查看完整参考手册内容，请[**移步至此**](/docs/handbook)。
-=======
 若要查看完整参考手册内容，请[**移步至此**](/docs/cirno/handbook)。
->>>>>>> 5391bf7ba996a1d383b0af94607f740fcbc79039:docs/cirno/handbook/shortHandbook.md
 
 :::
 
