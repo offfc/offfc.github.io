@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardLayer {
+    max-width: 90vw;
+}
+
+.titleLayer {
+    position: absolute;
+    width: 60%;
+    max-width: 800px;
+    will-change: transform;
+    z-index: 2;
+}

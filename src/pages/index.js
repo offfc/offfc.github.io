@@ -8,6 +8,7 @@ import HomepageNotification from "../components/HomepageNotification/HomepageNot
 import MatchBoard from "../components/MatchBoard/MatchBoard.js";
 import LiveIndicator from "../components/HomepageLiveStream/LiveIndicator";
 import LiveStream from "../components/HomepageLiveStream";
+import HomepageFeatureDisplay from "../components/HomepageFeatureDisplay";
 
 const common = require("../../common.js");
 
@@ -44,6 +45,7 @@ export default function Home() {
     <Layout title={`${siteConfig.title}`} description={`${common.description}`}>
       <HomepageHeader/>
       <main>
+        <HomepageFeatureDisplay/>
         <HomepageNotification type={"info"} message={
           "<b style='display: block; text-align: center;'>新的内容，敬请期待...</b>"
         }/>

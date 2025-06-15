@@ -9,17 +9,13 @@
     overflow: hidden;
     padding: 6rem 0 6rem;
     margin-bottom: 2rem;
-    background-position: right, center;
     background-size: contain;
-    background-repeat: no-repeat;
-    /*background-color: #0b9bbb;*/
-    background-image: url("/static/img/cirno-fac.png"),
-    linear-gradient(
+    background: linear-gradient(
         to right,
         rgba(11, 155, 187, 0.8),
         20%,
         rgba(218, 245, 252, 1)
-    );
+    ) no-repeat right, center;
 }
 
 .heroLogo {
