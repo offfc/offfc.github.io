@@ -66,6 +66,9 @@ function HomepageHeader() {
         <div className={styles.heroContent}>
           <div className={styles.heroLeft}>
             <div className={styles.titleSection}>
+              <div className={styles.titleBadge}>
+                <span className={styles.badgeText}>OFFC SL报名已开始！</span>
+              </div>
               <HomepageTitle />
               <div className={styles.titleUnderline}></div>
             </div>
