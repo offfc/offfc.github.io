@@ -4,75 +4,330 @@
  * and scoped locally.
  */
 .heroBanner {
-    text-align: left;
-    position: relative;
-    overflow: hidden;
-    padding: 6rem 0 6rem;
-    margin-bottom: 2rem;
-    background-size: contain;
-    background: linear-gradient(
-        to right,
-        rgba(11, 155, 187, 0.8),
-        20%,
-        rgba(218, 245, 252, 1)
-    ) no-repeat right, center;
+  padding: 6rem 0;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg,
+    rgba(59, 130, 246, 0.9) 0%,
+    rgba(96, 165, 250, 0.85) 25%,
+    rgba(147, 197, 253, 0.9) 50%,
+    rgba(191, 219, 254, 0.8) 75%,
+    rgba(219, 234, 254, 0.75) 100%
+  );
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 20px 40px rgba(59, 130, 246, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
 }
 
-.heroLogo {
-    width: 178px;
-    height: 178px;
+.heroBanner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(ellipse at 20% 30%,
+      rgba(255, 255, 255, 0.08) 0%,
+      transparent 60%
+    ),
+    radial-gradient(ellipse at 80% 70%,
+      rgba(255, 255, 255, 0.06) 0%,
+      transparent 60%
+    );
+  z-index: 0;
 }
 
-h2.heroTagline {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    filter: drop-shadow(2px 2px 2px #666);
+.heroBanner > .container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
 }
 
-.buttons {
-    display: flex;
-    align-items: flex-start;
-    justify-content: left;
-    gap: 1em;
+.heroContent {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 4rem;
+  align-items: center;
+  min-height: 50vh;
 }
 
-@media screen and (max-width: 1220px) {
-    .heroBanner {
-        padding: 2rem;
-    }
+.heroLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  position: relative;
+}
+
+.heroLeft::before {
+  content: '';
+  position: absolute;
+  left: -1rem;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  border-radius: 2px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.titleSection {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.titleBadge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 2rem;
+  padding: 0.5rem 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.badgeText {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  letter-spacing: 0.05em;
+}
+
+.titleUnderline {
+  width: 120px;
+  height: 4px;
+  background: linear-gradient(90deg,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  border-radius: 2px;
+  margin-top: 1rem;
+}
+
+.descriptionSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tagline {
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  margin: 0;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+}
+
+.heroDescription {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  max-width: 600px;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 1rem;
+  max-width: 500px;
+}
+
+.statItem {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.statItem::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg,
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+}
+
+.statItem:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.statNumber {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 0.3rem;
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.heroRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.actionPanel {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1.5rem;
+  padding: 2.5rem 2rem;
+  box-shadow:
+    0 25px 50px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 380px;
+}
+
+.actionPanel:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 35px 70px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.panelHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 1.5rem;
+}
+
+.panelTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 0.5rem 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.panelSubtitle {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  font-weight: 400;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .heroContent {
+    grid-template-columns: 1fr 350px;
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 4rem 0;
+    min-height: auto;
+  }
+
+  .heroContent {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .titleSection {
+    text-align: center;
+  }
+
+  .titleUnderline {
+    margin: 1rem auto 0;
+  }
+
+  .statsGrid {
+    margin: 2rem auto 0;
+  }
+
+  .actionPanel {
+    max-width: 500px;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .heroBanner {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 2rem 1rem;
-        background-image: url("/static/img/full-transparent.png"),
-        linear-gradient(
-            to right,
-            rgba(11, 155, 187, 0.8),
-            20%,
-            rgba(218, 245, 252, 1)
-        );
-        background-position: center bottom;
-        background-size: cover;
-    }
+  .tagline {
+    font-size: 1.6rem;
+  }
 
-    .heroBanner h1,
-    .heroBanner p {
-        text-align: center;
-    }
+  .heroDescription {
+    font-size: 1rem;
+  }
 
-    .buttons {
-        justify-content: center;
-    }
+  .statsGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 300px;
+  }
+
+  .statItem {
+    padding: 1rem 0.8rem;
+  }
+
+  .statNumber {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 560px) {
-    .buttons {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+  .heroLeft {
+    gap: 2rem;
+  }
+
+  .tagline {
+    font-size: 1.4rem;
+  }
+
+  .badgeText {
+    font-size: 0.8rem;
+  }
 }

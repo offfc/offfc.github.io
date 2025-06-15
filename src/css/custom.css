@@ -194,3 +194,21 @@ div[class^="announcementBar_"] {
     color: var(--link-accent);
     animation: hue 0.25s ease forwards, enlarge 0.25s ease forwards;
 }
+
+.hero--primary {
+  background: linear-gradient(135deg,
+    rgba(37, 117, 252, 0.95) 0%,
+    rgba(37, 117, 252, 0.85) 25%,
+    rgba(59, 130, 246, 0.9) 50%,
+    rgba(96, 165, 250, 0.8) 75%,
+    rgba(147, 197, 253, 0.7) 100%
+  ) !important;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero--primary .container {
+  position: relative;
+  z-index: 2;
+}
