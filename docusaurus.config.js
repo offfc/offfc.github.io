@@ -71,15 +71,7 @@ const config = {
         ],
     ],
 
-    stylesheets: [
-        {
-            href: "https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css",
-            type: "text/css",
-            integrity:
-                "sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM",
-            crossorigin: "anonymous",
-        },
-    ],
+
 
     themeConfig:
     /** @type {import("@docusaurus/preset-classic").ThemeConfig} */
@@ -91,7 +83,7 @@ const config = {
                 },
             },
             // Social card image
-            image: common.cardbanner,
+            image: common.socialImage,
             navbar: {
                 title: common.title,
                 logo: {
@@ -99,11 +91,11 @@ const config = {
                     src: common.icon,
                 },
                 items: [
-                    { to: "/docs/info/", label: "简介", position: "left" },
-                    { to: "/docs/handbook", label: "参赛手册", position: "left" },
-                    { to: "/docs/mainChart/", label: "主表格", position: "left" },
+                    { to: `/docs/${common.currentSeason}/info/`, label: "简介", position: "left" },
+                    { to: `/docs/${common.currentSeason}/handbook`, label: "参赛手册", position: "left" },
+                    { to: `/docs/${common.currentSeason}/mainChart/`, label: "主表格", position: "left" },
                     { to: "/blog", label: "动态", position: "left" },
-                    { to: "/docs/staff", label: "Staff", position: "left" },
+                    { to: `/docs/${common.currentSeason}/staff`, label: "Staff", position: "left" },
                     { to: "/docs/easteregg", label: "     ", position: "left" },
                     { to: "/docs/memes", label: `梗图`, position: "left" },
                     {
@@ -113,14 +105,6 @@ const config = {
                     },
                 ],
             },
-            announcementBar: {
-                id: "Announcement",
-                content:
-                    "📣OFFC Cirno 已告一段落！点击<a class=\"announcement-link\" href=\"/blog/Result\">这里</a>查看详情！📣",
-                backgroundColor: "#ffffff",
-                textColor: "#091E42",
-                isCloseable: true,
-            },
             footer: {
                 style: "dark",
                 links: [
@@ -129,15 +113,15 @@ const config = {
                         items: [
                             {
                                 label: "简介",
-                                to: "/docs/info",
+                                to: `/docs/${common.currentSeason}/info`,
                             },
                             {
                                 label: "参赛手册",
-                                to: "/docs/handbook",
+                                to: `/docs/${common.currentSeason}/handbook`,
                             },
                             {
                                 label: "主表格",
-                                to: "/docs/mainChart",
+                                to: `/docs/${common.currentSeason}/mainChart`,
                             },
                             {
                                 label: "动态",
@@ -145,7 +129,7 @@ const config = {
                             },
                             {
                                 label: "Staff",
-                                to: "/docs/staff",
+                                to: `/docs/${common.currentSeason}/staff`,
                             },
                             {
                                 label: "梗图",
@@ -167,12 +151,16 @@ const config = {
                         items: [
                             {
                                 label: "主表链接 (Google Docs)",
-                                href: "https://docs.google.com/spreadsheets/d/14ZFqYajLDRjr863hDo5n5xvGQMoDZPmNwJycgQXr3YQ/edit?usp=sharing",
+                                href: "https://docs.google.com/spreadsheets/d/167EKJ5hA59MOGXHn2D_oHjLCpedfKCdeW7gWOKtozjg/edit?gid=0#gid=0",
                             },
                             {
                                 label: "参赛手册（腾讯文档）",
-                                href: "https://docs.qq.com/doc/DV2VOWlZJdFZWZUpB?from_page=save",
+                                href: "https://docs.qq.com/doc/DVG15aUFITVVQYUZp",
                             },
+                            {
+                                label: "Discord",
+                                href: "https://discord.gg/GsQMn2GVpw",
+                            }
                         ],
                     },
                 ],
