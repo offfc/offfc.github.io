@@ -9,7 +9,6 @@ const common = {
     icon: "img/site-logo.png",
     socialImage: "img/card.jpg",
     src: "https://github.com/offfc/offfc.github.io",
-    currentSeason: "summer-lights",
     contact: {
         github_org: "https://github.com/offfc",
     },

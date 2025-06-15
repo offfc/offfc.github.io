@@ -3,7 +3,7 @@ sidebar_position: 1
 enableComments: true
 displayed_sidebar: mainSidebar
 id: index
-title: S1 参赛手册
+title: 参赛手册
 ---
 
 import {

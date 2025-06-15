@@ -3,7 +3,7 @@ sidebar_position: 1
 enableComments: true
 displayed_sidebar: mainSidebar
 id: shortHandbook
-title: S1 精简版规则
+title: 精简版规则
 ---
 
 <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css"></link>
@@ -16,7 +16,7 @@ title: S1 精简版规则
 
 你可以在[**腾讯文档**](https://docs.qq.com/doc/DVHZoWWl3Rkt5aldD)阅读最新版本。
 
-若要查看完整参考手册内容，请[**移步至此**](/docs/cirno/handbookndbook)。
+若要查看完整参考手册内容，请[**移步至此**](/docs/handbook)。
 
 :::
 
