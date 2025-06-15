@@ -16,7 +16,7 @@ import {
     faExchange, faBolt
 } from "@fortawesome/free-solid-svg-icons";
 
-![Cover](/img/handbookCover.png)
+![Cover](/img/cover-s1.png)
 
 # <Highlight color="#198dff">OFFC cirno</Highlight> 参赛手册
 
