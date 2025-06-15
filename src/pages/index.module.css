@@ -68,22 +68,6 @@
   position: relative;
 }
 
-.heroLeft::before {
-  content: '';
-  position: absolute;
-  left: -1rem;
-  top: 0;
-  width: 4px;
-  height: 100%;
-  background: linear-gradient(180deg,
-    rgba(255, 255, 255, 0.8) 0%,
-    rgba(255, 255, 255, 0.4) 50%,
-    rgba(255, 255, 255, 0.1) 100%
-  );
-  border-radius: 2px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-}
-
 .titleSection {
   position: relative;
   margin-bottom: 1rem;
