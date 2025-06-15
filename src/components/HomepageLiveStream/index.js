@@ -16,14 +16,11 @@ export default function LiveStream() {
     <section className={styles.liveStream}>
       <div className="container">
         <div className={styles.liveStreamContainer}>
-          <LiveIndicator />
+          <LiveIndicator/>
           <iframe
             src="https://www.bilibili.com/blackboard/live/live-activity-player.html?cid=31505637&sendpanel=1&danmaku=1&enableCtrlUI=1&logo=0"
-            frameBorder="no"
-            framespacing="0"
-            scrolling="no"
-            allow="autoplay; encrypted-media"
-            allowFullScreen={true}
+            allow="autoplay; encrypted-media; fullscreen"
+            style={{ border: 0 }}
             className="blp-activity-h5-iframe"
           ></iframe>
         </div>
