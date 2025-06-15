@@ -9,6 +9,7 @@ import MatchBoard from "../components/MatchBoard/MatchBoard.js";
 import LiveIndicator from "../components/HomepageLiveStream/LiveIndicator";
 import LiveStream from "../components/HomepageLiveStream";
 import HomepageFeatureDisplay from "../components/HomepageFeatureDisplay";
+import ModernButton from "../components/ModernButton/ModernButton.js";
 
 const common = require("../../common.js");
 import { useEffect } from 'react';
@@ -98,17 +99,21 @@ function HomepageHeader() {
                 <p className={styles.panelSubtitle}>选择你的下一步行动</p>
               </div>
               <div className={styles.buttonGroup}>
-                <FeatureButton
-                  link={`/docs/${common.currentSeason}`}
-                  buttonText="了解一下"
+                // Feel free to revert to FeatureButton if this is not looking great
+                <ModernButton
+                  text="了解一下"
+                  icon="ℹ️"
+                  href={`/docs/${common.currentSeason}`}
                 />
-                <FeatureButton
-                  link={`/docs/${common.currentSeason}/handbook`}
-                  buttonText="查看参赛手册"
+                <ModernButton
+                  text="查看参赛手册"
+                  icon="📖"
+                  href={`/docs/${common.currentSeason}/handbook`}
                 />
-                <FeatureButton
-                  link="/docs/summer-lights#报名"
-                  buttonText="立即报名！"
+                <ModernButton
+                  text="立即报名！"
+                  icon="📝"
+                  href="/docs/summer-lights#报名"
                 />
               </div>
             </div>
