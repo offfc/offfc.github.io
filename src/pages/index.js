@@ -30,7 +30,7 @@ function HomepageHeader() {
             buttonText="查看参赛手册"
           />
           <FeatureButton
-            link="https://docs.qq.com/form/page/DV1hXY1RMU1FOeGlM"
+            link="/docs/summer-lights#报名"
             buttonText="立即报名！"
           />
         </div>
