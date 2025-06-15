@@ -1,12 +1,12 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 enableComments: true
 displayed_sidebar: mainSidebar
 # The browser won't get the correct title without HTML tags.
-title: OFFC S1 · Cirno
+title: 简介
 ---
 
-# 简介 · <FntColor color="#198dff">OFFC cirno</FntColor>
+# 简介·<FntColor color="#198dff">OFFC cirno</FntColor>
 
 人间之里平常的一天里，琪露诺和大妖精有说有笑地在街上闲逛着。突然，一张纸条随风落在琪露诺的脸上。
 

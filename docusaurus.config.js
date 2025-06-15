@@ -71,6 +71,15 @@ const config = {
         ],
     ],
 
+    stylesheets: [
+        {
+            href: "https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css",
+            type: "text/css",
+            integrity:
+                "sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM",
+            crossorigin: "anonymous",
+        },
+    ],
 
     themeConfig:
     /** @type {import("@docusaurus/preset-classic").ThemeConfig} */
@@ -82,7 +91,7 @@ const config = {
                 },
             },
             // Social card image
-            image: common.socialImage,
+            image: common.cardbanner,
             navbar: {
                 title: common.title,
                 logo: {
@@ -90,11 +99,11 @@ const config = {
                     src: common.icon,
                 },
                 items: [
-                    { to: `/docs/${common.currentSeason}`, label: "简介", position: "left" },
-                    { to: `/docs/${common.currentSeason}/handbook`, label: "参赛手册", position: "left" },
-                    { to: `/docs/${common.currentSeason}/mainChart`, label: "主表格", position: "left" },
+                    { to: "/docs/info/", label: "简介", position: "left" },
+                    { to: "/docs/handbook", label: "参赛手册", position: "left" },
+                    { to: "/docs/mainChart/", label: "主表格", position: "left" },
                     { to: "/blog", label: "动态", position: "left" },
-                    { to: `/docs/${common.currentSeason}/staff`, label: "Staff", position: "left" },
+                    { to: "/docs/staff", label: "Staff", position: "left" },
                     { to: "/docs/easteregg", label: "     ", position: "left" },
                     { to: "/docs/memes", label: `梗图`, position: "left" },
                     {
@@ -104,6 +113,14 @@ const config = {
                     },
                 ],
             },
+            announcementBar: {
+                id: "Announcement",
+                content:
+                    "📣OFFC Cirno 已告一段落！点击<a class=\"announcement-link\" href=\"/blog/Result\">这里</a>查看详情！📣",
+                backgroundColor: "#ffffff",
+                textColor: "#091E42",
+                isCloseable: true,
+            },
             footer: {
                 style: "dark",
                 links: [
@@ -112,15 +129,15 @@ const config = {
                         items: [
                             {
                                 label: "简介",
-                                to: `/docs/${common.currentSeason}`,
+                                to: "/docs/info",
                             },
                             {
                                 label: "参赛手册",
-                                to: `/docs/${common.currentSeason}/handbook`,
+                                to: "/docs/handbook",
                             },
                             {
                                 label: "主表格",
-                                to: `/docs/${common.currentSeason}/mainChart`,
+                                to: "/docs/mainChart",
                             },
                             {
                                 label: "动态",
@@ -128,7 +145,7 @@ const config = {
                             },
                             {
                                 label: "Staff",
-                                to: `/docs/${common.currentSeason}/staff`,
+                                to: "/docs/staff",
                             },
                             {
                                 label: "梗图",
@@ -137,18 +154,10 @@ const config = {
                         ],
                     },
                     {
-                        title: "联系我们",
+                        title: "关于我们",
                         items: [
                             {
-                                label: "Discord",
-                                href: "https://discord.gg/GsQMn2GVpw",
-                            },
-                            {
-                                label: "官方 QQ 群",
-                                href: "https://qm.qq.com/q/X4uZu8J58y",
-                            },
-                            {
-                                label: "GitHub（仅限程序+网页）",
+                                label: "GitHub",
                                 href: common.contact.github_org,
                             },
                         ],
@@ -158,23 +167,11 @@ const config = {
                         items: [
                             {
                                 label: "主表链接 (Google Docs)",
-                                href: "https://docs.google.com/spreadsheets/d/167EKJ5hA59MOGXHn2D_oHjLCpedfKCdeW7gWOKtozjg/edit?gid=0#gid=0",
+                                href: "https://docs.google.com/spreadsheets/d/14ZFqYajLDRjr863hDo5n5xvGQMoDZPmNwJycgQXr3YQ/edit?usp=sharing",
                             },
                             {
                                 label: "参赛手册（腾讯文档）",
-                                href: "https://docs.qq.com/doc/DVG15aUFITVVQYUZp",
-                            },
-                            {
-                                label: "选手报名",
-                                href: "https://docs.qq.com/form/page/DVGJUcXhtZkFJWEVy",
-                            },
-                            {
-                                label: "策略师报名",
-                                href: "https://docs.qq.com/form/page/DVHBkd2JYa2VTbVBn",
-                            },
-                            {
-                                label: "工作人员报名",
-                                href: "https://docs.qq.com/form/page/DVEhxeWdqSENWTWRT",
+                                href: "https://docs.qq.com/doc/DV2VOWlZJdFZWZUpB?from_page=save",
                             },
                         ],
                     },
