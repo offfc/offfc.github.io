@@ -6,6 +6,8 @@ import HomepageTitle from "../components/HomepageTitle/HomepageTitle.js";
 import FeatureButton from "../components/FeatureButton/FeatureButton";
 import HomepageNotification from "../components/HomepageNotification/HomepageNotification.js";
 import MatchBoard from "../components/MatchBoard/MatchBoard.js";
+import LiveIndicator from "../components/HomepageLiveStream/LiveIndicator";
+import LiveStream from "../components/HomepageLiveStream";
 
 const common = require("../../common.js");
 
@@ -41,19 +43,11 @@ export default function Home() {
   return (
     <Layout title={`${siteConfig.title}`} description={`${common.description}`}>
       <HomepageHeader/>
-      <HomepageNotification type={"info"}
-                            message={"<b style='display: block; text-align: center;'>本届OFFC cirno完结撒花！感谢选手们的参与！</b><br />"}
-                            icon={true}/>
-      <br/>
       <main>
-        <MatchBoard/>
-        <br/>
+        <HomepageNotification type={"info"} message={
+          "<b style='display: block; text-align: center;'>新的内容，敬请期待...</b>"
+        }/>
       </main>
-      <HomepageNotification type={"info"} message={
-        "<p1 style='font-size: 36px'><b>感谢DESU.Life的赞助！</b></p1>" +
-        "<br>" +
-        "<p2 style='font-size: 24px'>前往<a href='https://cn.desu.life/'>DESU.Life</a>官网购买你的猫盘！</p2>"
-      } imgPath="/img/sponsor.png"/>
     </Layout>
   );
 }
