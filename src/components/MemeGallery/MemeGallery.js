@@ -14,6 +14,15 @@ export default function MemeGallery() {
 
 const itemData = [
   {
+    img: "/img/memes/fire-truck.png",
+    title: "火个几把",
+    description: "🔥🔥🤓🔥🔥",
+  },
+  {
+    img: "/img/memes/oh-my-children.png",
+    title: "我草小孩",
+  },
+  {
     img: "/img/memes/true-BA-player.png",
     title: "true Blue Archive player",
     description: "真正的 BA 玩家！",
