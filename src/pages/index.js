@@ -96,11 +96,11 @@ function HomepageHeader() {
               </div>
               <div className={styles.buttonGroup}>
                 <FeatureButton
-                  link="/docs/info"
+                  link={`/docs/${common.currentSeason}`}
                   buttonText="了解一下"
                 />
                 <FeatureButton
-                  link="/docs/handbook"
+                  link={`/docs/${common.currentSeason}/handbook`}
                   buttonText="查看参赛手册"
                 />
                 <FeatureButton
@@ -120,7 +120,7 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout title={`${siteConfig.title}`} description={`${common.description}`}>
-      <HomepageHeader />
+      <HomepageHeader/>
       <main>
         <HomepageFeatureDisplay/>
         <HomepageNotification type={"info"} message={

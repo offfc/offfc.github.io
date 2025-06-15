@@ -72,7 +72,6 @@ const config = {
     ],
 
 
-
     themeConfig:
     /** @type {import("@docusaurus/preset-classic").ThemeConfig} */
         ({
@@ -91,9 +90,9 @@ const config = {
                     src: common.icon,
                 },
                 items: [
-                    { to: `/docs/${common.currentSeason}/info/`, label: "简介", position: "left" },
+                    { to: `/docs/${common.currentSeason}`, label: "简介", position: "left" },
                     { to: `/docs/${common.currentSeason}/handbook`, label: "参赛手册", position: "left" },
-                    { to: `/docs/${common.currentSeason}/mainChart/`, label: "主表格", position: "left" },
+                    { to: `/docs/${common.currentSeason}/mainChart`, label: "主表格", position: "left" },
                     { to: "/blog", label: "动态", position: "left" },
                     { to: `/docs/${common.currentSeason}/staff`, label: "Staff", position: "left" },
                     { to: "/docs/easteregg", label: "     ", position: "left" },
@@ -113,7 +112,7 @@ const config = {
                         items: [
                             {
                                 label: "简介",
-                                to: `/docs/${common.currentSeason}/info`,
+                                to: `/docs/${common.currentSeason}`,
                             },
                             {
                                 label: "参赛手册",
@@ -138,10 +137,18 @@ const config = {
                         ],
                     },
                     {
-                        title: "关于我们",
+                        title: "联系我们",
                         items: [
                             {
-                                label: "GitHub",
+                                label: "Discord",
+                                href: "https://discord.gg/GsQMn2GVpw",
+                            },
+                            {
+                                label: "官方 QQ 群",
+                                href: "https://qm.qq.com/q/X4uZu8J58y",
+                            },
+                            {
+                                label: "GitHub（仅限程序+网页）",
                                 href: common.contact.github_org,
                             },
                         ],
@@ -158,9 +165,17 @@ const config = {
                                 href: "https://docs.qq.com/doc/DVG15aUFITVVQYUZp",
                             },
                             {
-                                label: "Discord",
-                                href: "https://discord.gg/GsQMn2GVpw",
-                            }
+                                label: "选手报名",
+                                href: "https://docs.qq.com/form/page/DVGJUcXhtZkFJWEVy",
+                            },
+                            {
+                                label: "策略师报名",
+                                href: "https://docs.qq.com/form/page/DVHBkd2JYa2VTbVBn",
+                            },
+                            {
+                                label: "工作人员报名",
+                                href: "https://docs.qq.com/form/page/DVEhxeWdqSENWTWRT",
+                            },
                         ],
                     },
                 ],
