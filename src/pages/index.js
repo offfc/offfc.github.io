@@ -99,7 +99,6 @@ function HomepageHeader() {
                 <p className={styles.panelSubtitle}>选择你的下一步行动</p>
               </div>
               <div className={styles.buttonGroup}>
-                // Feel free to revert to FeatureButton if this is not looking great
                 <ModernButton
                   text="了解一下"
                   icon="ℹ️"
