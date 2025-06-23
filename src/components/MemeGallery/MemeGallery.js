@@ -4,7 +4,7 @@ import ImageCard from "../ImageCard/ImageCard";
 
 export default function MemeGallery() {
   return (
-    <ImageList variant="masonry" cols={3} gap={10}>
+    <ImageList variant="masonry" cols={3} gap={10} style={{paddingBottom: "5px"}}>
       {itemData.map((item) => (
         <ImageCard title={item.title} image={item.img} description={item.description}/>
       ))}
