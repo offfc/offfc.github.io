@@ -1,17 +1,19 @@
 .matchBoardContainer {
-    max-width: 1600px;
-    margin: -0.5 auto;
-    padding: 10px;
-    padding-top: 10px;
-    padding-bottom: 5px;
+    max-width: 1080px;
+    margin: auto;
+    padding: 10px 10px 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
+    border-radius: 5px;
     overflow: hidden;
-  }
-  
-  iframe {
+
+    /* To match Challonge's background */
+    background-color: #272727;
+    color: white;
+}
+
+iframe {
+    /* CloneWith: A sane value to prevent the scroll bar from appearing */
+    height: 740px;
     width: 100%;
-    height: 650;
     border: none;
-  }
-  
+}

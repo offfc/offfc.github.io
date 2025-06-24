@@ -1,8 +1,14 @@
 /* Animation definitions. */
-@keyframes fade-in {
+@keyframes fade-in-from-zero {
     from {
         opacity: 0;
     }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
     to {
         opacity: 1;
     }
@@ -46,7 +52,6 @@
     }
 }
 
-/* TODO: Can we add animation on image load complete? */
 *.fade-in {
     animation-name: fade-in;
     animation-duration: 0.8s;
@@ -74,11 +79,9 @@
     justify-content: center;
     align-items: center;
     animation: hueblueback 0.3s ease forwards;
-    background: rgba(101, 171, 217, 0.28);
     backdrop-filter: blur(25px);
-    background-position: bottom;
     background-size: auto 60%;
-    background-repeat: repeat;
+    background: rgba(101, 171, 217, 0.28) repeat bottom;
     overflow: hidden;
     transition: transform 0.05s ease, background-color 0.005s ease;
 }
@@ -155,7 +158,7 @@
 
 .card-img {
     border-radius: var(--ifm-card-border-radius);
-    animation: shrink 0.3s ease forwards;
+    opacity: 0;
     /* Use fixed size for better appearance */
     width: 128px;
     height: 128px;
@@ -163,10 +166,6 @@
     transition: transform 0.05s ease; /* Smooth movement for parallax */
 }
 
-.card-img:hover {
-    animation: enlarge 0.3s ease forwards;
-}
-
-.card-img:active {
-    animation: shrink 0.3s ease forwards; /* 鼠标移出时缩小，持续0.5秒 */
+.card-img.loaded {
+    animation: shrink 0.3s ease forwards, fade-in 0.3s ease forwards;
 }

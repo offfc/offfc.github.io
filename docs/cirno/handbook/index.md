@@ -3,7 +3,7 @@ sidebar_position: 1
 enableComments: true
 displayed_sidebar: mainSidebar
 id: index
-title: 参赛手册
+title: S1 参赛手册
 ---
 
 import {
@@ -16,7 +16,7 @@ import {
     faExchange, faBolt
 } from "@fortawesome/free-solid-svg-icons";
 
-![Cover](/img/handbookCover.png)
+![Cover](/img/cover-s1.png)
 
 # <Highlight color="#198dff">OFFC cirno</Highlight> 参赛手册
 

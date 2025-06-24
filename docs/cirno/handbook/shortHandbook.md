@@ -3,10 +3,17 @@ sidebar_position: 1
 enableComments: true
 displayed_sidebar: mainSidebar
 id: shortHandbook
-title: 精简版规则
+title: S1 精简版规则
 ---
 
-<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css"></link>
+import {
+    faBan,
+    faLock,
+    faCheck,
+    faExclamationCircle,
+    faClock,
+    faExchange, faBolt
+} from "@fortawesome/free-solid-svg-icons";
 
 # <Highlight color="#198dff">OFFC cirno</Highlight>·Bingo 玩法 <FntColor color="#198dff">精简版</FntColor>
 
@@ -16,7 +23,7 @@ title: 精简版规则
 
 你可以在[**腾讯文档**](https://docs.qq.com/doc/DVHZoWWl3Rkt5aldD)阅读最新版本。
 
-若要查看完整参考手册内容，请[**移步至此**](/docs/handbook)。
+若要查看完整参考手册内容，请[**移步至此**](/docs/cirno/handbook)。
 
 :::
 
@@ -60,11 +67,11 @@ OFFC 中所有轮次的图池均以一个 4x4 的棋盘为载体，棋盘上有 
 比赛胜利的条件：当出现<Highlight color="#198dff">**任意一条横、竖、斜的四连同色**</Highlight>时，该颜色的对应方获得比赛胜利。
 
 1. 双方 **Roll 点**。点数大的一方决定先 Ban 或后 Ban。
-2. <Highlight color="#27efcb"><i class="fa fa-lock"></i> **Protect**</Highlight> 阶段。后 Ban 方优先保图，双方各 1 个保图位置。
-3. <Highlight color="#232323"><i class="fa fa-ban"></i> **Ban**</Highlight> 阶段。先 Ban 方优先 Ban 图，被 Ban 的图会被染黑。不可 Ban 保图。
-4. <Highlight color="#198dff"><i class="fa fa-check"></i> **Pick**</Highlight> 阶段。先 Ban 方优先 Pick 图。不可 Pick 黑色的 Ban 图。
+2. <Highlight color="#27efcb"><FontAwesomeIcon icon={faLock} /> **Protect**</Highlight> 阶段。后 Ban 方优先保图，双方各 1 个保图位置。
+3. <Highlight color="#232323"><FontAwesomeIcon icon={faBan} /> **Ban**</Highlight> 阶段。先 Ban 方优先 Ban 图，被 Ban 的图会被染黑。不可 Ban 保图。
+4. <Highlight color="#198dff"><FontAwesomeIcon icon={faCheck} /> **Pick**</Highlight> 阶段。先 Ban 方优先 Pick 图。不可 Pick 黑色的 Ban 图。
    - 棋盘里的一张图打完之后，用获胜方的队伍颜色，对该图所在的格子染色。
-5. <Highlight color="#7d75ee"><i class="fa fa-exclamation-circle"></i> **Trap**</Highlight> 阶段。后 Pick方二选结束后（即打了 4 把之后），双方队长在 bancho 中私聊裁判在任一未染色的格子上布置陷阱。
+5. <Highlight color="#7d75ee"><FontAwesomeIcon icon={faExclamationCircle} /> **Trap**</Highlight> 阶段。后 Pick方二选结束后（即打了 4 把之后），双方队长在 bancho 中私聊裁判在任一未染色的格子上布置陷阱。
 
 :::info Trap 阶段说明
 
@@ -81,7 +88,7 @@ OFFC 中所有轮次的图池均以一个 4x4 的棋盘为载体，棋盘上有 
 
 #### 2-3 EX 阶段
 
-如果场上的颜色布局情况导致游戏无论如何无法取胜，则进入<Highlight color="#7d75ee"><i class="fa fa-bolt" style={{color: '#ffa500'}}></i> **EX 阶段**</Highlight>，启用 EX 图池。双方强制按顺序比拼 EX 图。
+如果场上的颜色布局情况导致游戏无论如何无法取胜，则进入<Highlight color="#7d75ee"><FontAwesomeIcon icon={faBolt} style={{color: '#ffa500'}} /> **EX 阶段**</Highlight>，启用 EX 图池。双方强制按顺序比拼 EX 图。
 
 获胜方可将一个对手队伍颜色的格子或黑色格子染成己方队伍的颜色。对手的保图不可被 EX 染色。
 
@@ -93,10 +100,10 @@ EX 图池的选择顺序是**保留**的。这就意味着，多次进入 EX 局
 
 :::info 陷阱内容
 
-1. <Highlight color="#87ceeb"><i class="fa fa-clock-o"></i> **时空之门**</Highlight>：陷阱触发时，该小局比赛暂停，**暂时**视为放置陷阱方赢得此小局，对格子进行染色并结算。若任意一方连成一线，则游戏结束；若形成 EX 局面，则进入 EX 阶段。上述结算完成后，格子变回未染色情况，陷阱失效，该小局比赛继续进行，仿佛触发陷阱方刚刚选择此图一般。
+1. <Highlight color="#87ceeb"><FontAwesomeIcon icon={faClock} /> **时空之门**</Highlight>：陷阱触发时，该小局比赛暂停，**暂时**视为放置陷阱方赢得此小局，对格子进行染色并结算。若任意一方连成一线，则游戏结束；若形成 EX 局面，则进入 EX 阶段。上述结算完成后，格子变回未染色情况，陷阱失效，该小局比赛继续进行，仿佛触发陷阱方刚刚选择此图一般。
    - 特别说明：若染色后进入 EX 阶段，则双方须先打完 EX 阶段，待比赛**回到常规阶段后**，才能继续刚才暂停的小局。
    - 示例：NM2 陷阱触发 - NM2 染色 - EX 阶段开始 - NM2 变回无色 - EX 阶段结束 - NM2 比赛 - 根据比赛结果对 NM2 染色 - 下一个小局
-2. <Highlight color="#ffa500"><i class="fa fa-exchange"></i> **大陆漂移**</Highlight>：本小局结束后，先对此格子染色，不进行最终结算和 EX 结算，将此格子与另一个提前选择的格子进行交换（连带着格子上的颜色和陷阱），随后再进行结算。
+2. <Highlight color="#ffa500"><FontAwesomeIcon icon={faExchange} /> **大陆漂移**</Highlight>：本小局结束后，先对此格子染色，不进行最终结算和 EX 结算，将此格子与另一个提前选择的格子进行交换（连带着格子上的颜色和陷阱），随后再进行结算。
    - 布置陷阱方应提前告知裁判要交换的格子对象。
    - 要交换的格子对象不可以选择被 Ban 的黑色格子和被保护的格子。
    - 若该陷阱导致双方同时获胜，则以下一张 EX 图定胜负。

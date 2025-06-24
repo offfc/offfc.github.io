@@ -1,54 +1,67 @@
 .Banner {
     display: flex;
-    align-items: center;
     padding: 1rem;
     border: 2px solid;
     border-radius: 1rem;
     margin: 1rem auto;
-    margin-bottom: 1rem;
+    max-width: 1080px;
     width: 60%;
+    min-height: 64px;
     position: relative;
     overflow: hidden;
-  }
-  
-  .BannerVisual {
+}
+
+.BannerVisual {
     margin-right: 1rem;
     position: absolute;
     left: -2rem; /* Adjust this to position the icon */
-    top: 0%;
+    top: 0;
     transform: translateX(35%) translateY(-20%) rotate(-40deg); /* Center the icon vertically and rotate */
     opacity: 0.07; /* Controls the opacity of the icon */
-  }
-  
-  .BannerIcon {
+}
+
+.BannerIcon {
     width: 65px; /* Adjust width as needed */
     height: 65px; /* Adjust height as needed */
     fill: var(--fgColor-default);
-  }
-  
-  .BannerMessage {
+}
+
+.SideImage {
+    align-self: center;
+    max-width: 20%;
+    max-height: 256px;
+}
+
+.BannerMessage {
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
     margin-left: 1.6rem; /* Adjust based on icon positioning */
-  }
-  
-  .BannerTitle {
-    margin-left: -10px;
-    font-weight: bold;
-  }
-  
-  .BannerContent {
+}
+
+.BannerTitle {
     margin: 0;
-  }
-  
-  .Banner--warning {
+    font-weight: bold;
+}
+
+/* Users should provide additional styles, while we only provide limited initial ones. */
+.BannerContent {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    min-height: 36px;
+}
+
+.Banner--warning {
     background-image: linear-gradient(#fff8c5, #fff8c5);
     border-color: #d4a72c66;
     color: #1f2328;
-  }
-  
-  .Banner--info {
+}
+
+.Banner--info {
     background-image: linear-gradient(#c5f0ff, #c5f0ff);
     border-color: #2c96d4;
     color: #1f2328;
-  }
-  
+}

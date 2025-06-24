@@ -19,7 +19,7 @@ iframe {
 }
 
 .spinner {
-  margin: -6rpx 0rpx 0rpx 2rpx;
+  margin: -6rpx 0 0 2rpx;
   width: 25rpx;
   height: 18rpx;
   font-size: 10px;

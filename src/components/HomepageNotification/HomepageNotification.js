@@ -23,7 +23,7 @@ import styles from './HomepageNotification.module.css';
 
 
 
-const HomepageNotification = ({ type, message, icon }) => {
+const HomepageNotification = ({ type, message, icon, imgPath, imgAlt }) => {
   // Set the title based on the type
   const title = type === 'warning' ? '公告' : type === 'info' ? '通知' : '';
 
@@ -49,6 +49,7 @@ const HomepageNotification = ({ type, message, icon }) => {
         <p className={styles.BannerTitle}>{title}</p>
         <div className={styles.BannerContent} dangerouslySetInnerHTML={{ __html: message }} />
       </div>
+      {(imgPath && <img className={styles.SideImage} src={imgPath} alt={imgAlt}/>)}
     </div>
   );
 };
