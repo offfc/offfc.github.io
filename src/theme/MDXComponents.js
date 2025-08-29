@@ -5,6 +5,7 @@ import FntColor from "@site/src/components/FntColor";
 import StaffCard from "@site/src/components/StaffCard/StaffCard";
 import FeatureButton from "@site/src/components/FeatureButton/FeatureButton";
 import ModernButton from "@site/src/components/ModernButton/ModernButton";
+import MainSheetView from "@site/src/components/MainSheetView/MainSheetView";
 import Button from "@mui/material/Button";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
@@ -19,5 +20,6 @@ export default {
     FeatureButton,
     ModernButton,
     Button,
+    MainSheetView,
     FontAwesomeIcon
 };

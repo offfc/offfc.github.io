@@ -1,0 +1,48 @@
+﻿.sheetContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 1080px;
+    margin: auto;
+    padding: 15px 15px 10px;
+    box-shadow: var(--ifm-alert-shadow);
+    border-radius: 5px;
+    overflow: hidden;
+
+    background-color: var(--ifm-color-info-contrast-background);
+    color: var(--ifm-color-info-contrast-foreground);
+}
+
+.sheetTopbar {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sheetTopbarPart {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+.sheetTitle {
+    font-weight: bold;
+    font-size: large;
+}
+
+.loadingIconContainer {
+    transition: opacity 300ms ease, visibility 300ms ease;
+}
+
+.loadingIconContainer.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.loadingIconContainer.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
