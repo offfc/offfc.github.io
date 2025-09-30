@@ -1,0 +1,41 @@
+﻿import { Staff, StaffRole } from "../models/Staff";
+
+/**
+ * All staffs of OFFC Summer Lights.
+ */
+export const SummerLightsStaff = [
+  new Staff("- Isuzu Ren -", [StaffRole.Commentator, StaffRole.Host, StaffRole.MappoolSelector, StaffRole.Playtester, StaffRole.Referee, StaffRole.RoleMaker, StaffRole.Streamer], 13217389),
+  new Staff("kitakore", [StaffRole.RoleMaker], 33887163),
+  new Staff("NaughtyChas", [StaffRole.Developer, StaffRole.RoleMaker, StaffRole.Streamer], 15349720),
+  new Staff("cdwcgt", [StaffRole.Developer], 14721101),
+  new Staff("MoeRain233", [StaffRole.Developer], 30973609),
+  new Staff("AeCw", [StaffRole.GraphicDesigner], 6781503),
+  new Staff("Citrusis", [StaffRole.GraphicDesigner], 30298378),
+  new Staff("sourflour", [StaffRole.GraphicDesigner, StaffRole.SpreadsheetDesigner], 5237349),
+  new Staff("5atori Komeiji", [StaffRole.MappoolSelector], 34282059),
+  new Staff("FcEazy", [StaffRole.MappoolSelector, StaffRole.Playtester], 7825227),
+  new Staff("Koishi Komeiji", [StaffRole.MappoolSelector, StaffRole.Referee], 33295812),
+  new Staff("My Angel Bronya", [StaffRole.Commentator, StaffRole.MappoolSelector, StaffRole.Playtester], 17857203),
+  new Staff("Amateurre", [StaffRole.CustomMapper], 7326908),
+  new Staff("Arushii", [StaffRole.CustomMapper], 15664628),
+  new Staff("Flame Haze", [StaffRole.CustomMapper], 8922155),
+  new Staff("NatsuRin", [StaffRole.CustomMapper], 20653857),
+  new Staff("nominomu", [StaffRole.CustomMapper], 30485380),
+  new Staff("Petal", [StaffRole.CustomMapper], 7354729),
+  new Staff("Selcas", [StaffRole.CustomMapper], 12545835),
+  new Staff("Shurelia", [StaffRole.CustomMapper], 3807986),
+  new Staff("Soyuha", [StaffRole.CustomMapper], 14208375),
+  new Staff("SparkNights", [StaffRole.CustomMapper, StaffRole.Referee], 9641731),
+  new Staff("X Light", [StaffRole.CustomMapper], 1814662),
+  new Staff("-Rosmontis-", [StaffRole.Playtester], 34323353),
+  new Staff("chanliuko", [StaffRole.Playtester], 32289237),
+  new Staff("Komeiji_Satori_", [StaffRole.Referee], 15114200),
+  new Staff("Paraliesa", [StaffRole.Referee], 30595368),
+  new Staff("Dr_Shindo", [StaffRole.Streamer], 30895664),
+  new Staff("FroZZZZZen", [StaffRole.Streamer], 29235972),
+  new Staff("Nosenso", [StaffRole.Commentator], 30329943),
+  new Staff("S tella", [StaffRole.Commentator], 16018639),
+  new Staff("Dura", [StaffRole.SpreadsheetDesigner], 5185609),
+  new Staff("7Echo (Bilibili)", [StaffRole.Musician], null, "https://space.bilibili.com/3461578621979492"),
+  new Staff("gwsscz_ (Bilibili)", [StaffRole.Illustrator], null, "https://space.bilibili.com/1840888539"),
+];
